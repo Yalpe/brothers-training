@@ -15,8 +15,8 @@ function formatPct(val, lowerIsBetter = false) {
   return `<span class="test-improve ${cls}">${sign}${val.toFixed(1)}%</span>`;
 }
 
-// Tests where a lower number is better (e.g. shuttle time)
-const LOWER_IS_BETTER = new Set(['5-10-5 shuttle']);
+// Tests où un score plus bas est mieux (ex. navette chronométrée)
+const LOWER_IS_BETTER = new Set(['Navette 5-10-5']);
 
 export function renderTests(container, data) {
   const history = getState('test_history', []);
@@ -30,25 +30,25 @@ export function renderTests(container, data) {
       <div class="test-header">
         <div class="test-name">${item.name}</div>
         <div class="test-how">${item.how}</div>
-        <div class="test-unit">Unit: ${item.unit}</div>
+        <div class="test-unit">Unité : ${item.unit}</div>
       </div>
       <div class="test-inputs">
         <div class="test-input-group">
-          <div class="test-input-label g">G — Goalie</div>
+          <div class="test-input-label g">G — Gardien</div>
           <input class="test-input" type="text" inputmode="decimal"
-            placeholder="${prevG || 'Enter result'}"
+            placeholder="${prevG || 'Entrer le résultat'}"
             data-athlete="G" data-test="${encodeURIComponent(item.name)}" />
           <div class="test-prev">
-            ${prevG ? `Last: ${prevG} ${item.unit}` : 'No previous result'}
+            ${prevG ? `Dernier : ${prevG} ${item.unit}` : 'Aucun résultat précédent'}
           </div>
         </div>
         <div class="test-input-group">
-          <div class="test-input-label s">S — Skater</div>
+          <div class="test-input-label s">S — Patineur</div>
           <input class="test-input" type="text" inputmode="decimal"
-            placeholder="${prevS || 'Enter result'}"
+            placeholder="${prevS || 'Entrer le résultat'}"
             data-athlete="S" data-test="${encodeURIComponent(item.name)}" />
           <div class="test-prev">
-            ${prevS ? `Last: ${prevS} ${item.unit}` : 'No previous result'}
+            ${prevS ? `Dernier : ${prevS} ${item.unit}` : 'Aucun résultat précédent'}
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ export function renderTests(container, data) {
           const g = entry.G?.[item.name] ?? '—';
           const s = entry.S?.[item.name] ?? '—';
           return `<div style="margin-bottom:4px">
-            <span style="color:var(--text-dim);font-size:0.75rem">${item.name}:</span>
+            <span style="color:var(--text-dim);font-size:0.75rem">${item.name} :</span>
             <span class="badge-g" style="font-size:0.72rem;padding:1px 5px;border-radius:4px">G</span> ${g}
             <span class="badge-s" style="font-size:0.72rem;padding:1px 5px;border-radius:4px;margin-left:6px">S</span> ${s}
           </div>`;
@@ -71,36 +71,36 @@ export function renderTests(container, data) {
           ${rows}
         </div>`;
       }).join('')
-    : '<p class="text-dim" style="font-size:0.85rem;padding:8px 0">No test history yet.</p>';
+    : '<p class="text-dim" style="font-size:0.85rem;padding:8px 0">Aucun historique de test.</p>';
 
   container.innerHTML = `
     <div class="page-header">
-      <div class="page-title">📊 Test Day</div>
+      <div class="page-title">📊 Jour de test</div>
       <div class="page-subtitle">${data.tests.label}</div>
     </div>
     <div class="card" style="margin-bottom:16px;border-left:3px solid var(--gold)">
       <div style="font-size:0.85rem;color:var(--text-dim);line-height:1.5">
-        🏆 <strong style="color:var(--gold)">Handicap rule:</strong> ${data.tests.rule}
+        🏆 <strong style="color:var(--gold)">Règle du handicap :</strong> ${data.tests.rule}
       </div>
     </div>
 
     ${itemsHtml}
 
     <button class="btn btn-primary btn-full" id="save-tests" style="margin-top:8px">
-      💾 Save results
+      💾 Enregistrer les résultats
     </button>
     <div id="save-feedback" style="display:none;text-align:center;padding:10px;color:var(--green);font-weight:600">
-      ✓ Results saved!
+      ✓ Résultats enregistrés !
     </div>
 
     <div class="divider" style="margin-top:20px"></div>
-    <button class="history-toggle" id="toggle-history">▸ Past results (${history.length} entries)</button>
+    <button class="history-toggle" id="toggle-history">▸ Résultats passés (${history.length} entrées)</button>
     <div id="history-panel" style="display:none;margin-top:8px">${histHtml}</div>
   `;
 
   container.querySelector('#save-tests').addEventListener('click', () => {
     const inputs = container.querySelectorAll('.test-input');
-    const entry = { date: new Date().toLocaleDateString(), G: {}, S: {} };
+    const entry = { date: new Date().toLocaleDateString('fr-CA'), G: {}, S: {} };
     let hasData = false;
     inputs.forEach(inp => {
       const val = inp.value.trim();
@@ -129,6 +129,6 @@ export function renderTests(container, data) {
     const btn = container.querySelector('#toggle-history');
     const open = panel.style.display !== 'none';
     panel.style.display = open ? 'none' : 'block';
-    btn.textContent = (open ? '▸' : '▾') + ` Past results (${history.length} entries)`;
+    btn.textContent = (open ? '▸' : '▾') + ` Résultats passés (${history.length} entrées)`;
   });
 }

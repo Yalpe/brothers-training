@@ -27,18 +27,18 @@ export function renderReference(container, data) {
 
   container.innerHTML = `
     <div class="page-header">
-      <div class="page-title">📖 Rules & Games</div>
+      <div class="page-title">📖 Règles et jeux</div>
     </div>
 
     <div class="section-header" style="margin-top:0">
-      <h2>House Rules</h2>
+      <h2>Règles maison</h2>
     </div>
     ${rulesHtml}
 
     <div class="section-header">
-      <h2>Games Menu</h2>
+      <h2>Menu des jeux</h2>
     </div>
-    <p class="text-dim" style="font-size:0.85rem;margin-bottom:12px">Boys alternate picking. The one who lost last session picks first.</p>
+    <p class="text-dim" style="font-size:0.85rem;margin-bottom:12px">Les frères alternent le choix. Celui qui a perdu la dernière fois choisit en premier.</p>
     ${gamesHtml}
   `;
 

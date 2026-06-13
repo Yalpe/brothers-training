@@ -1,647 +1,647 @@
 {
   "meta": {
-    "title": "Brothers Hockey Training Program",
-    "subtitle": "10-week summer program — goalie (almost 10) + skater (12)",
+    "title": "Programme d'entraînement hockey des frères",
+    "subtitle": "Programme d'été de 10 semaines — gardien (presque 10 ans) + patineur (12 ans)",
     "athletes": {
-      "G": { "label": "Goalie", "age": 10, "position": "Goaltender (hockey)" },
-      "S": { "label": "Skater", "age": 12, "position": "Skater (hockey)" }
+      "G": { "label": "Gardien", "age": 10, "position": "Gardien de but (hockey)" },
+      "S": { "label": "Patineur", "age": 12, "position": "Patineur (hockey)" }
     },
-    "schedule": "3 sessions/week, rest day between each. 1 Field Day + 2 Basement Days per week, ordered flexibly based on weather. Odd weeks use V1 variants where present, even weeks use V2.",
+    "schedule": "3 séances/semaine, jour de repos entre chaque. 1 journée terrain + 2 journées sous-sol par semaine, ordre flexible selon la météo. Semaines impaires : variante V1, semaines paires : variante V2.",
     "legend": {
-      "SS": "Superset — exercises run as A then B back-to-back (or as partners: one does A while the other does B, then swap), with rest after completing both.",
-      "split": "Position split — goalie (G) and skater (S) each do a different exercise in this slot.",
-      "G/S specs": "Where reps/weights differ by athlete, both are given.",
-      "game": "End-of-session game finisher, chosen from the games menu by the boys (alternating who picks)."
+      "SS": "Supersérie — les exercices se font A puis B dos à dos (ou en équipe : l'un fait A pendant que l'autre fait B, puis on échange), avec repos après avoir complété les deux.",
+      "split": "Séparation par position — le gardien (G) et le patineur (S) font chacun un exercice différent à ce slot.",
+      "G/S specs": "Quand les répétitions ou les poids diffèrent par athlète, les deux sont indiqués.",
+      "game": "Jeu de fin de séance, choisi dans le menu des jeux par les garçons (ils alternent le choix)."
     }
   },
 
   "games": [
-    { "id": "mini-shootout", "name": "Mini shootout", "icon": "ball-football",
-      "desc": "Skater shoots a tennis/soft ball at a taped goal or net, goalie defends. Works indoors against a wall or outdoors with a real net. Counts as position training for both. Track saves vs goals." },
-    { "id": "save-streak", "name": "Save streak", "icon": "target",
-      "desc": "Dad tosses soft balls at the goalie at varying heights/corners — count consecutive saves. Skater version: consecutive one-timer catch-and-return against a wall." },
-    { "id": "deck-of-cards", "name": "Deck of cards", "icon": "cards",
-      "desc": "Draw a card: hearts = squat jumps, diamonds = dot hops, clubs = shuffles, spades = push-ups. Number = reps. Brothers alternate draws for 3 minutes." },
-    { "id": "mirror-battle", "name": "Mirror battle", "icon": "copy",
-      "desc": "Brothers face each other. One leads shuffles/fakes/drops for 30 sec, the other mirrors. Swap. Dad judges who tracked better — loser does 5 burpees." },
-    { "id": "beat-the-timer", "name": "Beat the timer", "icon": "clock-bolt",
-      "desc": "60 seconds: max lateral shuffles between lines 3m apart. Each brother chases his own record — separate fridge chart per kid." },
-    { "id": "animal-relays", "name": "Animal relays", "icon": "paw",
-      "desc": "Bear crawl down, frog jump back, crab walk down, sprint back. Brothers race head-to-head, or both race Dad. Best on the field where there's room to sprint at the end." },
-    { "id": "red-light-green-light", "name": "Red light, green light — hockey edition", "icon": "traffic-lights",
-      "desc": "Green = sprint with full arm drive. Red: goalie drops to butterfly/lateral stance, skater snaps into a low hockey-stop stance. Caught moving = 3 steps back. Field-only for the sprint version; basement version shortens to shuffles." },
-    { "id": "chase-tag", "name": "Chase tag", "icon": "run",
-      "desc": "10m head start, chaser tries to tag before the line. Needs the field — best use of open space. Nothing develops kid speed better than chasing and being chased." }
+    { "id": "mini-shootout", "name": "Mini tir au but", "icon": "ball-football",
+      "desc": "Le patineur tire une balle de tennis/molle sur un filet marqué au ruban ou un vrai filet, le gardien défend. Fonctionne en intérieur contre un mur ou en extérieur avec un vrai filet. Compte comme entraînement de position pour les deux. Comptez les arrêts et les buts." },
+    { "id": "save-streak", "name": "Série d'arrêts", "icon": "target",
+      "desc": "Papa lance des balles molles vers le gardien à hauteurs et angles variés — comptez les arrêts consécutifs. Version patineur : réceptions consécutives à une main contre un mur." },
+    { "id": "deck-of-cards", "name": "Jeu de cartes", "icon": "cards",
+      "desc": "Pigez une carte : cœur = squats sautés, carreau = sauts sur les points, trèfle = déplacements latéraux, pique = pompes. Le chiffre = les répétitions. Les frères alternent les piges pendant 3 minutes." },
+    { "id": "mirror-battle", "name": "Bataille miroir", "icon": "copy",
+      "desc": "Les frères se font face. L'un dirige des déplacements/feintes/baisses pendant 30 sec, l'autre imite. On échange. Papa juge qui a le mieux suivi — le perdant fait 5 burpees." },
+    { "id": "beat-the-timer", "name": "Battre le chrono", "icon": "clock-bolt",
+      "desc": "60 secondes : maximum de déplacements latéraux entre deux lignes à 3 m. Chaque frère bat son propre record — graphique séparé sur le frigo par enfant." },
+    { "id": "animal-relays", "name": "Relais animaux", "icon": "paw",
+      "desc": "Marche de l'ours à l'aller, saut de grenouille au retour, marche du crabe à l'aller, sprint au retour. Les frères font la course, ou les deux contre Papa. Mieux sur le terrain où il y a de la place pour sprinter à la fin." },
+    { "id": "red-light-green-light", "name": "Feu rouge, feu vert — édition hockey", "icon": "traffic-lights",
+      "desc": "Vert = sprint avec bonne traction des bras. Rouge : le gardien s'abaisse en papillon/position latérale, le patineur prend une position basse de hockey-stop. Pris à bouger = 3 pas en arrière. Terrain seulement pour la version sprint ; version sous-sol raccourcit en déplacements latéraux." },
+    { "id": "chase-tag", "name": "Course-poursuite", "icon": "run",
+      "desc": "10 m d'avance, le poursuivant essaie de toucher avant la ligne. Besoin du terrain — la meilleure utilisation de l'espace ouvert. Rien ne développe la vitesse d'un enfant comme courir après quelqu'un et être couru après." }
   ],
 
   "tests": {
-    "label": "Test day — last session of each phase (weeks 3, 6, 10)",
-    "rule": "The handicap rule: both boys run the same six tests, but the competition is percent improvement from their own last test, not raw score. Two columns on the fridge chart, one trophy line: 'most improved this phase.'",
+    "label": "Jour de test — dernière séance de chaque phase (semaines 3, 6, 10)",
+    "rule": "La règle du handicap : les deux garçons font les six mêmes tests, mais la compétition porte sur le pourcentage d'amélioration par rapport à leur propre dernier test, pas sur le score brut. Deux colonnes sur le graphique du frigo, un seul trophée : 'le plus amélioré cette phase.'",
     "items": [
-      { "name": "Standing long jump", "how": "Best of 3 attempts, must stick the landing", "unit": "cm or ft/in" },
-      { "name": "5-10-5 shuttle", "how": "Best of 2 timed attempts", "unit": "seconds" },
-      { "name": "Single-leg balance, eyes closed", "how": "Each leg, until a foot or hand touches down", "unit": "seconds per leg" },
-      { "name": "Deep squat hold", "how": "Heels down, below parallel, hands forward", "unit": "seconds" },
-      { "name": "Wall ball catches", "how": "One-hand catches in 30 seconds", "unit": "count" },
-      { "name": "Lateral shuffles", "how": "Lines 3m apart, touches in 30 seconds", "unit": "count" }
+      { "name": "Saut en longueur debout", "how": "Meilleur des 3 essais, doit tenir l'atterrissage", "unit": "cm" },
+      { "name": "Navette 5-10-5", "how": "Meilleur des 2 essais chronométrés", "unit": "secondes" },
+      { "name": "Équilibre sur une jambe, yeux fermés", "how": "Chaque jambe, jusqu'à ce qu'un pied ou une main touche le sol", "unit": "secondes par jambe" },
+      { "name": "Maintien squat profond", "how": "Talons au sol, sous le parallèle, mains en avant", "unit": "secondes" },
+      { "name": "Réceptions balle contre mur", "how": "Réceptions à une main en 30 secondes", "unit": "comptage" },
+      { "name": "Déplacements latéraux", "how": "Lignes à 3 m d'intervalle, touches en 30 secondes", "unit": "comptage" }
     ]
   },
 
   "houseRules": [
-    { "title": "Partner supersets", "body": "One brother does exercise A while the other does B, then they swap. Dumbbells are never needed twice at once, nobody stands idle, and the rest timer starts when both finish the round." },
-    { "title": "Growth spurt watch (12yo)", "body": "If he is in or entering a growth spurt: flexibility work matters more (never skip cool-downs), and any recurring pain just below the kneecap or in the heel means cut jumping volume in half for that week — keep everything else." },
-    { "title": "Weekly rhythm + vacation rule", "body": "Mon/Wed/Fri-style spacing with rest days between. Odd weeks V1, even weeks V2. Short on time or traveling: 10-minute minimum = one superset of choice + one game + pigeon pose, both boys. Missed weeks extend the phase — never skip ahead to catch up." },
-    { "title": "Rain swap rule", "body": "The Field Day can be ANY of the week's 3 sessions — whichever day has good weather. If a planned Field Day gets rained out, run a Basement Day instead and shift Field Day to the next good-weather day, even mid-week. Across the week, still aim for 3 sessions total." },
-    { "title": "Dad's role", "body": "Caller for reaction drills, judge for mirror battle, rabbit in chase tag, shooter in save streak. Jumping into sprints/relays yourself is worth more than instruction — kids match the energy in the room." }
+    { "title": "Superséries en équipe", "body": "L'un fait l'exercice A pendant que l'autre fait le B, puis ils échangent. Les haltères ne sont jamais nécessaires deux fois en même temps, personne ne reste inactif, et le minuteur de repos démarre quand les deux ont fini la ronde." },
+    { "title": "Surveillance de poussée de croissance (12 ans)", "body": "S'il est en pleine poussée de croissance : le travail de flexibilité compte encore plus (ne jamais sauter les retours au calme), et toute douleur récurrente sous la rotule ou dans le talon signifie réduire le volume de sauts de moitié pour la semaine — garder tout le reste." },
+    { "title": "Rythme hebdomadaire + règle de vacances", "body": "Espacement style lun/mer/ven avec des jours de repos entre. Semaines impaires V1, semaines paires V2. Manque de temps ou en voyage : 10 minutes minimum = une supersérie au choix + un jeu + position pigeon, les deux garçons. Les semaines manquées prolongent la phase — on ne saute jamais en avant pour rattraper." },
+    { "title": "Règle de pluie", "body": "La Journée terrain peut être N'IMPORTE LAQUELLE des 3 séances de la semaine — celle qui a beau temps. Si une Journée terrain est annulée à cause de la pluie, faites une Journée sous-sol à la place et déplacez la Journée terrain au prochain beau temps, même en milieu de semaine. Sur la semaine, visez quand même 3 séances au total." },
+    { "title": "Le rôle de Papa", "body": "Appelant pour les exercices de réaction, juge pour la bataille miroir, lièvre dans la course-poursuite, tireur dans la série d'arrêts. Participer aux sprints/relais vaut plus que les instructions — les enfants copient l'énergie dans la pièce." }
   ],
 
   "formData": {
     "Squat jumps": {
       "cues": [
-        ["Knees track over the 2nd toe — never caving inward, especially on landing", null],
-        ["Land soft: toes first, roll to heel, bent knees. Loud landings = bad mechanics", null],
-        ["Chest stays up at the bottom — no rounding forward", null]
+        ["Les genoux suivent le 2e orteil — jamais vers l'intérieur, surtout à l'atterrissage", null],
+        ["Atterrir doucement : orteils d'abord, rouler vers le talon, genoux fléchis. Atterrissages bruyants = mauvaise mécanique", null],
+        ["La poitrine reste haute en bas — pas d'arrondi vers l'avant", null]
       ],
-      "warn": "Stop if knees cave on landing. Regress to regular squats until controlled. On a field, grass is much softer than concrete — still land soft.",
-      "hockey": "For the goalie it's the butterfly position; for the skater it's the loaded position before every stride."
+      "warn": "Arrêter si les genoux s'effondrent à l'atterrissage. Régresser à des squats normaux jusqu'au contrôle. Sur le terrain, l'herbe est bien plus douce que le béton — atterrir quand même doucement.",
+      "hockey": "Pour le gardien c'est la position papillon ; pour le patineur c'est la position chargée avant chaque foulée."
     },
     "Dead bug": {
       "cues": [
-        ["Lower back pressed firmly into the mat — zero gap, that's the whole exercise", null],
-        ["Lower opposite arm and leg slowly (3-4 sec)", null],
-        ["Breathe out as limbs lower", null]
+        ["Bas du dos fermement pressé sur le tapis — zéro espace, c'est tout l'exercice", null],
+        ["Abaisser le bras et la jambe opposés lentement (3-4 sec)", null],
+        ["Expirer en abaissant les membres", null]
       ],
-      "warn": "If the back arches off the mat, the rep doesn't count. Reduce range.",
+      "warn": "Si le dos se décolle du tapis, la rep ne compte pas. Réduire l'amplitude.",
       "hockey": null
     },
     "Lateral shuffle + freeze": {
       "cues": [
-        ["Stay low the entire time — hips never rise during the shuffle", "if he pops up, reduce reps"],
-        ["Feet never cross — push off the trailing foot", null],
-        ["On 'freeze': wide stable stance, weight centered, hands up like holding a stick", null]
+        ["Rester bas en tout temps — les hanches ne montent jamais pendant le déplacement", "s'il se relève, réduire les reps"],
+        ["Les pieds ne se croisent jamais — pousser sur le pied arrière", null],
+        ["Au 'freeze' : position large et stable, poids centré, mains levées comme tenant un bâton", null]
       ],
-      "warn": "Feet crossing = slow down before adding speed.",
-      "hockey": "Post-to-post for the goalie; defensive-zone footwork for the skater."
+      "warn": "Pieds qui se croisent = ralentir avant d'accélérer.",
+      "hockey": "De poteau à poteau pour le gardien ; travail de pieds en zone défensive pour le patineur."
     },
     "Swiss ball wall squat": {
       "cues": [
-        ["Ball at lower back, feet walked out so knees hit 90° with vertical shins", null],
-        ["3-count down, 1-sec pause, normal speed up", null],
-        ["Weight through heels throughout", null]
+        ["Ballon dans le bas du dos, pieds avancés pour que les genoux atteignent 90° avec les tibias verticaux", null],
+        ["3 temps en bas, 1 sec de pause, vitesse normale en montant", null],
+        ["Poids sur les talons tout au long", null]
       ],
       "warn": null, "hockey": null
     },
     "Dot hops (4-square)": {
       "cues": [
-        ["Quick, springy contacts on the balls of the feet", null],
-        ["Knees soft and slightly bent the whole time", null],
-        ["Accuracy first, speed second — clean landings on each dot", null]
+        ["Contacts rapides et dynamiques sur les avant-pieds", null],
+        ["Genoux souples et légèrement fléchis tout le temps", null],
+        ["La précision d'abord, la vitesse ensuite — atterrissages nets sur chaque point", null]
       ],
       "warn": null, "hockey": null
     },
     "Standing long jump": {
       "cues": [
-        ["Big arm swing back, then forcefully forward as he leaves the ground", null],
-        ["Stick the landing 3 full seconds — wide feet, bent knees. Stumble = failed rep", null]
+        ["Grand élan des bras vers l'arrière, puis fortement vers l'avant au décollage", null],
+        ["Tenir l'atterrissage 3 secondes complètes — pieds larges, genoux fléchis. Trébuchement = rep ratée", null]
       ],
-      "warn": "Watch for landing with knees together or legs locking out straight on impact. Grass is forgiving — great surface for this one.",
-      "hockey": "'Stick the landing' builds the balance needed when diving for a save (goalie) or absorbing contact (skater)."
+      "warn": "Surveiller l'atterrissage avec les genoux ensemble ou les jambes qui se verrouillent à l'impact. L'herbe est douce — super surface pour ça.",
+      "hockey": "'Tenir l'atterrissage' développe l'équilibre nécessaire pour plonger (gardien) ou absorber les contacts (patineur)."
     },
     "React & drop": {
       "cues": [
-        ["Start in proper goalie stance — feet wide, knees bent, hands forward", null],
-        ["React to the call, don't anticipate — vary your rhythm as the caller", null],
-        ["Wide stable lunge each time, then recover to stance quickly", null]
+        ["Commencer en bonne position de gardien — pieds larges, genoux fléchis, mains en avant", null],
+        ["Réagir à l'appel, ne pas anticiper — varier le rythme comme appelant", null],
+        ["Fente latérale large et stable à chaque fois, puis revenir vite en position", null]
       ],
-      "warn": "On hard floors, keep this a standing lateral lunge — no knee drops. Grass allows safer knee-down variations if desired.",
-      "hockey": "This IS the goalie's game movement. Every rep should feel like a real save attempt."
+      "warn": "Sur sol dur, garder en fente latérale debout — pas de chute du genou. L'herbe permet des variantes avec genou au sol si désiré.",
+      "hockey": "C'est LE mouvement de jeu du gardien. Chaque rep devrait ressembler à un vrai arrêt."
     },
     "Crab walk race": {
       "cues": [
-        ["Hips stay up high — don't let them sag to the ground", null],
-        ["Hand and same-side foot move together", null]
+        ["Hanches hautes — ne pas les laisser s'affaisser vers le sol", null],
+        ["Main et pied du même côté bougent ensemble", null]
       ],
       "warn": null, "hockey": null
     },
     "T-drill (simplified)": {
       "cues": [
-        ["Stay low through every direction change", null],
-        ["Touch each cone with the closest hand — forces a low position", null],
-        ["Backpedal with short quick steps, weight slightly forward", null]
+        ["Rester bas à chaque changement de direction", null],
+        ["Toucher chaque cône avec la main la plus proche — force une position basse", null],
+        ["Reculer avec des petits pas rapides, poids légèrement vers l'avant", null]
       ],
       "warn": null, "hockey": null
     },
     "Mirror drill": {
       "cues": [
-        ["Low squat throughout — no popping up between moves", null],
-        ["Watch the partner's hips, not their feet — hips don't lie", null],
-        ["Quick small steps beat big slow ones", null]
+        ["Squat bas tout au long — ne pas se relever entre les mouvements", null],
+        ["Regarder les hanches du partenaire, pas ses pieds — les hanches ne mentent pas", null],
+        ["Les petits pas rapides battent les grands lents", null]
       ],
       "warn": null,
-      "hockey": "Goalie tracks the puck carrier; skater learns defensive mirroring. Works in either location."
+      "hockey": "Le gardien suit le porteur de rondelle ; le patineur apprend le miroir défensif. Fonctionne peu importe l'endroit."
     },
     "Red light, green light — hockey edition": {
       "cues": [
-        ["Green = sprint with good arm drive", null],
-        ["Red: goalie drops to butterfly/lateral stance, skater snaps into a low hockey-stop stance", null],
-        ["Caught moving on red = back 3 steps. Make it competitive", null]
+        ["Vert = sprint avec bonne traction des bras", null],
+        ["Rouge : le gardien s'abaisse en papillon/position latérale, le patineur prend une position basse de hockey-stop", null],
+        ["Pris à bouger au rouge = 3 pas en arrière. Rendre ça compétitif", null]
       ],
       "warn": null,
-      "hockey": "Combines sprint mechanics with position-specific stance under a reaction demand — multiple skills in one game."
+      "hockey": "Combine la mécanique de sprint avec la position spécifique sous demande de réaction — plusieurs compétences en un seul jeu."
     },
     "TRX assisted deep squat hold": {
       "cues": [
-        ["Hold the straps for balance only — minimal arm tension", null],
-        ["Lower as deep as possible — heels flat, knees pushed wide apart", null],
-        ["Chest up, spine long — not hunching over the knees", null]
+        ["Tenir les sangles pour l'équilibre seulement — tension minimale des bras", null],
+        ["Descendre aussi profond que possible — talons plats, genoux écartés", null],
+        ["Poitrine haute, colonne longue — pas se courber vers les genoux", null]
       ],
       "warn": null,
-      "hockey": "Goalie: butterfly depth. Skater: the deep knee bend every coach yells about. Goal over the summer is deeper and more comfortable."
+      "hockey": "Gardien : profondeur du papillon. Patineur : la flexion profonde du genou que tout entraîneur réclame. Objectif de l'été : plus profond et plus à l'aise."
     },
     "Side plank": {
       "cues": [
-        ["Forearm directly under shoulder, body straight head to heel", null],
-        ["Push the hip up and hold — don't let it sag toward the floor", null],
-        ["Can do from the knee to start — progress to full side plank", null]
+        ["Avant-bras directement sous l'épaule, corps droit de la tête aux talons", null],
+        ["Pousser la hanche vers le haut et tenir — ne pas la laisser s'affaisser vers le sol", null],
+        ["Peut se faire sur le genou pour commencer — progresser vers la planche latérale complète", null]
       ],
       "warn": null, "hockey": null
     },
     "Hip 90/90 stretch": {
       "cues": [
-        ["Sit tall — both hips and knees at roughly 90°, one shin in front, one behind", null],
-        ["Front hip: lean forward over the front shin slowly, spine long", null],
-        ["Back hip: sit upright and rotate chest toward the back knee", null],
-        ["Don't force both hips flat immediately — the raised side lowers over weeks", null]
+        ["Assis bien droit — les deux hanches et genoux à environ 90°, un tibia devant, un derrière", null],
+        ["Hanche avant : se pencher lentement au-dessus du tibia avant, colonne longue", null],
+        ["Hanche arrière : se redresser et faire pivoter la poitrine vers le genou arrière", null],
+        ["Ne pas forcer les deux hanches à plat immédiatement — le côté relevé s'abaisse avec les semaines", null]
       ],
-      "warn": "If one side is dramatically tighter, spend extra time there. Athletes are often asymmetrical from their dominant push-off side.",
+      "warn": "Si un côté est nettement plus serré, y passer plus de temps. Les athlètes sont souvent asymétriques selon leur côté de poussée dominant.",
       "hockey": null
     },
     "Swiss ball pass": {
       "cues": [
-        ["Lower back stays in contact with the mat during the pass", null],
-        ["Slow and controlled — no swinging the ball", null]
+        ["Le bas du dos reste en contact avec le tapis pendant le passage", null],
+        ["Lent et contrôlé — ne pas balancer le ballon", null]
       ],
       "warn": null, "hockey": null
     },
     "Lateral lunge": {
       "cues": [
-        ["Step wide — much wider than feels natural. The working hip needs to load deeply", null],
-        ["Sit back and to the side into the bent hip — toes of both feet pointing forward", null],
-        ["Straight leg stays long — should feel a stretch in the inner thigh", null],
-        ["Push through the heel of the bent leg to return", null]
+        ["Grand pas latéral — bien plus large que ce qui semble naturel. La hanche doit se charger profondément", null],
+        ["S'asseoir vers l'arrière et sur le côté dans la hanche fléchie — orteils des deux pieds pointent vers l'avant", null],
+        ["La jambe tendue reste longue — devrait sentir un étirement à l'intérieur de la cuisse", null],
+        ["Pousser sur le talon de la jambe fléchie pour revenir", null]
       ],
       "warn": null,
-      "hockey": "Goalie: butterfly split. Skater: the deep edge-work position. Both positions need this range."
+      "hockey": "Gardien : écart du papillon. Patineur : la position profonde de carre. Les deux positions ont besoin de cette amplitude."
     },
     "A-skips": {
       "cues": [
-        ["Skip with a high knee drive — thigh to parallel", null],
-        ["Opposite arm drives with the knee, elbows at 90°", null],
-        ["Snap the foot down underneath the body, land on the ball of the foot", null]
+        ["Sautiller avec une montée de genou haute — cuisse parallèle au sol", null],
+        ["Le bras opposé monte avec le genou, coudes à 90°", null],
+        ["Claquer le pied sous le corps, atterrir sur l'avant-pied", null]
       ],
       "warn": null,
-      "hockey": "Sprint school. Mastering the A-skip pattern is the fastest path to a faster kid. Real distance on grass makes this drill what it's meant to be."
+      "hockey": "École de sprint. Maîtriser le pattern A-skip est le chemin le plus rapide vers un enfant plus rapide. Une vraie distance sur l'herbe rend cet exercice ce qu'il est censé être."
     },
     "Falling starts": {
       "cues": [
-        ["Stand tall, lean forward from the ankles like a plank until balance breaks", null],
-        ["First steps are short, fast and behind the body — push the ground back", null],
-        ["Stay low for the first 5m, rise gradually", null]
+        ["Se tenir droit, se pencher vers l'avant depuis les chevilles comme une planche jusqu'à la perte d'équilibre", null],
+        ["Les premiers pas sont courts, rapides et derrière le corps — pousser le sol vers l'arrière", null],
+        ["Rester bas pour les 5 premiers mètres, se relever graduellement", null]
       ],
       "warn": null,
-      "hockey": "Teaches acceleration posture — the lean and push that slow runners are usually missing."
+      "hockey": "Enseigne la posture d'accélération — le penché et la poussée qui manquent habituellement aux coureurs lents."
     },
     "Box jumps": {
       "cues": [
-        ["Short, quick dip before jumping — not a deep squat first", null],
-        ["Land soft in a partial squat. Loud = box too high", null],
-        ["Always step down, never jump down backward — protects the Achilles", null]
+        ["Légère flexion rapide avant de sauter — pas un squat profond d'abord", null],
+        ["Atterrir doucement en squat partiel. Bruyant = boîte trop haute", null],
+        ["Toujours descendre en marchant, jamais sauter en arrière — protège l'achille", null]
       ],
-      "warn": "Knees caving on the landing = stop the set. For the 12yo: any pain below the kneecap = halve jump volume that week. Indoors, use a foam/rubber mat for noise and impact.",
-      "hockey": "The dip-and-explode is the same fast-twitch response as pushing off the post (goalie) or first stride (skater)."
+      "warn": "Genoux qui s'effondrent à l'atterrissage = arrêter la série. Pour le 12 ans : toute douleur sous la rotule = réduire le volume de sauts de moitié cette semaine. En intérieur, utiliser un tapis mousse/caoutchouc pour le bruit et l'impact.",
+      "hockey": "La flexion-et-explosion est la même réponse rapide que pousser sur le poteau (gardien) ou la première foulée (patineur)."
     },
     "TRX row": {
       "cues": [
-        ["Body straight as a plank from heels to head — no sagging hips", null],
-        ["Pull elbows back past the body, chest reaches the hands, squeeze shoulder blades", null],
-        ["Lower slowly (2-3 sec) — the lowering phase builds most of the strength", null],
-        ["Skater (S): walk feet further forward for a harder angle", null]
+        ["Corps droit comme une planche des talons à la tête — pas de hanches qui s'affaissent", null],
+        ["Tirer les coudes derrière le corps, la poitrine rejoint les mains, serrer les omoplates", null],
+        ["Descendre lentement (2-3 sec) — la phase de descente développe la plupart de la force", null],
+        ["Patineur (S) : avancer les pieds pour un angle plus difficile", null]
       ],
       "warn": null, "hockey": null
     },
     "5-10-5 shuttle run": {
       "cues": [
-        ["Low athletic stance at the start — weight forward on balls of feet", null],
-        ["Plant the outside foot hard on direction changes and push laterally — don't slow to a stop", null],
-        ["Stay low through every cut — standing up loses 0.2-0.3 seconds", null],
-        ["Touch the line with the closest hand — forces a low body position", null]
+        ["Position athlétique basse au départ — poids vers l'avant sur les avant-pieds", null],
+        ["Planter le pied extérieur fort sur les changements de direction et pousser latéralement — ne pas ralentir jusqu'à l'arrêt", null],
+        ["Rester bas à chaque changement — se redresser fait perdre 0,2-0,3 secondes", null],
+        ["Toucher la ligne avec la main la plus proche — force une position basse", null]
       ],
       "warn": null,
-      "hockey": "Time every rep, separate records per athlete. Yard lines give exact 5-yard increments — ideal on a field."
+      "hockey": "Chronométrer chaque rep, records séparés par athlète. Les lignes de yard donnent des incréments de 5 yards exacts — idéal sur le terrain."
     },
     "Single-leg balance + reach": {
       "cues": [
-        ["Standing leg has a soft bend at the knee — never locked straight", null],
-        ["Reach forward slowly with full control — no swinging or momentum", null],
-        ["Hip of the standing leg stays level — watch for the pelvis dropping", "dropped hip = weak glute med"]
+        ["La jambe d'appui a une légère flexion au genou — jamais verrouillée droite", null],
+        ["Tendre vers l'avant lentement avec contrôle complet — pas de balancement ou d'élan", null],
+        ["La hanche de la jambe d'appui reste de niveau — surveiller le bassin qui descend d'un côté", "bassin qui descend = fessier moyen faible"]
       ],
-      "warn": "Falling repeatedly on the same side may mean one ankle is weaker — give it extra time.",
+      "warn": "Tomber souvent du même côté peut signifier une cheville plus faible — lui donner plus de temps.",
       "hockey": null
     },
     "Driveway sprints": {
       "cues": [
-        ["Use the falling-start lean to begin each one", null],
-        ["Arms drive hard, hands hip-to-cheek", null],
-        ["Full walk-back recovery between sprints — speed work needs full rest", null]
+        ["Utiliser le penché des départs tombants pour commencer", null],
+        ["Bras qui poussent fort, mains de la hanche à la joue", null],
+        ["Récupération complète en marchant entre les sprints — le travail de vitesse nécessite un repos complet", null]
       ],
       "warn": null,
-      "hockey": "On a field, use real yard-line distances (10-15m). Short maximal sprints with full recovery are how kids actually get faster."
+      "hockey": "Sur le terrain, utiliser de vraies distances en yards (10-15 m). Des sprints courts maximaux avec récupération complète, c'est comme ça que les enfants deviennent vraiment plus rapides."
     },
     "Lateral bounds": {
       "cues": [
-        ["Push off the outside edge of one foot, land on the other", null],
-        ["Stick each landing 1 full second before the next bound", null],
-        ["Land with the knee over the toe — no inward collapse", null]
+        ["Pousser sur la bordure extérieure d'un pied, atterrir sur l'autre", null],
+        ["Tenir chaque atterrissage 1 seconde complète avant le prochain bond", null],
+        ["Atterrir avec le genou au-dessus du pied — pas d'effondrement vers l'intérieur", null]
       ],
-      "warn": "If landings collapse, shorten the bound distance.",
-      "hockey": "For the skater this is the crossover and stride push as a jump — the most hockey-specific jump there is."
+      "warn": "Si les atterrissages s'effondrent, réduire la distance du bond.",
+      "hockey": "Pour le patineur, c'est le croisé et la poussée de foulée en saut — le saut le plus spécifique au hockey qui soit."
     },
     "Drop-step to save": {
       "cues": [
-        ["Proper goalie stance to start every rep", null],
-        ["Pivot and drop-step — don't shuffle first", null],
-        ["Hold the wide lunge 2 full seconds", null]
+        ["Bonne position de gardien pour commencer chaque rep", null],
+        ["Pivoter et faire le drop step — ne pas d'abord déplacer les pieds", null],
+        ["Tenir la fente large 2 secondes complètes", null]
       ],
-      "warn": "On hard floors, keep this standing (lunge, not knee-drop).",
-      "hockey": "This IS the goalie's post-to-post game movement."
+      "warn": "Sur sol dur, garder debout (fente, pas de chute du genou).",
+      "hockey": "C'est LE mouvement de jeu du gardien de poteau à poteau."
     },
     "Crossover step-overs": {
       "cues": [
-        ["Set a line or low stick on the ground", null],
-        ["Cross the outside leg over, push laterally off the back foot — like a crossover stride", null],
-        ["Stay low, chest up, eyes forward the whole drill", null]
+        ["Poser une ligne ou un bâton bas sur le sol", null],
+        ["Croiser la jambe extérieure par-dessus, pousser latéralement sur le pied arrière — comme une foulée croisée", null],
+        ["Rester bas, poitrine haute, regard vers l'avant tout au long de l'exercice", null]
       ],
       "warn": null,
-      "hockey": "Skater-only: this is the crossover pattern off-ice. Drive off the outside edge of the back foot."
+      "hockey": "Patineur seulement : c'est le pattern de croisé hors glace. Pousser sur la carre extérieure du pied arrière."
     },
     "Push-up handles variation": {
       "cues": [
-        ["Body straight from head to heels — no sagging hips", null],
-        ["Lower chest to handle level — elbows at roughly 45° from the body", null],
-        ["On the hop sideways: both hands move together — keep hips level during the hop", null]
+        ["Corps droit de la tête aux talons — pas de hanches qui s'affaissent", null],
+        ["Descendre la poitrine au niveau des poignées — coudes à environ 45° du corps", null],
+        ["Pour le saut latéral : les deux mains bougent ensemble — garder les hanches de niveau pendant le saut", null]
       ],
       "warn": null, "hockey": null
     },
     "Cone weave sprint": {
       "cues": [
-        ["Cut off the outside foot at each cone", null],
-        ["Stay low through the weave, sprint tall on the way back", null]
+        ["Couper sur le pied extérieur à chaque cône", null],
+        ["Rester bas dans le slalom, sprinter droit sur le retour", null]
       ],
       "warn": null, "hockey": null
     },
     "Wall ball reaction": {
       "cues": [
-        ["Stay in a low ready stance throughout", null],
-        ["Vary the throw height and angle each rep — unpredictability is the point", null],
-        ["Catch with one hand where possible — trains each side independently", null]
+        ["Rester en position basse prête tout au long", null],
+        ["Varier la hauteur et l'angle du lancer à chaque rep — l'imprévisibilité est le but", null],
+        ["Attraper à une main quand possible — entraîne chaque côté indépendamment", null]
       ],
       "warn": null,
-      "hockey": "Directly trains the anticipation and hand quickness a goalie needs; lacrosse ball adds difficulty."
+      "hockey": "Entraîne directement l'anticipation et la vivacité des mains dont un gardien a besoin ; une balle de crosse ajoute de la difficulté."
     },
     "Reaction ball drops": {
       "cues": [
-        ["Start in a low athletic stance — weight on balls of feet, knees slightly bent", null],
-        ["Eyes on the ball the moment it's released — react, don't anticipate", null],
-        ["Dive or lunge with control — recover quickly to ready position after each catch", null]
+        ["Commencer en position athlétique basse — poids sur les avant-pieds, genoux légèrement fléchis", null],
+        ["Regard sur la balle dès qu'elle est lâchée — réagir, ne pas anticiper", null],
+        ["Plonger ou se fendre avec contrôle — revenir vite en position prête après chaque prise", null]
       ],
       "warn": null,
-      "hockey": "Pure reaction training. Can also roll a ball unpredictably along the ground for variety."
+      "hockey": "Entraînement pur de réaction. Peut aussi rouler une balle de façon imprévisible sur le sol pour varier."
     },
     "Goblet squat": {
       "cues": [
-        ["Hold dumbbell vertically at chest — elbows tucked in, not flared", null],
-        ["Descend slowly (3 sec), pushing knees outward as you go down", "cue: 'push your knees apart with your elbows'"],
-        ["Heels must stay flat on the floor — if they lift, widen the stance slightly", null],
-        ["Drive through the whole foot — squeeze glutes at the top", null]
+        ["Tenir l'haltère verticalement à la poitrine — coudes rentrés, pas écartés", null],
+        ["Descendre lentement (3 sec), en poussant les genoux vers l'extérieur", "indice : 'pousse tes genoux avec tes coudes'"],
+        ["Les talons doivent rester à plat sur le sol — si ça lève, élargir légèrement la position", null],
+        ["Pousser à travers tout le pied — serrer les fessiers en haut", null]
       ],
-      "warn": "Heels lifting is most common. Widen stance or use a small heel raise (book under heels) while mobility improves.",
-      "hockey": "Deep squat = goalie butterfly = skater stride depth. Same lesson, both boys: 'that's your butterfly/stride position.'"
+      "warn": "Les talons qui se lèvent est le problème le plus fréquent. Élargir la position ou utiliser une petite surélévation du talon (livre sous les talons) pendant que la mobilité s'améliore.",
+      "hockey": "Squat profond = papillon du gardien = profondeur de foulée du patineur. Même leçon, les deux garçons : 'c'est ta position de papillon/de foulée.'"
     },
     "Romanian deadlift": {
       "cues": [
-        ["Push hips back first — this is a hip hinge, not a squat", null],
-        ["Keep dumbbells close to the legs the whole way down — almost brush the shins", null],
-        ["Back stays flat throughout — no rounding of the lower back", "cue: 'long neck, tall spine'"],
-        ["Stop when hamstrings pull — don't force range beyond tension", null],
-        ["Drive hips forward to stand — squeeze glutes at the top", null]
+        ["Pousser les hanches vers l'arrière d'abord — c'est une charnière de hanche, pas un squat", null],
+        ["Garder les haltères près des jambes tout au long — presque frôler les tibias", null],
+        ["Le dos reste à plat tout au long — pas d'arrondi dans le bas du dos", "indice : 'long cou, colonne haute'"],
+        ["S'arrêter quand les ischios tirent — ne pas forcer l'amplitude au-delà de la tension", null],
+        ["Pousser les hanches vers l'avant pour se relever — serrer les fessiers en haut", null]
       ],
-      "warn": "Lower back rounding is the key thing to catch on both boys. Reduce weight or limit range.",
-      "hockey": "Hamstrings and glutes are the skating engine — the most important lift in the program."
+      "warn": "L'arrondi du bas du dos est la chose clé à surveiller pour les deux garçons. Réduire le poids ou limiter l'amplitude.",
+      "hockey": "Les ischio-jambiers et les fessiers sont le moteur du patin — le levé le plus important du programme."
     },
     "Dumbbell floor press": {
       "cues": [
-        ["Lie on back, feet flat, lower back gently pressed into the floor", null],
-        ["Press straight up — wrists stacked over elbows at the bottom", null],
-        ["Lower slowly (2-3 sec) — elbows at roughly 45° from the body", null]
+        ["Allongé sur le dos, pieds à plat, bas du dos légèrement pressé sur le sol", null],
+        ["Pousser droit vers le haut — poignets alignés au-dessus des coudes en bas", null],
+        ["Descendre lentement (2-3 sec) — coudes à environ 45° du corps", null]
       ],
       "warn": null, "hockey": null
     },
     "Swiss ball jackknife": {
       "cues": [
-        ["Start in a solid plank — hands under shoulders, core braced", null],
-        ["Ball under the shins, not the feet — keeps it stable", null],
-        ["Pull knees toward chest by curling the lower back — don't let hips shoot up", null],
-        ["Slow and controlled both ways — not a speed exercise", null]
+        ["Commencer en planche solide — mains sous les épaules, gainage actif", null],
+        ["Ballon sous les tibias, pas les pieds — reste stable", null],
+        ["Tirer les genoux vers la poitrine en courbant le bas du dos — ne pas laisser les hanches monter", null],
+        ["Lent et contrôlé dans les deux sens — ce n'est pas un exercice de vitesse", null]
       ],
-      "warn": "If the ball rolls sideways, hips are rotating. 5 clean reps beats 10 sloppy ones.",
+      "warn": "Si le ballon roule de côté, les hanches pivotent. 5 reps propres valent mieux que 10 sales.",
       "hockey": null
     },
     "Swiss ball Russian twist": {
       "cues": [
-        ["Upper back on the ball, hips up in a bridge, feet flat", null],
-        ["Hold one light dumbbell with straight arms, rotate the shoulders side to side", null],
-        ["Hips stay square and high — only the torso rotates", null]
+        ["Haut du dos sur le ballon, hanches levées en pont, pieds à plat", null],
+        ["Tenir un haltère léger avec les bras tendus, faire pivoter les épaules d'un côté à l'autre", null],
+        ["Les hanches restent de niveau et hautes — seul le torse pivote", null]
       ],
       "warn": null,
-      "hockey": "Skater-only: rotational power is shooting power. Slow and controlled before fast."
+      "hockey": "Patineur seulement : la puissance de rotation c'est la puissance du tir. Lent et contrôlé avant rapide."
     },
     "Step-up with knee drive": {
       "cues": [
-        ["Push through the heel of the stepping foot — not the toes", null],
-        ["Drive the opposite knee up high at the top — pause 1 sec", null],
-        ["Torso upright throughout — no leaning over the stepping leg", null],
-        ["Step down with control — don't fall off the box", null]
+        ["Pousser sur le talon du pied qui monte — pas les orteils", null],
+        ["Monter le genou opposé haut en haut — pause 1 sec", null],
+        ["Torse droit tout au long — ne pas pencher sur la jambe qui monte", null],
+        ["Descendre avec contrôle — ne pas tomber de la boîte", null]
       ],
       "warn": null, "hockey": null
     },
     "Plank shoulder taps": {
       "cues": [
-        ["In push-up position, body straight from head to heels", null],
-        ["Tap opposite shoulder alternating — keep hips completely still", null],
-        ["If hips sway, slow down — control beats speed here", null]
+        ["En position de pompe, corps droit de la tête aux talons", null],
+        ["Tapoter l'épaule opposée en alternant — garder les hanches complètement immobiles", null],
+        ["Si les hanches bougent, ralentir — le contrôle prime sur la vitesse", null]
       ],
       "warn": null, "hockey": null
     },
     "Pigeon pose": {
       "cues": [
-        ["Front shin across the mat, hips square and level", null],
-        ["Fold forward slowly — use forearms or a folded blanket under the front hip if needed", null],
-        ["Breathe into the tightness — exhale and let the hip soften. Don't force it", null],
-        ["6 slow breaths per side — a breathing game, not a clock-watch", null]
+        ["Tibia avant sur le tapis, hanches de niveau et alignées", null],
+        ["Se pencher vers l'avant lentement — utiliser les avant-bras ou une couverture pliée sous la hanche avant si nécessaire", null],
+        ["Respirer dans la tension — expirer et laisser la hanche se détendre. Ne pas forcer", null],
+        ["6 respirations lentes par côté — un jeu de respiration, pas une course contre la montre", null]
       ],
-      "warn": "Sharp pain at the knee = adjust shin angle. Pain in the hip joint itself = stop.",
-      "hockey": "The single most important stretch for the goalie; for the 12yo it guards against the flexibility loss that comes with growth spurts. Every session, no exceptions."
+      "warn": "Douleur vive au genou = ajuster l'angle du tibia. Douleur dans l'articulation de la hanche elle-même = arrêter.",
+      "hockey": "L'étirement le plus important pour le gardien ; pour le 12 ans il protège contre la perte de flexibilité qui accompagne les poussées de croissance. À chaque séance, sans exception."
     },
     "Combo: squat jump + lateral bound": {
       "cues": [
-        ["Jump, land, absorb — then immediately bound sideways off one foot", null],
-        ["Stick the single-leg landing 1 full second", null],
-        ["Knee over toe on every landing", null]
+        ["Sauter, atterrir, absorber — puis bondir immédiatement latéralement sur un pied", null],
+        ["Tenir l'atterrissage sur une jambe 1 seconde complète", null],
+        ["Genou au-dessus du pied à chaque atterrissage", null]
       ],
-      "warn": "If the bound landing collapses, separate the two movements until each is solid. Grass is ideal — soft landings both directions.",
-      "hockey": "Goalie: post push + lateral drive. Skater: stride + crossover. Same drill, both positions."
+      "warn": "Si l'atterrissage du bond s'effondre, séparer les deux mouvements jusqu'à ce que chacun soit solide. L'herbe est idéale — atterrissages doux dans les deux sens.",
+      "hockey": "Gardien : poussée sur le poteau + drive latéral. Patineur : foulée + croisé. Même exercice, les deux positions."
     },
     "Single-leg squat to box": {
       "cues": [
-        ["Lower until the free heel just taps the ground, then drive up", null],
-        ["Knee of working leg tracks over the 2nd toe — watch from the front for caving", null],
-        ["Hinge forward slightly at the hips — arms extend forward for balance", null],
-        ["Start very low (4-6 inches). Height earns nothing if form breaks down", null]
+        ["Descendre jusqu'à ce que le talon libre touche juste le sol, puis monter", null],
+        ["Le genou de la jambe qui travaille suit le 2e orteil — surveiller de face les effondrements", null],
+        ["Légère inclinaison vers l'avant à la hanche — bras tendus vers l'avant pour l'équilibre", null],
+        ["Commencer très bas (10-15 cm). La hauteur n'apporte rien si la forme s'effondre", null]
       ],
-      "warn": "Consistent knee caving = back to two-leg squats and more glute work. On a field without a box, use a soccer ball or low cone target.",
-      "hockey": "Almost every save and every stride is a single-leg push."
+      "warn": "Effondrement constant du genou = retour au squat deux jambes et plus de travail des fessiers. Sur le terrain sans boîte, utiliser une balle de soccer ou un cône bas comme cible.",
+      "hockey": "Presque chaque arrêt et chaque foulée est une poussée sur une seule jambe."
     },
     "Resisted sprint": {
       "cues": [
-        ["Lean into the resistance — drive the ground backward", null],
-        ["Short powerful steps, arms pumping", null]
+        ["Se pencher dans la résistance — pousser le sol vers l'arrière", null],
+        ["Pas courts et puissants, bras qui pompent", null]
       ],
       "warn": null,
-      "hockey": "TRX loose around the waist, Dad anchors the other end — works great on grass."
+      "hockey": "TRX lâche autour de la taille, Papa ancre l'autre bout — fonctionne très bien sur l'herbe."
     },
     "Flying sprints": {
       "cues": [
-        ["Jog 5m to build, then hit max speed for 10m, then coast", null],
-        ["Tall posture at top speed — eyes forward, relaxed face and hands", null],
-        ["Full recovery between reps", null]
+        ["Trottiner 5 m pour accélérer, puis vitesse maximale 10 m, puis ralentir", null],
+        ["Posture haute à vitesse maximale — regard vers l'avant, visage et mains détendus", null],
+        ["Récupération complète entre les reps", null]
       ],
       "warn": null,
-      "hockey": "Max-speed exposure with relaxed form — top-end speed needs real distance, the field's best use."
+      "hockey": "Exposition à la vitesse maximale avec forme détendue — la vitesse de pointe nécessite une vraie distance, la meilleure utilisation du terrain."
     },
     "Dumbbell lateral raise": {
       "cues": [
-        ["Raise to shoulder height only, slight elbow bend", null],
-        ["3-sec lowering — that's where the work is", null],
-        ["Swinging = too heavy", null]
+        ["Monter à la hauteur des épaules seulement, légère flexion du coude", null],
+        ["Descente 3 sec — c'est là que le travail se fait", null],
+        ["Balancement = trop lourd", null]
       ],
-      "warn": "In a low-ceiling basement, stop the raise at chest height instead of shoulder height.",
+      "warn": "Dans un sous-sol avec plafond bas, arrêter la montée à la hauteur de la poitrine plutôt que des épaules.",
       "hockey": null
     },
     "5-cone star drill": {
       "cues": [
-        ["Sprint every arm of the star — no jogging", null],
-        ["Touch each cone with the nearest hand", null],
-        ["The push back to centre matters as much as the sprint out", null]
+        ["Sprinter chaque bras de l'étoile — pas de trot", null],
+        ["Toucher chaque cône avec la main la plus proche", null],
+        ["Le retour au centre compte autant que le sprint vers l'extérieur", null]
       ],
-      "warn": "Needs real width — best on a field.",
-      "hockey": "Multi-directional speed is what separates quick goalies and skaters from slow ones."
+      "warn": "Nécessite une vraie largeur — mieux sur le terrain.",
+      "hockey": "La vitesse multi-directionnelle est ce qui distingue les gardiens et patineurs rapides des lents."
     },
     "TRX single-leg lunge": {
       "cues": [
-        ["Back foot in strap, ~12-16 inches off the ground", null],
-        ["Lower straight down — front knee to 90°, back knee drops toward floor", null],
-        ["Front knee stays stacked over the ankle — not past the toes", null],
-        ["Torso upright — no leaning forward. Hands on hips helps", null],
-        ["1-second pause at the bottom — don't skip it", null]
+        ["Pied arrière dans la sangle, environ 30-40 cm du sol", null],
+        ["Descendre droit vers le bas — genou avant à 90°, genou arrière vers le sol", null],
+        ["Genou avant aligné au-dessus de la cheville — pas au-delà des orteils", null],
+        ["Torse droit — ne pas se pencher vers l'avant. Mains sur les hanches aide", null],
+        ["Pause 1 seconde en bas — ne pas la sauter", null]
       ],
-      "warn": "Can't hold the bottom steady = do split squats on a bench first.",
+      "warn": "Ne peut pas tenir la position basse stable = faire des fentes fractionnées sur un banc d'abord.",
       "hockey": null
     },
     "Standing dumbbell chop": {
       "cues": [
-        ["Hold one dumbbell in both hands at one hip", null],
-        ["Rotate diagonally up and across to the opposite shoulder — arms fairly straight", null],
-        ["Power comes from the hips turning, not the arms — pivot the back foot", null]
+        ["Tenir un haltère à deux mains à une hanche", null],
+        ["Faire pivoter en diagonale vers le haut et en travers vers l'épaule opposée — bras assez tendus", null],
+        ["La puissance vient des hanches qui pivotent, pas des bras — faire pivoter le pied arrière", null]
       ],
-      "warn": "Low ceiling: stop the chop at chest height, don't take it overhead.",
-      "hockey": "Skater-only: the wrist shot and slap shot are hip rotation. This is shot power off-ice."
+      "warn": "Plafond bas : arrêter le mouvement à la hauteur de la poitrine, ne pas le porter au-dessus de la tête.",
+      "hockey": "Patineur seulement : le tir du poignet et le lancer frappé sont une rotation de hanche. C'est la puissance du tir hors glace."
     },
     "Speed squat": {
       "cues": [
-        ["Fast down, explosive up, no pause — bodyweight only", null],
-        ["Depth stays honest even at speed — thighs to parallel", null]
+        ["Descente rapide, montée explosive, sans pause — poids du corps seulement", null],
+        ["La profondeur reste honnête même à vitesse — cuisses au parallèle", null]
       ],
       "warn": null, "hockey": null
     },
     "Front squat": {
       "cues": [
-        ["Weight at chest, elbows up and parallel to the floor — if elbows drop, weight lifts off", null],
-        ["Descend slowly (3 sec) — knees push wide, chest stays tall", null],
-        ["Drive straight up — don't let elbows drop on the way up", null],
-        ["Heels flat on the floor throughout — widen stance if they lift", null]
+        ["Poids à la poitrine, coudes hauts et parallèles au sol — si les coudes descendent, le poids bascule", null],
+        ["Descendre lentement (3 sec) — genoux poussent larges, poitrine haute", null],
+        ["Monter droit — ne pas laisser les coudes descendre en montant", null],
+        ["Talons à plat sur le sol tout au long — élargir la position si ça lève", null]
       ],
-      "warn": "Elbows dropping = weight tips forward = lower back rounds. Reduce weight first.",
-      "hockey": "Front-loaded squat trains the upright posture both positions need."
+      "warn": "Coudes qui descendent = poids qui bascule vers l'avant = bas du dos qui s'arrondit. Réduire le poids d'abord.",
+      "hockey": "Le squat avec charge avant entraîne la posture droite dont les deux positions ont besoin."
     },
     "Single-arm dumbbell row": {
       "cues": [
-        ["Knee and hand on bench — back flat and parallel to the floor", null],
-        ["Pull elbow straight back toward the hip — not out to the side", null],
-        ["Lower slowly (2-3 sec) — don't just drop the weight", null],
-        ["No rotating the torso to help the lift — keep hips and shoulders square", null]
+        ["Genou et main sur le banc — dos plat et parallèle au sol", null],
+        ["Tirer le coude droit vers l'arrière vers la hanche — pas sur le côté", null],
+        ["Descendre lentement (2-3 sec) — ne pas simplement lâcher le poids", null],
+        ["Ne pas faire pivoter le torse pour aider le levé — garder hanches et épaules alignées", null]
       ],
       "warn": null, "hockey": null
     },
     "TRX fallout": {
       "cues": [
-        ["Start standing, gripping TRX handles — body upright before you lean out", null],
-        ["Walk feet back and lean the whole body forward as one rigid unit — arms extend overhead", null],
-        ["Hips must not pike or sag — the body stays straight like a plank throughout", null],
-        ["Pull back by engaging the lats — not by bending at the hips", null]
+        ["Commencer debout, tenant les poignées TRX — corps droit avant de se pencher", null],
+        ["Reculer les pieds et pencher tout le corps vers l'avant comme une unité rigide — bras s'étendent au-dessus", null],
+        ["Les hanches ne doivent pas plier ni s'affaisser — le corps reste droit comme une planche tout au long", null],
+        ["Tirer pour revenir en engageant les dorsaux — pas en pliant les hanches", null]
       ],
-      "warn": "If hips sag or pike, shorten the range of motion. Under a low ceiling, keep the range short.",
+      "warn": "Si les hanches plient ou s'affaissent, réduire l'amplitude. Sous un plafond bas, garder l'amplitude courte.",
       "hockey": null
     }
   },
 
   "weeks": [
     {
-      "phase": "Phase 1 (weeks 1–3)",
+      "phase": "Phase 1 (semaines 1–3)",
       "loc": "field",
-      "name": "Field Day — Sprint Foundations",
-      "focus": "Sprint mechanics + jumps on grass",
+      "name": "Journée terrain — Bases du sprint",
+      "focus": "Mécanique de sprint + sauts sur l'herbe",
       "duration": "~25 min",
-      "tip": "This can be ANY of the 3 weekly sessions — whichever day has field access and good weather. The other two are basement days, always available.",
-      "swap": "Rained out? Run a Basement Day instead, and do this field session on the next good-weather day. Across the week you still get 3 sessions in — the order just shifts.",
+      "tip": "Peut être N'IMPORTE LAQUELLE des 3 séances hebdomadaires — celle qui a accès au terrain et beau temps. Les deux autres sont des journées sous-sol, toujours disponibles.",
+      "swap": "Journée pluvieuse ? Faites une Journée sous-sol à la place, et faites cette séance terrain le prochain beau temps. Sur la semaine vous aurez quand même 3 séances — l'ordre change juste.",
       "blocks": [
         {
-          "label": "Warm-up + sprint school (5 min)",
+          "label": "Échauffement + école de sprint (5 min)",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "High knees + leg swings + arm circles", "detail": "30 sec each, flowing", "spec": "3 min", "why": "full-body prep" },
-              { "name": "A-skips", "detail": "High knee drive, opposite arm, snap the foot down", "spec": "2 × 10m", "why": "sprint mechanics" }
+              { "name": "High knees + leg swings + arm circles", "detail": "30 sec chaque, en enchaînant", "spec": "3 min", "why": "préparation corps entier" },
+              { "name": "A-skips", "detail": "Genou haut, bras opposé, claquer le pied au sol", "spec": "2 × 10 m", "why": "mécanique de sprint" }
             ]}
           ]
         },
         {
-          "label": "Main work (14 min)",
+          "label": "Travail principal (14 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Jumps on grass — soft landings, real distance",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Sauts sur l'herbe — atterrissages doux, vraie distance",
               "exercises": [
-                { "name": "Standing long jump", "detail": "Max distance, stick the landing 3 sec — separate records", "spec": "G 5 jumps / S 5 jumps", "why": "hip extension power", "letter": "A" },
-                { "name": "Crab walk race", "detail": "Sideways 5m and back, hips high", "spec": "3 rounds", "why": "hip abductor strength", "letter": "B" }
+                { "name": "Standing long jump", "detail": "Distance maximale, tenir l'atterrissage 3 sec — records séparés", "spec": "G 5 sauts / S 5 sauts", "why": "puissance d'extension de hanche", "letter": "A" },
+                { "name": "Crab walk race", "detail": "Latéralement 5 m et retour, hanches hautes", "spec": "3 rondes", "why": "force abducteurs de hanche", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec rest after each round", "note": "Position split — real space at last",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position — enfin de l'espace",
               "split": {
-                "g": { "name": "React & drop", "detail": "Dad calls left/right — lunge into wide lateral stance, low and stable", "spec": "15 calls", "why": "goalie reaction" },
-                "s": { "name": "Lateral bounds", "detail": "Bound side to side, stick each landing on grass", "spec": "3 × 5 each side", "why": "crossover power" }
+                "g": { "name": "React & drop", "detail": "Papa appelle gauche/droite — fente en position latérale large, bas et stable", "spec": "15 appels", "why": "réaction du gardien" },
+                "s": { "name": "Lateral bounds", "detail": "Bondir d'un côté à l'autre, tenir chaque atterrissage sur l'herbe", "spec": "3 × 5 chaque côté", "why": "puissance de croisé" }
               },
               "exercises": [
-                { "name": "Falling starts", "detail": "Lean until balance breaks, then sprint 10m", "spec": "3 reps each", "why": "acceleration posture", "letter": "B" }
+                { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis sprinter 10 m", "spec": "3 reps chaque", "why": "posture d'accélération", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (4 min) — they alternate picking", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min) — ils alternent le choix", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (3 min) — together",
+          "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Quad stretch + hip flexor lunge + child's pose", "detail": "45-60 sec each — bring a towel for the grass", "spec": "3 min", "why": null }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté, les deux garçons", "spec": "~60 sec par côté", "why": "l'étirement non-négociable" }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 1 (weeks 1–3)",
+      "phase": "Phase 1 (semaines 1–3)",
       "loc": "basement",
-      "name": "Basement Day A — Strength + Core",
-      "focus": "Squat/hinge pairing + core",
+      "name": "Journée sous-sol A — Force + Gainage",
+      "focus": "Paire squat/charnière + gainage",
       "duration": "~25 min",
-      "tip": "This and Basement Day B are your rain-day fallbacks — always runnable regardless of weather.",
+      "tip": "Cette séance et la Journée sous-sol B sont vos solutions de repli par temps de pluie — toujours praticables peu importe la météo.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (3 min) — together",
+          "label": "Échauffement (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Cat-cow + world's greatest stretch", "detail": "10 cat-cows, 5 per side", "spec": "3 min", "why": "spine + opener" }
+              { "name": "Cat-cow + world's greatest stretch", "detail": "10 cat-cow, 5 par côté", "spec": "3 min", "why": "colonne vertébrale + ouverture" }
             ]}
           ]
         },
         {
-          "label": "Main work (12 min)",
+          "label": "Travail principal (12 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "The core strength pairing — squat + core (partner style)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire de force du gainage — squat + gainage (style partenaire)",
               "exercises": [
-                { "name": "Goblet squat", "detail": "Dumbbell at chest, 3-sec descent, deep", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "lower body strength", "letter": "A" },
-                { "name": "Dead bug", "detail": "Opposite arm + leg, back flat — S holds a 2-3 lb dumbbell", "spec": "3×8 each side", "why": "core anti-rotation", "letter": "B" }
+                { "name": "Goblet squat", "detail": "Haltère à la poitrine, descente 3 sec, profond", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "force du bas du corps", "letter": "A" },
+                { "name": "Dead bug", "detail": "Bras et jambe opposés, dos à plat — S tient un haltère de 2-3 lb", "spec": "3×8 chaque côté", "why": "gainage anti-rotation", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Lateral stability + butterfly/stride depth",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Stabilité latérale + profondeur de papillon/foulée",
               "exercises": [
-                { "name": "TRX assisted deep squat hold", "detail": "Deepest squat possible, heels flat", "spec": "3 × 20 sec", "why": "squat depth for both", "letter": "A" },
-                { "name": "Side plank", "detail": "From knee or full", "spec": "G 2×20s / S 2×30s", "why": "lateral core", "letter": "B" }
+                { "name": "TRX assisted deep squat hold", "detail": "Squat le plus profond possible, talons plats", "spec": "3 × 20 sec", "why": "profondeur de squat pour les deux", "letter": "A" },
+                { "name": "Side plank", "detail": "Sur le genou ou complet", "spec": "G 2×20s / S 2×30s", "why": "gainage latéral", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (4 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (3 min) — together",
+          "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Pigeon pose", "detail": "6 slow breaths per side, both boys", "spec": "~60 sec each side", "why": "the non-negotiable stretch" }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté, les deux garçons", "spec": "~60 sec par côté", "why": "l'étirement non-négociable" }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 1 (weeks 1–3)",
+      "phase": "Phase 1 (semaines 1–3)",
       "loc": "basement",
-      "name": "Basement Day B — Position Skills + Mobility",
-      "focus": "Indoor-friendly footwork + hip range",
+      "name": "Journée sous-sol B — Habiletés de position + Mobilité",
+      "focus": "Travail de pieds en intérieur + amplitude de hanche",
       "duration": "~25 min",
-      "tip": "Tape lines on the basement floor for shuffles and dot hops — quiet, low-impact, works great inside.",
+      "tip": "Collez du ruban adhésif sur le plancher du sous-sol pour les déplacements latéraux et les sauts sur points — silencieux, peu d'impact, très efficace en intérieur.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (3 min) — together",
+          "label": "Échauffement (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Jumping jacks + hip circles + ankle rolls", "detail": "1 min each — jacks can be low-impact (step instead of jump) if floor noise matters", "spec": "3 min", "why": "joint prep" }
+              { "name": "Jumping jacks + hip circles + ankle rolls", "detail": "1 min chaque — les jacks peuvent être sans impact (pas à la place de saut) si le bruit sur le plancher pose problème", "spec": "3 min", "why": "préparation des articulations" }
             ]}
           ]
         },
         {
-          "label": "Main work (12 min)",
+          "label": "Travail principal (12 min)",
           "items": [
-            { "ss": true, "rest": "45 sec rest after each round", "note": "Position split + shared mobility",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position + mobilité partagée",
               "split": {
-                "g": { "name": "React & drop", "detail": "Dad calls left/right — lunge into wide lateral stance, low and stable. No knee-drops on hard floor.", "spec": "15 calls", "why": "goalie reaction" },
-                "s": { "name": "Crossover step-overs", "detail": "Cross over a line, push laterally off the back foot", "spec": "3 × 8 each way", "why": "crossover stride" }
+                "g": { "name": "React & drop", "detail": "Papa appelle gauche/droite — fente en position latérale large, bas et stable. Pas de chutes de genoux sur sol dur.", "spec": "15 appels", "why": "réaction du gardien" },
+                "s": { "name": "Crossover step-overs", "detail": "Croiser au-dessus d'une ligne, pousser latéralement sur le pied arrière", "spec": "3 × 8 chaque sens", "why": "foulée croisée" }
               },
               "exercises": [
-                { "name": "Dot hops (4-square)", "detail": "4 taped dots, all patterns — quiet on a mat", "spec": "2 × 30 sec", "why": "foot quickness", "letter": "B" }
+                { "name": "Dot hops (4-square)", "detail": "4 points au ruban, tous les patterns — silencieux sur un tapis", "spec": "2 × 30 sec", "why": "vitesse des pieds", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec rest after each round", "note": "Core coordination + deep hip range",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Coordination du gainage + amplitude profonde de la hanche",
               "exercises": [
-                { "name": "Mirror drill", "detail": "Brothers mirror each other's shuffles, low stance", "spec": "3 × 30 sec", "why": "reactive tracking", "letter": "A" },
-                { "name": "Hip 90/90 stretch", "detail": "Lean over the front shin", "spec": "45 sec each side", "why": "deep hip rotators", "letter": "B" }
+                { "name": "Mirror drill", "detail": "Les frères s'imitent dans des déplacements latéraux, position basse", "spec": "3 × 30 sec", "why": "suivi réactif", "letter": "A" },
+                { "name": "Hip 90/90 stretch", "detail": "Se pencher au-dessus du tibia avant", "spec": "45 sec chaque côté", "why": "rotateurs profonds de la hanche", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (4 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (3 min) — together",
+          "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Butterfly stretch + hamstring + 5 deep breaths", "detail": "Slow and easy", "spec": "3 min", "why": null }
+              { "name": "Butterfly stretch + hamstring + 5 deep breaths", "detail": "Lentement et en douceur", "spec": "3 min", "why": null }
             ]}
           ]
         }
@@ -649,146 +649,146 @@
     },
 
     {
-      "phase": "Phase 2 (weeks 4–6)",
+      "phase": "Phase 2 (semaines 4–6)",
       "loc": "field",
-      "name": "Field Day — Speed Development",
-      "focus": "Real-distance sprints + shuttles",
+      "name": "Journée terrain — Développement de la vitesse",
+      "focus": "Sprints sur vraie distance + navettes",
       "duration": "~30 min",
-      "tip": "This is where yard lines pay off — every distance below is exact, no pacing-out needed.",
-      "swap": "Rained out? Run a Basement Day instead, and shift this session to the next good-weather day — even mid-week is fine.",
+      "tip": "C'est là que les lignes de yard deviennent utiles — chaque distance ci-dessous est exacte, pas besoin de mesurer.",
+      "swap": "Journée pluvieuse ? Faites une Journée sous-sol à la place, et déplacez cette séance au prochain beau temps — même en milieu de semaine c'est bien.",
       "blocks": [
         {
-          "label": "Warm-up + sprint school (6 min)",
+          "label": "Échauffement + école de sprint (6 min)",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Skipping + inchworm walk-out", "detail": "2 min skip, 5 inchworms", "spec": "3 min", "why": "general prep" },
-              { "name": "A-skips", "detail": "High knee, opposite arm, snap the foot down", "spec": "2 × 10m", "why": "sprint mechanics" },
-              { "name": "Falling starts", "detail": "Lean until balance breaks, then go", "spec": "3 × 10m", "why": "acceleration posture" }
+              { "name": "Skipping + inchworm walk-out", "detail": "2 min saut à la corde, 5 inchworms", "spec": "3 min", "why": "préparation générale" },
+              { "name": "A-skips", "detail": "Genou haut, bras opposé, claquer le pied au sol", "spec": "2 × 10 m", "why": "mécanique de sprint" },
+              { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis y aller", "spec": "3 × 10 m", "why": "posture d'accélération" }
             ]}
           ]
         },
         {
-          "label": "Main work (17 min)",
+          "label": "Travail principal (17 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Direction change on real yard markings",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Changement de direction sur les vraies lignes de yard",
               "exercises": [
-                { "name": "5-10-5 shuttle run", "detail": "Use the 5-yard lines — time every rep, separate records", "spec": "4 timed each", "why": "change of direction", "letter": "A" },
-                { "name": "Crab walk race", "detail": "Sideways 5m and back", "spec": "3 rounds", "why": "hip abductor strength", "letter": "B" }
+                { "name": "5-10-5 shuttle run", "detail": "Utiliser les lignes de 5 yards — chronométrer chaque rep, records séparés", "spec": "4 chronométrés chaque", "why": "changement de direction", "letter": "A" },
+                { "name": "Crab walk race", "detail": "Latéralement 5 m et retour", "spec": "3 rondes", "why": "force abducteurs de hanche", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Straight speed + lateral power on grass",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse pure + puissance latérale sur l'herbe",
               "exercises": [
-                { "name": "Driveway sprints", "detail": "Falling start into 15m max sprint (use yard lines), full walk-back rest", "spec": "4 × 15m each", "why": "pure speed", "letter": "A" },
-                { "name": "Lateral bounds", "detail": "Stick each landing 1 sec", "spec": "2 × 5 each side", "why": "lateral power", "letter": "B" }
+                { "name": "Driveway sprints", "detail": "Départ tombant vers sprint max 15 m (lignes de yard), récupération au pas", "spec": "4 × 15 m chaque", "why": "vitesse pure", "letter": "A" },
+                { "name": "Lateral bounds", "detail": "Tenir chaque atterrissage 1 sec", "spec": "2 × 5 chaque côté", "why": "puissance latérale", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (4 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (3 min) — together",
+          "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Hip flexor stretch + lying hamstring", "detail": "45 sec each side, on a towel on the grass", "spec": "3 min", "why": null }
+              { "name": "Hip flexor stretch + lying hamstring", "detail": "45 sec chaque côté, sur une serviette sur l'herbe", "spec": "3 min", "why": null }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 2 (weeks 4–6)",
+      "phase": "Phase 2 (semaines 4–6)",
       "loc": "basement",
-      "name": "Basement Day A — Strength + Push/Pull",
-      "focus": "Loaded squat/hinge + upper body",
+      "name": "Journée sous-sol A — Force + Poussée/Tiré",
+      "focus": "Squat/charnière chargé + haut du corps",
       "duration": "~30 min",
-      "tip": "Loads climb here for the 12yo. The dumbbells are the whole point of this session.",
+      "tip": "Les charges augmentent ici pour le 12 ans. Les haltères sont le cœur de cette séance.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (4 min) — together",
+          "label": "Échauffement (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Bear crawl + thoracic rotations", "detail": "3 lengths, 10 rotations per side", "spec": "4 min", "why": "shoulders + upper back" }
+              { "name": "Bear crawl + thoracic rotations", "detail": "3 longueurs, 10 rotations par côté", "spec": "4 min", "why": "épaules + haut du dos" }
             ]}
           ]
         },
         {
-          "label": "Main work (17 min)",
+          "label": "Travail principal (17 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "The core strength pairing — squat + hinge",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire de force principale — squat + charnière",
               "exercises": [
-                { "name": "Goblet squat", "detail": "Dumbbell at chest, 3-sec descent, deep", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "lower body strength", "letter": "A" },
-                { "name": "Romanian deadlift", "detail": "Hinge, flat back, feel the hamstrings", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "the skating engine", "letter": "B" }
+                { "name": "Goblet squat", "detail": "Haltère à la poitrine, descente 3 sec, profond", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "force du bas du corps", "letter": "A" },
+                { "name": "Romanian deadlift", "detail": "Charnière, dos droit, sentir les ischios", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "le moteur du patin", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Upper push/pull + core",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Poussée/tiré haut du corps + gainage",
               "split": {
-                "g": { "name": "Swiss ball jackknife", "detail": "Plank, shins on ball, knees to chest", "spec": "2 × 8", "why": "core + hip flexors" },
-                "s": { "name": "Swiss ball Russian twist", "detail": "Bridge on the ball, rotate a 5 lb dumbbell side to side", "spec": "2 × 8 each side", "why": "shot rotation power" }
+                "g": { "name": "Swiss ball jackknife", "detail": "Planche, tibias sur le ballon, genoux vers la poitrine", "spec": "2 × 8", "why": "gainage + fléchisseurs de hanche" },
+                "s": { "name": "Swiss ball Russian twist", "detail": "Pont sur le ballon, faire pivoter un haltère de 5 lb d'un côté à l'autre", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir" }
               },
               "exercises": [
-                { "name": "TRX row", "detail": "Plank-straight, chest to hands — S walks feet forward for harder angle", "spec": "G 3×8 / S 3×10", "why": "upper body pull", "letter": "B" }
+                { "name": "TRX row", "detail": "Corps droit comme une planche, poitrine vers les mains — S avance les pieds pour un angle plus difficile", "spec": "G 3×8 / S 3×10", "why": "tiré haut du corps", "letter": "B" }
               ]
             },
             { "solo": true, "exercises": [
-              { "name": "Pigeon pose", "detail": "6 slow breaths per side — both boys, every time", "spec": "~60 sec each side", "why": "goalie's stretch + spurt protection" }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "l'étirement du gardien + protection poussée de croissance" }
             ]}
           ]
         },
-        { "label": "Game finisher (4 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (4 min) — together",
+          "label": "Retour au calme (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Frog stretch + seated glute stretch", "detail": "60 sec frog, 45 sec glute per side", "spec": "4 min", "why": "groin + glutes" }
+              { "name": "Frog stretch + seated glute stretch", "detail": "60 sec grenouille, 45 sec fessier par côté", "spec": "4 min", "why": "aine + fessiers" }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 2 (weeks 4–6)",
+      "phase": "Phase 2 (semaines 4–6)",
       "loc": "basement",
-      "name": "Basement Day B — Position Skills + Jumps",
-      "focus": "Low-impact jumps on a mat + reaction",
+      "name": "Journée sous-sol B — Habiletés de position + Sauts",
+      "focus": "Sauts à faible impact sur tapis + réaction",
       "duration": "~30 min",
-      "tip": "Use a foam/rubber mat for squat jumps here — keeps it quiet and joint-friendly.",
+      "tip": "Utilisez un tapis mousse/caoutchouc pour les squat sauts — garde le bruit bas et protège les articulations.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (4 min) — together",
+          "label": "Échauffement (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Jump rope (or pretend) + hip airplanes", "detail": "2 min rope, 6 airplanes per side", "spec": "4 min", "why": "feet + hips" }
+              { "name": "Jump rope (or pretend) + hip airplanes", "detail": "2 min corde, 6 hip airplanes par côté", "spec": "4 min", "why": "pieds + hanches" }
             ]}
           ]
         },
         {
-          "label": "Main work (17 min)",
+          "label": "Travail principal (17 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Low-impact power on the mat + upper push",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Puissance à faible impact sur le tapis + poussée haut du corps",
               "exercises": [
-                { "name": "Squat jumps", "detail": "On the foam mat — explode up, land soft, pause at bottom", "spec": "G 3×6 / S 3×8", "why": "push-off power", "letter": "A" },
-                { "name": "Push-up handles variation", "detail": "Push-up, hop hands sideways, push-up", "spec": "G 3×6 / S 3×8", "why": "upper explosiveness", "letter": "B" }
+                { "name": "Squat jumps", "detail": "Sur le tapis mousse — exploser vers le haut, atterrir doucement, pause en bas", "spec": "G 3×6 / S 3×8", "why": "puissance de poussée", "letter": "A" },
+                { "name": "Push-up handles variation", "detail": "Pompe, sauter les mains latéralement, pompe", "spec": "G 3×6 / S 3×8", "why": "explosivité haut du corps", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec rest after each round", "note": "Position split + reaction",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position + réaction",
               "split": {
-                "g": { "name": "Drop-step to save", "detail": "Goalie stance, Dad points — drop step, wide lunge, hold 2 sec. No knee-drops indoors.", "spec": "12 reps", "why": "post-to-post" },
-                "s": { "name": "Crossover step-overs", "detail": "Cross over a line, push laterally off the back foot", "spec": "3 × 8 each way", "why": "crossover stride" }
+                "g": { "name": "Drop-step to save", "detail": "Position gardien, Papa pointe — drop step, fente large, tenir 2 sec. Pas de chutes de genoux en intérieur.", "spec": "12 reps", "why": "de poteau à poteau" },
+                "s": { "name": "Crossover step-overs", "detail": "Croiser au-dessus d'une ligne, pousser latéralement sur le pied arrière", "spec": "3 × 8 chaque sens", "why": "foulée croisée" }
               },
               "exercises": [
-                { "name": "Reaction ball drops", "detail": "Catch before the 2nd bounce — small movements, low ceiling friendly", "spec": "10 drops each", "why": "pure reaction", "letter": "B" }
+                { "name": "Reaction ball drops", "detail": "Attraper avant le 2e rebond — petits mouvements, compatible avec un plafond bas", "spec": "10 laisser-tomber chaque", "why": "réaction pure", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (4 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (3 min) — together",
+          "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Doorframe chest stretch + seated forward fold", "detail": "45 sec each", "spec": "3 min", "why": null }
+              { "name": "Doorframe chest stretch + seated forward fold", "detail": "45 sec chaque", "spec": "3 min", "why": null }
             ]}
           ]
         }
@@ -796,162 +796,162 @@
     },
 
     {
-      "phase": "Phase 3 (weeks 7–10)",
+      "phase": "Phase 3 (semaines 7–10)",
       "loc": "field",
-      "name": "Field Day — Top Speed + Game Speed",
-      "focus": "Flying sprints, star drill, combo jumps",
+      "name": "Journée terrain — Vitesse maximale + Vitesse de jeu",
+      "focus": "Flying sprints, exercice étoile, sauts combinés",
       "duration": "~35 min",
-      "tip": "Pre-season tempo. Time everything — Test day #2 numbers are the targets for today's reps.",
-      "swap": "Rained out? Run a Basement Day, shift this to the next good-weather day. By Phase 3 the boys know the drills well enough that a day's delay costs nothing.",
+      "tip": "Tempo pré-saison. Chronométrer tout — les chiffres du Jour de test #2 sont les cibles pour les reps d'aujourd'hui.",
+      "swap": "Journée pluvieuse ? Faites une Journée sous-sol, déplacez celle-ci au prochain beau temps. En Phase 3 les garçons connaissent bien les exercices — un jour de délai ne coûte rien.",
       "blocks": [
         {
-          "label": "Warm-up + sprint school (6 min)",
+          "label": "Échauffement + école de sprint (6 min)",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Dynamic circuit", "detail": "High knees, butt kicks, lateral shuffle — 20 sec each × 3", "spec": "3 min", "why": null },
-              { "name": "A-skips", "detail": "2 × 10m, full mechanics focus", "spec": "3 min", "why": "mechanics maintenance" }
+              { "name": "Dynamic circuit", "detail": "Genoux hauts, fesses aux talons, déplacements latéraux — 20 sec chaque × 3", "spec": "3 min", "why": null },
+              { "name": "A-skips", "detail": "2 × 10 m, focus complet sur la mécanique", "spec": "3 min", "why": "maintien de la mécanique" }
             ]}
           ]
         },
         {
-          "label": "Main work (21 min)",
+          "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Explosive chain + single-leg strength — grass is ideal",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Chaîne explosive + force unilatérale — herbe idéale",
               "exercises": [
-                { "name": "Combo: squat jump + lateral bound", "detail": "Jump, land, immediately bound sideways, stick it", "spec": "G 3×4/side / S 4×4/side", "why": "position power chain", "letter": "A" },
-                { "name": "Single-leg squat to box", "detail": "Use a soccer ball or low cone target for the free heel to tap", "spec": "G 2×6/leg / S 3×6/leg", "why": "unilateral strength", "letter": "B" }
+                { "name": "Combo: squat jump + lateral bound", "detail": "Sauter, atterrir, bondir immédiatement latéralement, tenir", "spec": "G 3×4/côté / S 4×4/côté", "why": "chaîne de puissance de position", "letter": "A" },
+                { "name": "Single-leg squat to box", "detail": "Utiliser une balle de soccer ou un cône bas pour que le talon libre touche", "spec": "G 2×6/jambe / S 3×6/jambe", "why": "force unilatérale", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Top-end speed + multi-direction",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse maximale + multi-directionnel",
               "exercises": [
-                { "name": "Flying sprints", "detail": "Jog 5m in, max speed 10m, coast — full rest", "spec": "5 reps each", "why": "top-end speed", "letter": "A" },
-                { "name": "5-cone star drill", "detail": "Centre + 4 corners, sprint out and back — timed", "spec": "3 timed each", "why": "multi-directional speed", "letter": "B" }
+                { "name": "Flying sprints", "detail": "Trot 5 m, vitesse max 10 m, côte — récupération complète", "spec": "5 reps chaque", "why": "vitesse maximale", "letter": "A" },
+                { "name": "5-cone star drill", "detail": "Centre + 4 coins, sprint aller-retour — chronométré", "spec": "3 chronométrés chaque", "why": "vitesse multi-directionnelle", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Resisted acceleration",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Accélération résistée",
               "exercises": [
-                { "name": "Resisted sprint", "detail": "TRX loose around the waist, Dad anchors — sprint out 5m", "spec": "5 × 5m each", "why": "acceleration power", "letter": "A" }
+                { "name": "Resisted sprint", "detail": "TRX lâche autour de la taille, Papa ancre l'autre bout — sprint de 5 m", "spec": "5 × 5 m chaque", "why": "puissance d'accélération", "letter": "A" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (5 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (4 min) — together",
+          "label": "Retour au calme (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Hip flow: 90/90 → pigeon → figure-4 → frog", "detail": "45 sec each position, towel on grass", "spec": "4 min", "why": null }
+              { "name": "Hip flow: 90/90 → pigeon → figure-4 → frog", "detail": "45 sec par position, serviette sur l'herbe", "spec": "4 min", "why": null }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 3 (weeks 7–10)",
+      "phase": "Phase 3 (semaines 7–10)",
       "loc": "basement",
-      "name": "Basement Day A — Heavy Strength",
-      "focus": "Main lifts at peak loads",
+      "name": "Journée sous-sol A — Force maximale",
+      "focus": "Exercices principaux aux charges de pointe",
       "duration": "~35 min",
-      "tip": "If the 12yo is breezing through, nudge weight up — only after a week of perfect form at the current load.",
+      "tip": "Si le 12 ans s'en sort trop facilement, augmenter le poids légèrement — seulement après une semaine de forme parfaite à la charge actuelle.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (5 min) — together",
+          "label": "Échauffement (5 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Full dynamic flow", "detail": "Inchworms → bear crawl → world's greatest stretch → leg swings", "spec": "5 min", "why": null }
+              { "name": "Full dynamic flow", "detail": "Inchworms → marche de l'ours → world's greatest stretch → leg swings", "spec": "5 min", "why": null }
             ]}
           ]
         },
         {
-          "label": "Main work (21 min)",
+          "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "The main lift pairing — squat + pull",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire d'exercices principaux — squat + tiré",
               "exercises": [
-                { "name": "Front squat", "detail": "Weight at chest, elbows up, deep and controlled", "spec": "G 3×8 @10-15lb / S 3×8 @20-25lb", "why": "full lower body strength", "letter": "A" },
-                { "name": "Single-arm dumbbell row", "detail": "Knee on bench, row to the hip", "spec": "G 3×8 @10-15lb / S 3×8 @15-20lb", "why": "back + posture", "letter": "B" }
+                { "name": "Front squat", "detail": "Poids à la poitrine, coudes hauts, profond et contrôlé", "spec": "G 3×8 @10-15lb / S 3×8 @20-25lb", "why": "force complète du bas du corps", "letter": "A" },
+                { "name": "Single-arm dumbbell row", "detail": "Genou sur le banc, tirer vers la hanche", "spec": "G 3×8 @10-15lb / S 3×8 @15-20lb", "why": "dos + posture", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Core + edge-work range (ceiling-safe)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Gainage + amplitude de carre (sécuritaire pour plafond bas)",
               "exercises": [
-                { "name": "TRX fallout", "detail": "Rigid body, arms overhead — keep range short under a low ceiling", "spec": "G 2×8 / S 3×8", "why": "anti-extension core", "letter": "A" },
-                { "name": "Lateral lunge", "detail": "Wide step, sit into the hip — S holds 5-10 lb at chest", "spec": "2 × 8 each side", "why": "groin + edge range", "letter": "B" }
+                { "name": "TRX fallout", "detail": "Corps rigide, bras au-dessus de la tête — réduire l'amplitude sous un plafond bas", "spec": "G 2×8 / S 3×8", "why": "gainage anti-extension", "letter": "A" },
+                { "name": "Lateral lunge", "detail": "Grand pas, s'asseoir dans la hanche — S tient 5-10 lb à la poitrine", "spec": "2 × 8 chaque côté", "why": "aine + amplitude de carre", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Single-leg + rotation (chest-height for low ceilings)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Unipodal + rotation (hauteur poitrine pour plafonds bas)",
               "split": {
-                "g": { "name": "Swiss ball jackknife", "detail": "Knees to chest, hips square", "spec": "2 × 8", "why": "core + hip flexors" },
-                "s": { "name": "Standing dumbbell chop", "detail": "Rotate dumbbell hip to chest height — stop below ceiling line", "spec": "2 × 8 each side", "why": "shot rotation power" }
+                "g": { "name": "Swiss ball jackknife", "detail": "Genoux vers la poitrine, hanches bien alignées", "spec": "2 × 8", "why": "gainage + fléchisseurs de hanche" },
+                "s": { "name": "Standing dumbbell chop", "detail": "Faire pivoter l'haltère de la hanche à hauteur de poitrine — arrêter avant la ligne du plafond", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir" }
               },
               "exercises": [
-                { "name": "Step-up with knee drive", "detail": "Heel drive, knee high, pause", "spec": "G 2×8 @5lb / S 2×8 @10-15lb", "why": "hip extension", "letter": "B" }
+                { "name": "Step-up with knee drive", "detail": "Poussée sur le talon, genou haut, pause", "spec": "G 2×8 @5lb / S 2×8 @10-15lb", "why": "extension de hanche", "letter": "B" }
               ]
             },
             { "solo": true, "exercises": [
-              { "name": "Pigeon pose", "detail": "6 slow breaths per side, both boys", "spec": "~60 sec each side", "why": "non-negotiable, every session" }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté, les deux garçons", "spec": "~60 sec par côté", "why": "non-négociable, à chaque séance" }
             ]}
           ]
         },
-        { "label": "Game finisher (5 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (5 min) — together",
+          "label": "Retour au calme (5 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Full stretch sequence", "detail": "Pigeon → frog → thoracic rotation → child's pose", "spec": "5 min", "why": null }
+              { "name": "Full stretch sequence", "detail": "Pigeon → grenouille → rotation thoracique → pose de l'enfant", "spec": "5 min", "why": null }
             ]}
           ]
         }
       ]
     },
     {
-      "phase": "Phase 3 (weeks 7–10)",
+      "phase": "Phase 3 (semaines 7–10)",
       "loc": "basement",
-      "name": "Basement Day B — Quickness + Hands",
-      "focus": "Reactive drills + low-impact speed",
+      "name": "Journée sous-sol B — Rapidité + Mains",
+      "focus": "Exercices réactifs + vitesse à faible impact",
       "duration": "~35 min",
-      "tip": "End with the mini shootout against a wall whenever you can — it's the best position-specific finisher either of them gets.",
+      "tip": "Terminer avec le mini tir au but contre un mur quand vous pouvez — c'est le meilleur finisseur de position spécifique que l'un ou l'autre obtient.",
       "swap": null,
       "blocks": [
         {
-          "label": "Warm-up (5 min) — together",
+          "label": "Échauffement (5 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Tape agility ladder + shoulder circuit", "detail": "High knees then lateral through 10 rungs; arm circles + doorframe stretch", "spec": "5 min", "why": "feet + shoulders" }
+              { "name": "Tape agility ladder + shoulder circuit", "detail": "Genoux hauts puis latéral à travers 10 échelons ; cercles de bras + étirement de porte", "spec": "5 min", "why": "pieds + épaules" }
             ]}
           ]
         },
         {
-          "label": "Main work (21 min)",
+          "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Multi-direction speed (low-impact) + core",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse multi-directionnelle (faible impact) + gainage",
               "exercises": [
-                { "name": "Speed squat", "detail": "Fast down, explosive up, no pause — quiet, no jump", "spec": "G 2×12 / S 3×12", "why": "fast-twitch recruitment", "letter": "A" },
-                { "name": "Plank shoulder taps", "detail": "Hips dead still", "spec": "2 × 10 each side", "why": "core anti-rotation", "letter": "B" }
+                { "name": "Speed squat", "detail": "Descente rapide, montée explosive, sans pause — silencieux, sans saut", "spec": "G 2×12 / S 3×12", "why": "recrutement rapide des fibres", "letter": "A" },
+                { "name": "Plank shoulder taps", "detail": "Hanches complètement immobiles", "spec": "2 × 10 chaque côté", "why": "gainage anti-rotation", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Hip strength + position hands",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Force de hanche + mains de position",
               "split": {
-                "g": { "name": "Wall ball reaction", "detail": "Lacrosse ball, varied angles — goalie hands", "spec": "90 sec", "why": "hand-eye + anticipation" },
-                "s": { "name": "Standing dumbbell chop", "detail": "Rotate dumbbell hip to chest height — stop below ceiling line", "spec": "2 × 8 each side", "why": "shot power" }
+                "g": { "name": "Wall ball reaction", "detail": "Balle de crosse, angles variés — mains de gardien", "spec": "90 sec", "why": "coordination œil-main + anticipation" },
+                "s": { "name": "Standing dumbbell chop", "detail": "Faire pivoter l'haltère de la hanche à hauteur de poitrine — arrêter avant la ligne du plafond", "spec": "2 × 8 chaque côté", "why": "puissance au tir" }
               },
               "exercises": [
-                { "name": "TRX single-leg lunge", "detail": "Back foot in strap, pause at the bottom — both", "spec": "G 2×8/leg / S 3×8/leg", "why": "hip stability + glutes", "letter": "B" }
+                { "name": "TRX single-leg lunge", "detail": "Pied arrière dans la sangle, pause en bas — les deux", "spec": "G 2×8/jambe / S 3×8/jambe", "why": "stabilité de hanche + fessiers", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec rest after each round", "note": "Tracking + cutting in tight space",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Suivi + changements de direction en espace réduit",
               "exercises": [
-                { "name": "Mirror drill", "detail": "Brothers mirror each other, add fakes", "spec": "3 × 30 sec", "why": "reactive tracking", "letter": "A" },
-                { "name": "Cone weave sprint", "detail": "6 cones close together — weave fast, walk back", "spec": "5 reps each", "why": "agility + cutting", "letter": "B" }
+                { "name": "Mirror drill", "detail": "Les frères s'imitent, ajouter des feintes", "spec": "3 × 30 sec", "why": "suivi réactif", "letter": "A" },
+                { "name": "Cone weave sprint", "detail": "6 cônes rapprochés — slalom rapide, marcher pour revenir", "spec": "5 reps chaque", "why": "agilité + changements de direction", "letter": "B" }
               ]
             }
           ]
         },
-        { "label": "Game finisher (5 min)", "items": [ { "game": true } ] },
+        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
-          "label": "Cool-down (4 min) — together",
+          "label": "Retour au calme (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Lower body flow: hip flexor → hamstring → butterfly → twist", "detail": "45-60 sec each", "spec": "4 min", "why": null }
+              { "name": "Lower body flow: hip flexor → hamstring → butterfly → twist", "detail": "45-60 sec chaque", "spec": "4 min", "why": null }
             ]}
           ]
         }

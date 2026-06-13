@@ -8,16 +8,16 @@ export function renderBrowse(container, data) {
   });
 
   let html = `<div class="page-header">
-    <div class="page-title">📋 All Sessions</div>
-    <div class="page-subtitle">Tap to preview any session</div>
+    <div class="page-title">📋 Toutes les séances</div>
+    <div class="page-subtitle">Appuyez pour prévisualiser une séance</div>
   </div>`;
 
   for (const [phase, sessions] of Object.entries(phases)) {
     html += `<div class="phase-group"><div class="phase-heading">${phase}</div>`;
     for (const { w, i } of sessions) {
       const locBadge = w.loc === 'field'
-        ? '<span class="badge badge-field">⛳ Field</span>'
-        : '<span class="badge badge-basement">🏠 Basement</span>';
+        ? '<span class="badge badge-field">⛳ Terrain</span>'
+        : '<span class="badge badge-basement">🏠 Sous-sol</span>';
       html += `<div class="browse-session-card" data-week="${i}">
         <div class="browse-session-left">
           <div class="exercise-name">${w.name}</div>

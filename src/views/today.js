@@ -16,8 +16,8 @@ function renderPicker(container, data, onPick) {
   const current = getState('session');
 
   let html = `<div class="page-header">
-    <div class="page-title">🏒 Pick Today's Session</div>
-    <div class="page-subtitle">Tap a session to start</div>
+    <div class="page-title">🏒 Choisir la séance du jour</div>
+    <div class="page-subtitle">Appuyez sur une séance pour commencer</div>
   </div>`;
 
   for (const [phase, sessions] of Object.entries(phases)) {
@@ -26,8 +26,8 @@ function renderPicker(container, data, onPick) {
     for (const { w, i } of sessions) {
       const isActive = current?.weekIndex === i;
       const locBadge = w.loc === 'field'
-        ? '<span class="badge badge-field">⛳ Field</span>'
-        : '<span class="badge badge-basement">🏠 Basement</span>';
+        ? '<span class="badge badge-field">⛳ Terrain</span>'
+        : '<span class="badge badge-basement">🏠 Sous-sol</span>';
       html += `<div class="session-pick-card ${isActive ? 'active-session' : ''}" data-week="${i}">
         <div>
           <div class="session-pick-name">${w.name}</div>
@@ -76,14 +76,14 @@ function exerciseRowHTML(ex, weekIndex, formData, withCheckbox = true) {
 
   return `<div class="exercise-row" data-ex-name="${encodeURIComponent(ex.name)}">
     <div class="exercise-top">
-      ${withCheckbox ? `<button class="exercise-check ${done ? 'checked' : ''}" data-check-key="${checkKey}" aria-label="Mark done">${done ? '✓' : ''}</button>` : ''}
+      ${withCheckbox ? `<button class="exercise-check ${done ? 'checked' : ''}" data-check-key="${checkKey}" aria-label="Marquer fait">${done ? '✓' : ''}</button>` : ''}
       <div class="exercise-info">
         <div class="exercise-name ${done ? 'done' : ''}">${ex.letter ? `<span style="color:var(--ice);font-weight:700">${ex.letter}.</span> ` : ''}${ex.name}</div>
         ${ex.spec ? `<div class="exercise-spec">${specDisplay}</div>` : ''}
         ${ex.detail ? `<div class="exercise-why">${ex.detail}</div>` : ''}
         ${ex.why ? `<div class="exercise-why" style="color:var(--text-dim);font-style:italic">${ex.why}</div>` : ''}
       </div>
-      ${formData[ex.name] ? `<button class="exercise-expand-btn" data-expand="${encodeURIComponent(ex.name)}" aria-label="Show form cues">ℹ️</button>` : ''}
+      ${formData[ex.name] ? `<button class="exercise-expand-btn" data-expand="${encodeURIComponent(ex.name)}" aria-label="Conseils de forme">ℹ️</button>` : ''}
     </div>
     <div class="ex-cues-panel" style="display:none" data-cues-for="${encodeURIComponent(ex.name)}">
       ${cuesHTML(ex.name, formData)}
@@ -117,7 +117,7 @@ function attachTimers(container) {
     function stop() {
       clearInterval(interval);
       interval = null;
-      btn.textContent = 'Start';
+      btn.textContent = 'Démarrer';
       display.classList.remove('timer-running');
       remaining = secs;
       display.textContent = format(secs);
@@ -146,7 +146,7 @@ function attachTimers(container) {
       if (interval) { stop(); return; }
       if (activeTimer && activeTimer !== stop) activeTimer();
       activeTimer = stop;
-      btn.textContent = 'Stop';
+      btn.textContent = 'Arrêter';
       display.classList.add('timer-running');
       interval = setInterval(() => {
         remaining--;
@@ -199,7 +199,7 @@ function gamePicker(games) {
   const pick = games[Math.floor(Math.random() * games.length)];
   const icon = GAME_ICONS[pick.icon] || '🎮';
   return `<div class="game-card">
-    <h3>🎮 Game Finisher</h3>
+    <h3>🎮 Jeu final</h3>
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
       <span style="font-size:2rem">${icon}</span>
       <div>
@@ -208,8 +208,8 @@ function gamePicker(games) {
       </div>
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn btn-gold btn-sm" id="game-reroll">🎲 Pick different</button>
-      <button class="btn btn-ghost btn-sm" id="game-show-all">See all games</button>
+      <button class="btn btn-gold btn-sm" id="game-reroll">🎲 Autre jeu</button>
+      <button class="btn btn-ghost btn-sm" id="game-show-all">Voir tous les jeux</button>
     </div>
     <div id="game-list-panel" style="display:none" class="game-list">
       ${games.map(g => `
@@ -227,17 +227,17 @@ function gamePicker(games) {
 // ── Render one session ────────────────────────────────────────────────────────
 function renderSession(container, week, weekIndex, data, withCheckbox = true, showBack = false) {
   const locBadge = week.loc === 'field'
-    ? '<span class="badge badge-field">⛳ Field</span>'
-    : '<span class="badge badge-basement">🏠 Basement</span>';
+    ? '<span class="badge badge-field">⛳ Terrain</span>'
+    : '<span class="badge badge-basement">🏠 Sous-sol</span>';
 
   let html = '';
   if (showBack) {
-    html += `<button class="browse-back-btn" id="back-to-browse">← Back to sessions</button>`;
+    html += `<button class="browse-back-btn" id="back-to-browse">← Retour aux séances</button>`;
   } else {
     html += `<div class="session-header">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
         <h1 style="font-size:1.15rem">${week.name}</h1>
-        <button class="btn btn-ghost btn-sm" id="change-session">Change</button>
+        <button class="btn btn-ghost btn-sm" id="change-session">Changer</button>
       </div>
       <div class="session-meta">${locBadge}<span class="badge badge-phase">${week.phase}</span><span class="text-dim" style="font-size:0.82rem;align-self:center">${week.duration}</span></div>
       ${week.focus ? `<div class="session-focus">${week.focus}</div>` : ''}
@@ -258,7 +258,7 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
         const timerSecs = parseRestSeconds(item.rest || '60 sec');
         html += `<div class="superset-block">
           <div class="superset-header">
-            <span class="superset-label">⚡ Superset</span>
+            <span class="superset-label">⚡ Supersérie</span>
             ${item.note ? `<span class="superset-note">${item.note}</span>` : ''}
           </div>
           <div class="superset-body">
@@ -267,11 +267,11 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
           </div>
           <div class="timer-row" data-timer="${timerSecs}">
             <div>
-              <div class="timer-label">Rest timer</div>
+              <div class="timer-label">Repos</div>
               <div style="font-size:0.75rem;color:var(--text-dim)">${item.rest}</div>
             </div>
             <div class="timer-display">-:--</div>
-            <button class="timer-btn">Start</button>
+            <button class="timer-btn">Démarrer</button>
           </div>
         </div>`;
       }
