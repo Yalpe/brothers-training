@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a1628" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Hockey Training" />
+  <title>Brothers Hockey Training</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon.svg" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main id="view">
+    <div style="padding:40px 20px;text-align:center;color:#8ca0b8">Loading…</div>
+  </main>
+
+  <nav id="nav">
+    <button data-tab="today" class="active">
+      <span class="nav-icon">🏒</span>
+      Today
+    </button>
+    <button data-tab="browse">
+      <span class="nav-icon">📋</span>
+      Browse
+    </button>
+    <button data-tab="tests">
+      <span class="nav-icon">📊</span>
+      Tests
+    </button>
+    <button data-tab="reference">
+      <span class="nav-icon">📖</span>
+      Rules
+    </button>
+  </nav>
+
+  <script type="module" src="src/app.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>

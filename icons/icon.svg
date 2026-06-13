@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#0a1628"/>
+  <!-- Ice rink oval -->
+  <ellipse cx="256" cy="300" rx="200" ry="80" fill="none" stroke="#1e3557" stroke-width="3"/>
+  <!-- Center dot -->
+  <circle cx="256" cy="300" r="18" fill="none" stroke="#4fc3f7" stroke-width="3"/>
+  <circle cx="256" cy="300" r="5" fill="#4fc3f7"/>
+  <!-- Hockey stick left (G) -->
+  <line x1="140" y1="170" x2="140" y2="310" stroke="#4fc3f7" stroke-width="14" stroke-linecap="round"/>
+  <line x1="140" y1="310" x2="190" y2="330" stroke="#4fc3f7" stroke-width="14" stroke-linecap="round"/>
+  <!-- Hockey stick right (S) -->
+  <line x1="372" y1="170" x2="372" y2="310" stroke="#ffd54f" stroke-width="14" stroke-linecap="round"/>
+  <line x1="372" y1="310" x2="322" y2="330" stroke="#ffd54f" stroke-width="14" stroke-linecap="round"/>
+  <!-- Puck -->
+  <ellipse cx="256" cy="358" rx="36" ry="14" fill="#2a3f5f" stroke="#4fc3f7" stroke-width="2"/>
+  <!-- Text: BHT -->
+  <text x="256" y="130" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif"
+    font-weight="900" font-size="88" fill="#ffffff" letter-spacing="-4">BHT</text>
+  <!-- Subtitle -->
+  <text x="256" y="460" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif"
+    font-weight="600" font-size="36" fill="#4fc3f7">HOCKEY TRAINING</text>
+</svg>
