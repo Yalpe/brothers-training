@@ -1,4 +1,4 @@
-const CACHE = 'bht-v1';
+const CACHE = 'bht-v2';
 const ASSETS = [
   '.',
   'index.html',
@@ -11,6 +11,8 @@ const ASSETS = [
   'src/views/tests.js',
   'src/views/reference.js',
   'icons/icon.svg',
+  'icons/icon-192.png',
+  'icons/icon-512.png',
   'icons/icon-maskable.svg',
 ];
 
