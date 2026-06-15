@@ -61,8 +61,11 @@ function cuesHTML(name, formData) {
   }
   if (fd.warn) html += `<div class="cue-warn">⚠️ ${fd.warn}</div>`;
   if (fd.hockey) html += `<div class="cue-hockey">🏒 ${fd.hockey}</div>`;
-  const searchQ = encodeURIComponent(name + ' exercise form how to');
-  html += `<a class="search-link" href="https://www.google.com/search?q=${searchQ}" target="_blank" rel="noopener">🔍 Voir des vidéos — ${name}</a>`;
+  const parts = name.split(' + ');
+  html += parts.map(p => {
+    const q = encodeURIComponent(p.trim() + ' exercise form how to');
+    return `<a class="search-link" href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener">🔍 Voir des vidéos — ${p.trim()}</a>`;
+  }).join('');
   html += '</div>';
   return html;
 }
