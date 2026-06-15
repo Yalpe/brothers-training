@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "Programme d'entraînement hockey des frères",
-    "subtitle": "Programme d'été de 10 semaines — gardien (presque 10 ans) + patineur (12 ans)",
+    "subtitle": "Programme d'été de 10 semaines — gardien (~10 ans) + patineur (12 ans)",
     "athletes": {
       "G": { "label": "Gardien", "age": 10, "position": "Gardien de but (hockey)" },
       "S": { "label": "Patineur", "age": 12, "position": "Patineur (hockey)" }
     },
-    "schedule": "3 séances/semaine, jour de repos entre chaque. 1 journée terrain + 2 journées sous-sol par semaine, ordre flexible selon la météo. Semaines impaires : variante V1, semaines paires : variante V2.",
+    "schedule": "3 séances par semaine, un jour de repos entre chaque. Une journée terrain + deux journées sous-sol par semaine, dans l'ordre que la météo décide. Semaines impaires : variante V1, semaines paires : variante V2.",
     "legend": {
-      "SS": "Supersérie — les exercices se font A puis B dos à dos (ou en équipe : l'un fait A pendant que l'autre fait B, puis on échange), avec repos après avoir complété les deux.",
-      "split": "Séparation par position — le gardien (G) et le patineur (S) font chacun un exercice différent à ce slot.",
+      "SS": "Supersérie — les exercices se font A puis B l'un après l'autre (ou en duo : un fait A pendant que l'autre fait B, puis on échange), avec repos après les deux.",
+      "split": "Séparation de position — le gardien (G) et le patineur (S) font chacun un exercice différent à ce slot.",
       "G/S specs": "Quand les répétitions ou les poids diffèrent par athlète, les deux sont indiqués.",
       "game": "Jeu de fin de séance, choisi dans le menu des jeux par les garçons (ils alternent le choix)."
     }
@@ -17,26 +17,26 @@
 
   "games": [
     { "id": "mini-shootout", "name": "Mini tir au but", "icon": "ball-football",
-      "desc": "Le patineur tire une balle de tennis/molle sur un filet marqué au ruban ou un vrai filet, le gardien défend. Fonctionne en intérieur contre un mur ou en extérieur avec un vrai filet. Compte comme entraînement de position pour les deux. Comptez les arrêts et les buts." },
+      "desc": "Le patineur tire une balle de tennis ou molle sur un filet de ruban adhésif ou un vrai filet, le gardien défend. Marche en intérieur contre un mur ou dehors avec un vrai filet. Ça compte comme de l'entraînement de position pour les deux. Comptez les arrêts et les buts." },
     { "id": "save-streak", "name": "Série d'arrêts", "icon": "target",
       "desc": "Papa lance des balles molles vers le gardien à hauteurs et angles variés — comptez les arrêts consécutifs. Version patineur : réceptions consécutives à une main contre un mur." },
     { "id": "deck-of-cards", "name": "Jeu de cartes", "icon": "cards",
       "desc": "Pigez une carte : cœur = squats sautés, carreau = sauts sur les points, trèfle = déplacements latéraux, pique = pompes. Le chiffre = les répétitions. Les frères alternent les piges pendant 3 minutes." },
     { "id": "mirror-battle", "name": "Bataille miroir", "icon": "copy",
-      "desc": "Les frères se font face. L'un dirige des déplacements/feintes/baisses pendant 30 sec, l'autre imite. On échange. Papa juge qui a le mieux suivi — le perdant fait 5 burpees." },
+      "desc": "Les frères se font face. L'un dirige des déplacements, feintes et baisses pendant 30 sec, l'autre imite. On échange. Papa juge qui a le mieux suivi — le perdant fait 5 burpees." },
     { "id": "beat-the-timer", "name": "Battre le chrono", "icon": "clock-bolt",
-      "desc": "60 secondes : maximum de déplacements latéraux entre deux lignes à 3 m. Chaque frère bat son propre record — graphique séparé sur le frigo par enfant." },
+      "desc": "60 secondes : maximum de déplacements latéraux entre deux lignes à 3 m. Chaque frère bat son propre record — tableau séparé sur le frigo par enfant." },
     { "id": "animal-relays", "name": "Relais animaux", "icon": "paw",
       "desc": "Marche de l'ours à l'aller, saut de grenouille au retour, marche du crabe à l'aller, sprint au retour. Les frères font la course, ou les deux contre Papa. Mieux sur le terrain où il y a de la place pour sprinter à la fin." },
     { "id": "red-light-green-light", "name": "Feu rouge, feu vert — édition hockey", "icon": "traffic-lights",
-      "desc": "Vert = sprint avec bonne traction des bras. Rouge : le gardien s'abaisse en papillon/position latérale, le patineur prend une position basse de hockey-stop. Pris à bouger = 3 pas en arrière. Terrain seulement pour la version sprint ; version sous-sol raccourcit en déplacements latéraux." },
+      "desc": "Vert = sprint avec bonne traction des bras. Rouge : le gardien s'abaisse en papillon ou position latérale, le patineur prend une position basse de hockey-stop. Pris à bouger = 3 pas en arrière. Terrain seulement pour la version sprint ; en sous-sol, on se réduit aux déplacements latéraux." },
     { "id": "chase-tag", "name": "Course-poursuite", "icon": "run",
-      "desc": "10 m d'avance, le poursuivant essaie de toucher avant la ligne. Besoin du terrain — la meilleure utilisation de l'espace ouvert. Rien ne développe la vitesse d'un enfant comme courir après quelqu'un et être couru après." }
+      "desc": "10 m d'avance, le poursuivant essaie de toucher avant la ligne. Ça prend du terrain — la meilleure utilisation de l'espace ouvert. Rien ne développe la vitesse d'un enfant comme courir après quelqu'un et se faire courir après." }
   ],
 
   "tests": {
     "label": "Jour de test — dernière séance de chaque phase (semaines 3, 6, 10)",
-    "rule": "La règle du handicap : les deux garçons font les six mêmes tests, mais la compétition porte sur le pourcentage d'amélioration par rapport à leur propre dernier test, pas sur le score brut. Deux colonnes sur le graphique du frigo, un seul trophée : 'le plus amélioré cette phase.'",
+    "rule": "La règle du handicap : les deux garçons font les six mêmes tests, mais la compétition porte sur le pourcentage d'amélioration par rapport à leur propre dernier test, pas sur le score brut. Deux colonnes sur le tableau du frigo, un seul trophée : « le plus amélioré cette phase ».",
     "items": [
       { "name": "Saut en longueur debout", "how": "Meilleur des 3 essais, doit tenir l'atterrissage", "unit": "cm" },
       { "name": "Navette 5-10-5", "how": "Meilleur des 2 essais chronométrés", "unit": "secondes" },
@@ -48,77 +48,77 @@
   },
 
   "houseRules": [
-    { "title": "Superséries en équipe", "body": "L'un fait l'exercice A pendant que l'autre fait le B, puis ils échangent. Les haltères ne sont jamais nécessaires deux fois en même temps, personne ne reste inactif, et le minuteur de repos démarre quand les deux ont fini la ronde." },
-    { "title": "Surveillance de poussée de croissance (12 ans)", "body": "S'il est en pleine poussée de croissance : le travail de flexibilité compte encore plus (ne jamais sauter les retours au calme), et toute douleur récurrente sous la rotule ou dans le talon signifie réduire le volume de sauts de moitié pour la semaine — garder tout le reste." },
-    { "title": "Rythme hebdomadaire + règle de vacances", "body": "Espacement style lun/mer/ven avec des jours de repos entre. Semaines impaires V1, semaines paires V2. Manque de temps ou en voyage : 10 minutes minimum = une supersérie au choix + un jeu + position pigeon, les deux garçons. Les semaines manquées prolongent la phase — on ne saute jamais en avant pour rattraper." },
-    { "title": "Règle de pluie", "body": "La Journée terrain peut être N'IMPORTE LAQUELLE des 3 séances de la semaine — celle qui a beau temps. Si une Journée terrain est annulée à cause de la pluie, faites une Journée sous-sol à la place et déplacez la Journée terrain au prochain beau temps, même en milieu de semaine. Sur la semaine, visez quand même 3 séances au total." },
-    { "title": "Le rôle de Papa", "body": "Appelant pour les exercices de réaction, juge pour la bataille miroir, lièvre dans la course-poursuite, tireur dans la série d'arrêts. Participer aux sprints/relais vaut plus que les instructions — les enfants copient l'énergie dans la pièce." }
+    { "title": "Superséries en duo", "body": "Un fait l'exercice A pendant que l'autre fait le B, puis on échange. Les haltères ne sont jamais occupés en même temps, personne ne traîne à ne rien faire, et le minuteur de repos part quand les deux ont fini leur tour." },
+    { "title": "Poussée de croissance (12 ans)", "body": "S'il est en pleine pousse : la flexibilité compte encore plus — ne jamais sauter le retour au calme. Toute douleur qui revient sous le genou ou dans le talon = réduire les sauts de moitié pour la semaine. Le reste continue pareil." },
+    { "title": "Rythme de la semaine + règle de vacances", "body": "Style lun/mer/ven avec des jours de repos entre. Semaines impaires V1, semaines paires V2. Pas le temps ou en voyage : 10 minutes, c'est assez — une supersérie au choix + un jeu + position pigeon, les deux ensemble. Une semaine manquée prolonge la phase — on ne saute jamais par-dessus pour rattraper." },
+    { "title": "Règle de pluie", "body": "La journée terrain, c'est n'importe laquelle des 3 séances de la semaine — celle qui tombe par beau temps. Si c'est annulé à cause de la pluie, faites une journée sous-sol à la place et replacez la journée terrain au prochain beau temps, même en semaine. L'objectif reste 3 séances dans la semaine." },
+    { "title": "Le rôle de Papa", "body": "Appelant pour les exercices de réaction, juge pour la bataille miroir, lièvre dans la course-poursuite, tireur dans la série d'arrêts. Participer aux sprints et aux relais, ça vaut plus que les instructions — les enfants copient l'énergie dans la pièce." }
   ],
 
   "formData": {
     "Squat jumps": {
       "cues": [
-        ["Les genoux suivent le 2e orteil — jamais vers l'intérieur, surtout à l'atterrissage", null],
-        ["Atterrir doucement : orteils d'abord, rouler vers le talon, genoux fléchis. Atterrissages bruyants = mauvaise mécanique", null],
-        ["La poitrine reste haute en bas — pas d'arrondi vers l'avant", null]
+        ["Les genoux suivent la ligne du 2e orteil — jamais vers l'intérieur, surtout à l'atterrissage", null],
+        ["Atterrir doucement : orteils en premier, genoux fléchis, absorber le choc. Si c'est bruyant, c'est mal fait.", null],
+        ["La poitrine reste haute dans le bas du mouvement — pas d'arrondi vers l'avant", null]
       ],
-      "warn": "Arrêter si les genoux s'effondrent à l'atterrissage. Régresser à des squats normaux jusqu'au contrôle. Sur le terrain, l'herbe est bien plus douce que le béton — atterrir quand même doucement.",
-      "hockey": "Pour le gardien c'est la position papillon ; pour le patineur c'est la position chargée avant chaque foulée."
+      "warn": "Si les genoux s'effondrent à l'atterrissage, on arrête la série. Revenir aux squats normaux jusqu'à ce que le contrôle revienne. Sur le terrain, l'herbe amortit beaucoup mieux que le béton — mais on atterrit quand même doucement.",
+      "hockey": "Pour le gardien, c'est le papillon. Pour le patineur, c'est la position chargée avant chaque foulée."
     },
     "Dead bug": {
       "cues": [
-        ["Bas du dos fermement pressé sur le tapis — zéro espace, c'est tout l'exercice", null],
-        ["Abaisser le bras et la jambe opposés lentement (3-4 sec)", null],
-        ["Expirer en abaissant les membres", null]
+        ["Le bas du dos doit être collé au tapis en tout temps — sans espace, c'est tout l'exercice", null],
+        ["Descendre le bras et la jambe opposés lentement (3-4 sec)", null],
+        ["Expirer en descendant les membres", null]
       ],
-      "warn": "Si le dos se décolle du tapis, la rep ne compte pas. Réduire l'amplitude.",
+      "warn": "Si le dos décolle du tapis, la rep ne compte pas. Réduire l'amplitude.",
       "hockey": null
     },
     "Lateral shuffle + freeze": {
       "cues": [
         ["Rester bas en tout temps — les hanches ne montent jamais pendant le déplacement", "s'il se relève, réduire les reps"],
         ["Les pieds ne se croisent jamais — pousser sur le pied arrière", null],
-        ["Au 'freeze' : position large et stable, poids centré, mains levées comme tenant un bâton", null]
+        ["Au freeze : position large et stable, poids centré, mains levées comme si on tenait un bâton", null]
       ],
       "warn": "Pieds qui se croisent = ralentir avant d'accélérer.",
-      "hockey": "De poteau à poteau pour le gardien ; travail de pieds en zone défensive pour le patineur."
+      "hockey": "De poteau à poteau pour le gardien, travail de pieds en zone défensive pour le patineur."
     },
     "Swiss ball wall squat": {
       "cues": [
-        ["Ballon dans le bas du dos, pieds avancés pour que les genoux atteignent 90° avec les tibias verticaux", null],
-        ["3 temps en bas, 1 sec de pause, vitesse normale en montant", null],
-        ["Poids sur les talons tout au long", null]
+        ["Ballon dans le bas du dos, pieds avancés — genoux à 90° avec les tibias verticaux", null],
+        ["3 secondes en bas, 1 sec de pause, puis remonter normalement", null],
+        ["Poids sur les talons en tout temps", null]
       ],
       "warn": null, "hockey": null
     },
     "Dot hops (4-square)": {
       "cues": [
         ["Contacts rapides et dynamiques sur les avant-pieds", null],
-        ["Genoux souples et légèrement fléchis tout le temps", null],
+        ["Genoux souples et légèrement fléchis en tout temps", null],
         ["La précision d'abord, la vitesse ensuite — atterrissages nets sur chaque point", null]
       ],
       "warn": null, "hockey": null
     },
     "Standing long jump": {
       "cues": [
-        ["Grand élan des bras vers l'arrière, puis fortement vers l'avant au décollage", null],
-        ["Tenir l'atterrissage 3 secondes complètes — pieds larges, genoux fléchis. Trébuchement = rep ratée", null]
+        ["Grand élan des bras vers l'arrière, puis fortement vers l'avant au moment du décollage", null],
+        ["Tenir l'atterrissage 3 secondes complètes — pieds larges, genoux fléchis. Si tu trébuches, la rep ne compte pas.", null]
       ],
-      "warn": "Surveiller l'atterrissage avec les genoux ensemble ou les jambes qui se verrouillent à l'impact. L'herbe est douce — super surface pour ça.",
-      "hockey": "'Tenir l'atterrissage' développe l'équilibre nécessaire pour plonger (gardien) ou absorber les contacts (patineur)."
+      "warn": "Attention à l'atterrissage genoux serrés ou jambes droites à l'impact. L'herbe amortit — super surface pour ça.",
+      "hockey": "Tenir l'atterrissage développe l'équilibre nécessaire pour les plongeons (gardien) et pour absorber les contacts (patineur)."
     },
     "React & drop": {
       "cues": [
-        ["Commencer en bonne position de gardien — pieds larges, genoux fléchis, mains en avant", null],
-        ["Réagir à l'appel, ne pas anticiper — varier le rythme comme appelant", null],
+        ["Partir en bonne position de gardien à chaque rep — pieds larges, genoux fléchis, mains en avant", null],
+        ["Réagir à l'appel, pas anticiper — varier les délais comme appelant", null],
         ["Fente latérale large et stable à chaque fois, puis revenir vite en position", null]
       ],
-      "warn": "Sur sol dur, garder en fente latérale debout — pas de chute du genou. L'herbe permet des variantes avec genou au sol si désiré.",
-      "hockey": "C'est LE mouvement de jeu du gardien. Chaque rep devrait ressembler à un vrai arrêt."
+      "warn": "Sur sol dur, rester en fente debout — pas de genou qui tombe. Sur l'herbe, les variantes avec genou au sol sont correctes.",
+      "hockey": "C'est LE mouvement du gardien en jeu. Chaque rep doit ressembler à un vrai arrêt."
     },
     "Crab walk race": {
       "cues": [
-        ["Hanches hautes — ne pas les laisser s'affaisser vers le sol", null],
+        ["Hanches hautes — ne pas les laisser tomber vers le sol", null],
         ["Main et pied du même côté bougent ensemble", null]
       ],
       "warn": null, "hockey": null
@@ -126,7 +126,7 @@
     "T-drill (simplified)": {
       "cues": [
         ["Rester bas à chaque changement de direction", null],
-        ["Toucher chaque cône avec la main la plus proche — force une position basse", null],
+        ["Toucher chaque cône avec la main la plus proche — ça force une position basse", null],
         ["Reculer avec des petits pas rapides, poids légèrement vers l'avant", null]
       ],
       "warn": null, "hockey": null
@@ -134,64 +134,64 @@
     "Mirror drill": {
       "cues": [
         ["Squat bas tout au long — ne pas se relever entre les mouvements", null],
-        ["Regarder les hanches du partenaire, pas ses pieds — les hanches ne mentent pas", null],
+        ["Regarder les hanches du partenaire, pas les pieds — les hanches ne mentent pas", null],
         ["Les petits pas rapides battent les grands lents", null]
       ],
       "warn": null,
-      "hockey": "Le gardien suit le porteur de rondelle ; le patineur apprend le miroir défensif. Fonctionne peu importe l'endroit."
+      "hockey": "Le gardien suit le porteur de rondelle, le patineur apprend le miroir défensif. Ça marche partout."
     },
     "Red light, green light — hockey edition": {
       "cues": [
         ["Vert = sprint avec bonne traction des bras", null],
-        ["Rouge : le gardien s'abaisse en papillon/position latérale, le patineur prend une position basse de hockey-stop", null],
-        ["Pris à bouger au rouge = 3 pas en arrière. Rendre ça compétitif", null]
+        ["Rouge : le gardien s'abaisse en papillon ou position latérale, le patineur prend une position basse de hockey-stop", null],
+        ["Pris à bouger au rouge = 3 pas en arrière. Rendre ça compétitif.", null]
       ],
       "warn": null,
-      "hockey": "Combine la mécanique de sprint avec la position spécifique sous demande de réaction — plusieurs compétences en un seul jeu."
+      "hockey": "Un jeu qui combine mécanique de sprint et position spécifique sous pression de réaction — plusieurs habiletés en une seule activité."
     },
     "TRX assisted deep squat hold": {
       "cues": [
         ["Tenir les sangles pour l'équilibre seulement — tension minimale des bras", null],
-        ["Descendre aussi profond que possible — talons plats, genoux écartés", null],
-        ["Poitrine haute, colonne longue — pas se courber vers les genoux", null]
+        ["Descendre aussi profond que possible — talons à plat, genoux écartés", null],
+        ["Poitrine haute, colonne étirée — ne pas se courber vers les genoux", null]
       ],
       "warn": null,
-      "hockey": "Gardien : profondeur du papillon. Patineur : la flexion profonde du genou que tout entraîneur réclame. Objectif de l'été : plus profond et plus à l'aise."
+      "hockey": "Gardien : profondeur du papillon. Patineur : la flexion profonde du genou que tous les entraîneurs demandent. Objectif de l'été : descendre plus bas et se sentir à l'aise là."
     },
     "Side plank": {
       "cues": [
-        ["Avant-bras directement sous l'épaule, corps droit de la tête aux talons", null],
-        ["Pousser la hanche vers le haut et tenir — ne pas la laisser s'affaisser vers le sol", null],
-        ["Peut se faire sur le genou pour commencer — progresser vers la planche latérale complète", null]
+        ["Avant-bras directement sous l'épaule, corps bien droit de la tête aux talons", null],
+        ["Lever la hanche vers le haut et tenir — ne pas la laisser tomber vers le sol", null],
+        ["Peut se faire sur le genou pour commencer — progresser vers la version complète avec le temps", null]
       ],
       "warn": null, "hockey": null
     },
     "Hip 90/90 stretch": {
       "cues": [
-        ["Assis bien droit — les deux hanches et genoux à environ 90°, un tibia devant, un derrière", null],
-        ["Hanche avant : se pencher lentement au-dessus du tibia avant, colonne longue", null],
-        ["Hanche arrière : se redresser et faire pivoter la poitrine vers le genou arrière", null],
-        ["Ne pas forcer les deux hanches à plat immédiatement — le côté relevé s'abaisse avec les semaines", null]
+        ["S'asseoir bien droit — hanches et genoux à environ 90° des deux côtés, un tibia devant, un derrière", null],
+        ["Hanche avant : se pencher lentement au-dessus du tibia avant, colonne étirée", null],
+        ["Hanche arrière : se redresser, puis faire pivoter la poitrine vers le genou arrière", null],
+        ["Ne pas forcer les deux hanches à plat tout de suite — le côté levé s'améliorera avec les semaines", null]
       ],
-      "warn": "Si un côté est nettement plus serré, y passer plus de temps. Les athlètes sont souvent asymétriques selon leur côté de poussée dominant.",
+      "warn": "Si un côté est beaucoup plus raide, y passer plus de temps. Les athlètes sont souvent asymétriques selon leur côté dominant.",
       "hockey": null
     },
     "Swiss ball pass": {
       "cues": [
-        ["Le bas du dos reste en contact avec le tapis pendant le passage", null],
+        ["Le bas du dos reste en contact avec le tapis pendant tout le mouvement", null],
         ["Lent et contrôlé — ne pas balancer le ballon", null]
       ],
       "warn": null, "hockey": null
     },
     "Lateral lunge": {
       "cues": [
-        ["Grand pas latéral — bien plus large que ce qui semble naturel. La hanche doit se charger profondément", null],
-        ["S'asseoir vers l'arrière et sur le côté dans la hanche fléchie — orteils des deux pieds pointent vers l'avant", null],
-        ["La jambe tendue reste longue — devrait sentir un étirement à l'intérieur de la cuisse", null],
+        ["Grand pas sur le côté — plus large que ce qui semble naturel. La hanche doit plier profondément.", null],
+        ["S'asseoir vers l'arrière et sur le côté dans la hanche — orteils des deux pieds pointent vers l'avant", null],
+        ["La jambe tendue reste bien longue — on devrait sentir un étirement à l'intérieur de la cuisse", null],
         ["Pousser sur le talon de la jambe fléchie pour revenir", null]
       ],
       "warn": null,
-      "hockey": "Gardien : écart du papillon. Patineur : la position profonde de carre. Les deux positions ont besoin de cette amplitude."
+      "hockey": "Pour le gardien, c'est l'écart du papillon. Pour le patineur, c'est la position profonde de carre. Les deux positions ont besoin de cette amplitude."
     },
     "A-skips": {
       "cues": [
@@ -200,7 +200,7 @@
         ["Claquer le pied sous le corps, atterrir sur l'avant-pied", null]
       ],
       "warn": null,
-      "hockey": "École de sprint. Maîtriser le pattern A-skip est le chemin le plus rapide vers un enfant plus rapide. Une vraie distance sur l'herbe rend cet exercice ce qu'il est censé être."
+      "hockey": "École de sprint. Maîtriser le A-skip, c'est le chemin le plus direct pour courir plus vite. Sur l'herbe avec une vraie distance, ça devient ce que ça doit être."
     },
     "Falling starts": {
       "cues": [
@@ -209,71 +209,71 @@
         ["Rester bas pour les 5 premiers mètres, se relever graduellement", null]
       ],
       "warn": null,
-      "hockey": "Enseigne la posture d'accélération — le penché et la poussée qui manquent habituellement aux coureurs lents."
+      "hockey": "Enseigne la bonne posture d'accélération — le penché vers l'avant et la poussée que les coureurs lents oublient toujours."
     },
     "Box jumps": {
       "cues": [
         ["Légère flexion rapide avant de sauter — pas un squat profond d'abord", null],
-        ["Atterrir doucement en squat partiel. Bruyant = boîte trop haute", null],
+        ["Atterrir doucement en squat partiel. Bruyant = boîte trop haute.", null],
         ["Toujours descendre en marchant, jamais sauter en arrière — protège l'achille", null]
       ],
-      "warn": "Genoux qui s'effondrent à l'atterrissage = arrêter la série. Pour le 12 ans : toute douleur sous la rotule = réduire le volume de sauts de moitié cette semaine. En intérieur, utiliser un tapis mousse/caoutchouc pour le bruit et l'impact.",
-      "hockey": "La flexion-et-explosion est la même réponse rapide que pousser sur le poteau (gardien) ou la première foulée (patineur)."
+      "warn": "Genoux qui s'effondrent à l'atterrissage = on arrête la série. Pour le 12 ans : toute douleur sous le genou = réduire les sauts de moitié pour la semaine. En intérieur, un tapis mousse ou caoutchouc réduit le bruit et amortit l'impact.",
+      "hockey": "La flexion-explosion, c'est la même réponse explosive que pousser sur le poteau (gardien) ou prendre la première foulée (patineur)."
     },
     "TRX row": {
       "cues": [
-        ["Corps droit comme une planche des talons à la tête — pas de hanches qui s'affaissent", null],
-        ["Tirer les coudes derrière le corps, la poitrine rejoint les mains, serrer les omoplates", null],
-        ["Descendre lentement (2-3 sec) — la phase de descente développe la plupart de la force", null],
-        ["Patineur (S) : avancer les pieds pour un angle plus difficile", null]
+        ["Corps droit comme une planche de la tête aux talons — pas de hanches qui tombent", null],
+        ["Tirer les coudes vers l'arrière, poitrine vers les mains, serrer les omoplates", null],
+        ["Descendre lentement (2-3 sec) — la descente, c'est là que la force se construit", null],
+        ["S : avancer les pieds pour un angle plus difficile", null]
       ],
       "warn": null, "hockey": null
     },
     "5-10-5 shuttle run": {
       "cues": [
         ["Position athlétique basse au départ — poids vers l'avant sur les avant-pieds", null],
-        ["Planter le pied extérieur fort sur les changements de direction et pousser latéralement — ne pas ralentir jusqu'à l'arrêt", null],
+        ["Planter le pied extérieur sur les changements de direction et pousser latéralement — ne pas freiner jusqu'à l'arrêt complet", null],
         ["Rester bas à chaque changement — se redresser fait perdre 0,2-0,3 secondes", null],
-        ["Toucher la ligne avec la main la plus proche — force une position basse", null]
+        ["Toucher la ligne avec la main la plus proche — ça force une position basse", null]
       ],
       "warn": null,
-      "hockey": "Chronométrer chaque rep, records séparés par athlète. Les lignes de yard donnent des incréments de 5 yards exacts — idéal sur le terrain."
+      "hockey": "Chronométrer chaque rep, records séparés par athlète. Les lignes de yard donnent des distances exactes — idéal sur le terrain."
     },
     "Single-leg balance + reach": {
       "cues": [
-        ["La jambe d'appui a une légère flexion au genou — jamais verrouillée droite", null],
-        ["Tendre vers l'avant lentement avec contrôle complet — pas de balancement ou d'élan", null],
-        ["La hanche de la jambe d'appui reste de niveau — surveiller le bassin qui descend d'un côté", "bassin qui descend = fessier moyen faible"]
+        ["La jambe d'appui a une légère flexion — jamais complètement droite", null],
+        ["Tendre vers l'avant lentement, avec contrôle complet — pas de balancement ni d'élan", null],
+        ["La hanche de la jambe d'appui reste de niveau — surveiller si le bassin penche d'un côté", "bassin qui penche = fessier moyen faible"]
       ],
       "warn": "Tomber souvent du même côté peut signifier une cheville plus faible — lui donner plus de temps.",
       "hockey": null
     },
     "Driveway sprints": {
       "cues": [
-        ["Utiliser le penché des départs tombants pour commencer", null],
+        ["Partir avec le penché appris dans les départs tombants", null],
         ["Bras qui poussent fort, mains de la hanche à la joue", null],
-        ["Récupération complète en marchant entre les sprints — le travail de vitesse nécessite un repos complet", null]
+        ["Récupération complète en marchant entre les sprints — pour la vitesse, il faut un vrai repos.", null]
       ],
       "warn": null,
-      "hockey": "Sur le terrain, utiliser de vraies distances en yards (10-15 m). Des sprints courts maximaux avec récupération complète, c'est comme ça que les enfants deviennent vraiment plus rapides."
+      "hockey": "Sur le terrain, utiliser de vraies distances en yards (10-15 m). Des sprints courts maximaux avec récupération complète, c'est comme ça qu'on devient vraiment plus rapide."
     },
     "Lateral bounds": {
       "cues": [
-        ["Pousser sur la bordure extérieure d'un pied, atterrir sur l'autre", null],
+        ["Pousser sur le rebord extérieur d'un pied, atterrir sur l'autre", null],
         ["Tenir chaque atterrissage 1 seconde complète avant le prochain bond", null],
         ["Atterrir avec le genou au-dessus du pied — pas d'effondrement vers l'intérieur", null]
       ],
       "warn": "Si les atterrissages s'effondrent, réduire la distance du bond.",
-      "hockey": "Pour le patineur, c'est le croisé et la poussée de foulée en saut — le saut le plus spécifique au hockey qui soit."
+      "hockey": "Pour le patineur, c'est le croisé et la poussée de foulée en saut — le mouvement le plus spécifique au hockey qui soit."
     },
     "Drop-step to save": {
       "cues": [
-        ["Bonne position de gardien pour commencer chaque rep", null],
-        ["Pivoter et faire le drop step — ne pas d'abord déplacer les pieds", null],
+        ["Partir en bonne position de gardien à chaque rep", null],
+        ["Pivoter et exécuter le drop step — ne pas déplacer les pieds en premier", null],
         ["Tenir la fente large 2 secondes complètes", null]
       ],
-      "warn": "Sur sol dur, garder debout (fente, pas de chute du genou).",
-      "hockey": "C'est LE mouvement de jeu du gardien de poteau à poteau."
+      "warn": "Sur sol dur, rester debout — fente, pas de genou qui tombe.",
+      "hockey": "C'est LE mouvement de jeu du gardien, de poteau à poteau."
     },
     "Crossover step-overs": {
       "cues": [
@@ -282,11 +282,11 @@
         ["Rester bas, poitrine haute, regard vers l'avant tout au long de l'exercice", null]
       ],
       "warn": null,
-      "hockey": "Patineur seulement : c'est le pattern de croisé hors glace. Pousser sur la carre extérieure du pied arrière."
+      "hockey": "Patineur seulement — c'est le croisé hors glace. Pousser sur la carre extérieure du pied arrière."
     },
     "Push-up handles variation": {
       "cues": [
-        ["Corps droit de la tête aux talons — pas de hanches qui s'affaissent", null],
+        ["Corps droit de la tête aux talons — pas de hanches qui tombent", null],
         ["Descendre la poitrine au niveau des poignées — coudes à environ 45° du corps", null],
         ["Pour le saut latéral : les deux mains bougent ensemble — garder les hanches de niveau pendant le saut", null]
       ],
@@ -301,132 +301,132 @@
     },
     "Wall ball reaction": {
       "cues": [
-        ["Rester en position basse prête tout au long", null],
-        ["Varier la hauteur et l'angle du lancer à chaque rep — l'imprévisibilité est le but", null],
-        ["Attraper à une main quand possible — entraîne chaque côté indépendamment", null]
+        ["Rester en position basse et prête en tout temps", null],
+        ["Varier la hauteur et l'angle à chaque rep — l'imprévisibilité, c'est l'objectif", null],
+        ["Attraper à une main quand c'est possible — ça entraîne chaque côté indépendamment", null]
       ],
       "warn": null,
-      "hockey": "Entraîne directement l'anticipation et la vivacité des mains dont un gardien a besoin ; une balle de crosse ajoute de la difficulté."
+      "hockey": "Travaille directement l'anticipation et la vivacité des mains dont le gardien a besoin. Une balle de crosse rend ça plus difficile."
     },
     "Reaction ball drops": {
       "cues": [
-        ["Commencer en position athlétique basse — poids sur les avant-pieds, genoux légèrement fléchis", null],
-        ["Regard sur la balle dès qu'elle est lâchée — réagir, ne pas anticiper", null],
-        ["Plonger ou se fendre avec contrôle — revenir vite en position prête après chaque prise", null]
+        ["Partir en position athlétique basse — poids sur les avant-pieds, genoux légèrement fléchis", null],
+        ["Les yeux sur la balle dès qu'elle est lâchée — réagir, pas anticiper", null],
+        ["Plonger ou se fendre avec contrôle — revenir rapidement en position après chaque prise", null]
       ],
       "warn": null,
-      "hockey": "Entraînement pur de réaction. Peut aussi rouler une balle de façon imprévisible sur le sol pour varier."
+      "hockey": "Du pur entraînement de réaction. On peut aussi rouler une balle de façon imprévisible sur le sol pour varier."
     },
     "Goblet squat": {
       "cues": [
-        ["Tenir l'haltère verticalement à la poitrine — coudes rentrés, pas écartés", null],
-        ["Descendre lentement (3 sec), en poussant les genoux vers l'extérieur", "indice : 'pousse tes genoux avec tes coudes'"],
+        ["Tenir l'haltère à la poitrine, vertical — coudes rentrés, pas écartés", null],
+        ["Descendre lentement (3 sec), en poussant les genoux vers l'extérieur", "truc : 'pousse tes genoux avec tes coudes'"],
         ["Les talons doivent rester à plat sur le sol — si ça lève, élargir légèrement la position", null],
-        ["Pousser à travers tout le pied — serrer les fessiers en haut", null]
+        ["Pousser à travers tout le pied et serrer les fessiers en haut", null]
       ],
-      "warn": "Les talons qui se lèvent est le problème le plus fréquent. Élargir la position ou utiliser une petite surélévation du talon (livre sous les talons) pendant que la mobilité s'améliore.",
-      "hockey": "Squat profond = papillon du gardien = profondeur de foulée du patineur. Même leçon, les deux garçons : 'c'est ta position de papillon/de foulée.'"
+      "warn": "Les talons qui se lèvent, c'est le problème le plus courant. Élargir la position ou mettre un livre sous les talons le temps que la mobilité s'améliore.",
+      "hockey": "Squat profond = papillon du gardien = profondeur de foulée du patineur. Même leçon pour les deux : c'est ta position de jeu."
     },
     "Romanian deadlift": {
       "cues": [
-        ["Pousser les hanches vers l'arrière d'abord — c'est une charnière de hanche, pas un squat", null],
+        ["Pousser les hanches vers l'arrière en premier — c'est une charnière, pas un squat", null],
         ["Garder les haltères près des jambes tout au long — presque frôler les tibias", null],
-        ["Le dos reste à plat tout au long — pas d'arrondi dans le bas du dos", "indice : 'long cou, colonne haute'"],
-        ["S'arrêter quand les ischios tirent — ne pas forcer l'amplitude au-delà de la tension", null],
+        ["Le dos reste à plat en tout temps — pas d'arrondi dans le bas du dos", "truc : 'long cou, colonne haute'"],
+        ["S'arrêter quand les ischios tirent — ne pas forcer l'amplitude plus loin que la tension", null],
         ["Pousser les hanches vers l'avant pour se relever — serrer les fessiers en haut", null]
       ],
-      "warn": "L'arrondi du bas du dos est la chose clé à surveiller pour les deux garçons. Réduire le poids ou limiter l'amplitude.",
-      "hockey": "Les ischio-jambiers et les fessiers sont le moteur du patin — le levé le plus important du programme."
+      "warn": "Le bas du dos qui s'arrondit, c'est LA chose à surveiller pour les deux. Réduire le poids ou limiter l'amplitude si ça arrive.",
+      "hockey": "Les ischio-jambiers et les fessiers, c'est le moteur du patin. Le mouvement le plus important du programme."
     },
     "Dumbbell floor press": {
       "cues": [
-        ["Allongé sur le dos, pieds à plat, bas du dos légèrement pressé sur le sol", null],
-        ["Pousser droit vers le haut — poignets alignés au-dessus des coudes en bas", null],
+        ["Allongé sur le dos, pieds à plat sur le sol, bas du dos légèrement pressé contre le sol", null],
+        ["Pousser droit vers le haut — poignets au-dessus des coudes dans le bas du mouvement", null],
         ["Descendre lentement (2-3 sec) — coudes à environ 45° du corps", null]
       ],
       "warn": null, "hockey": null
     },
     "Swiss ball jackknife": {
       "cues": [
-        ["Commencer en planche solide — mains sous les épaules, gainage actif", null],
-        ["Ballon sous les tibias, pas les pieds — reste stable", null],
-        ["Tirer les genoux vers la poitrine en courbant le bas du dos — ne pas laisser les hanches monter", null],
+        ["Partir en planche solide — mains sous les épaules, core engagé", null],
+        ["Ballon sous les tibias, pas sous les pieds — c'est plus stable", null],
+        ["Tirer les genoux vers la poitrine en arrondissant le bas du dos — ne pas laisser les hanches monter", null],
         ["Lent et contrôlé dans les deux sens — ce n'est pas un exercice de vitesse", null]
       ],
-      "warn": "Si le ballon roule de côté, les hanches pivotent. 5 reps propres valent mieux que 10 sales.",
+      "warn": "Si le ballon part de côté, les hanches ont pivoté. 5 belles reps valent mieux que 10 bâclées.",
       "hockey": null
     },
     "Swiss ball Russian twist": {
       "cues": [
-        ["Haut du dos sur le ballon, hanches levées en pont, pieds à plat", null],
-        ["Tenir un haltère léger avec les bras tendus, faire pivoter les épaules d'un côté à l'autre", null],
-        ["Les hanches restent de niveau et hautes — seul le torse pivote", null]
+        ["Haut du dos appuyé sur le ballon, hanches en pont, pieds à plat au sol", null],
+        ["Tenir un haltère léger, bras tendus, et faire pivoter les épaules d'un côté à l'autre", null],
+        ["Les hanches restent hautes et de niveau — seul le torse pivote", null]
       ],
       "warn": null,
-      "hockey": "Patineur seulement : la puissance de rotation c'est la puissance du tir. Lent et contrôlé avant rapide."
+      "hockey": "Patineur seulement : la puissance du tir vient de la rotation. Lent et contrôlé avant de penser à la vitesse."
     },
     "Step-up with knee drive": {
       "cues": [
-        ["Pousser sur le talon du pied qui monte — pas les orteils", null],
-        ["Monter le genou opposé haut en haut — pause 1 sec", null],
-        ["Torse droit tout au long — ne pas pencher sur la jambe qui monte", null],
+        ["Pousser sur le talon de la jambe qui monte — pas sur les orteils", null],
+        ["Monter le genou opposé bien haut en arrivant en haut — pause 1 sec", null],
+        ["Torse bien droit en tout temps — ne pas se pencher vers la jambe", null],
         ["Descendre avec contrôle — ne pas tomber de la boîte", null]
       ],
       "warn": null, "hockey": null
     },
     "Plank shoulder taps": {
       "cues": [
-        ["En position de pompe, corps droit de la tête aux talons", null],
-        ["Tapoter l'épaule opposée en alternant — garder les hanches complètement immobiles", null],
-        ["Si les hanches bougent, ralentir — le contrôle prime sur la vitesse", null]
+        ["En position de pompe — corps droit de la tête aux talons", null],
+        ["Toucher l'épaule opposée en alternant — garder les hanches parfaitement immobiles", null],
+        ["Si les hanches bougent, ralentir le rythme — le contrôle passe avant la vitesse", null]
       ],
       "warn": null, "hockey": null
     },
     "Pigeon pose": {
       "cues": [
-        ["Tibia avant sur le tapis, hanches de niveau et alignées", null],
-        ["Se pencher vers l'avant lentement — utiliser les avant-bras ou une couverture pliée sous la hanche avant si nécessaire", null],
-        ["Respirer dans la tension — expirer et laisser la hanche se détendre. Ne pas forcer", null],
-        ["6 respirations lentes par côté — un jeu de respiration, pas une course contre la montre", null]
+        ["Tibia avant à plat sur le tapis, hanches de niveau", null],
+        ["Se pencher vers l'avant lentement — s'appuyer sur les avant-bras ou mettre une couverture pliée sous la hanche si besoin", null],
+        ["Respirer dans la tension — expirer et laisser la hanche se relâcher. Ne pas forcer.", null],
+        ["6 respirations lentes par côté — c'est un exercice de respiration, pas une course", null]
       ],
-      "warn": "Douleur vive au genou = ajuster l'angle du tibia. Douleur dans l'articulation de la hanche elle-même = arrêter.",
-      "hockey": "L'étirement le plus important pour le gardien ; pour le 12 ans il protège contre la perte de flexibilité qui accompagne les poussées de croissance. À chaque séance, sans exception."
+      "warn": "Douleur vive au genou = ajuster l'angle du tibia. Douleur dans l'articulation de la hanche = arrêter complètement.",
+      "hockey": "L'étirement le plus important pour le gardien. Pour le 12 ans, il protège contre la perte de souplesse qui vient avec les poussées de croissance. À chaque séance, sans exception."
     },
     "Combo: squat jump + lateral bound": {
       "cues": [
-        ["Sauter, atterrir, absorber — puis bondir immédiatement latéralement sur un pied", null],
+        ["Sauter, atterrir, absorber — puis bondir immédiatement sur le côté sur un pied", null],
         ["Tenir l'atterrissage sur une jambe 1 seconde complète", null],
         ["Genou au-dessus du pied à chaque atterrissage", null]
       ],
-      "warn": "Si l'atterrissage du bond s'effondre, séparer les deux mouvements jusqu'à ce que chacun soit solide. L'herbe est idéale — atterrissages doux dans les deux sens.",
+      "warn": "Si l'atterrissage du bond s'effondre, séparer les deux mouvements jusqu'à ce que chacun soit solide. L'herbe amortit — idéal pour les deux.",
       "hockey": "Gardien : poussée sur le poteau + drive latéral. Patineur : foulée + croisé. Même exercice, les deux positions."
     },
     "Single-leg squat to box": {
       "cues": [
-        ["Descendre jusqu'à ce que le talon libre touche juste le sol, puis monter", null],
-        ["Le genou de la jambe qui travaille suit le 2e orteil — surveiller de face les effondrements", null],
+        ["Descendre jusqu'à ce que le talon libre effleure le sol, puis monter", null],
+        ["Le genou de la jambe qui travaille suit le 2e orteil — vérifier de face si ça s'effondre", null],
         ["Légère inclinaison vers l'avant à la hanche — bras tendus vers l'avant pour l'équilibre", null],
-        ["Commencer très bas (10-15 cm). La hauteur n'apporte rien si la forme s'effondre", null]
+        ["Commencer avec très peu de hauteur (10-15 cm). Monter haut ne sert à rien si la forme s'effondre.", null]
       ],
-      "warn": "Effondrement constant du genou = retour au squat deux jambes et plus de travail des fessiers. Sur le terrain sans boîte, utiliser une balle de soccer ou un cône bas comme cible.",
-      "hockey": "Presque chaque arrêt et chaque foulée est une poussée sur une seule jambe."
+      "warn": "Genou qui s'effondre constamment = revenir au squat sur deux jambes et travailler les fessiers. Sur le terrain sans boîte, une balle de soccer ou un cône bas fait l'affaire.",
+      "hockey": "Presque chaque arrêt et chaque foulée, c'est une poussée sur une seule jambe."
     },
     "Resisted sprint": {
       "cues": [
-        ["Se pencher dans la résistance — pousser le sol vers l'arrière", null],
-        ["Pas courts et puissants, bras qui pompent", null]
+        ["Se pencher vers l'avant dans la résistance — pousser le sol vers l'arrière", null],
+        ["Pas courts et puissants, bras qui pompent fort", null]
       ],
       "warn": null,
       "hockey": "TRX lâche autour de la taille, Papa ancre l'autre bout — fonctionne très bien sur l'herbe."
     },
     "Flying sprints": {
       "cues": [
-        ["Trottiner 5 m pour accélérer, puis vitesse maximale 10 m, puis ralentir", null],
-        ["Posture haute à vitesse maximale — regard vers l'avant, visage et mains détendus", null],
+        ["Trottiner 5 m pour prendre de l'élan, puis vitesse maximale sur 10 m, puis ralentir", null],
+        ["Posture haute à vitesse maximale — regard vers l'avant, visage et mains décontractés", null],
         ["Récupération complète entre les reps", null]
       ],
       "warn": null,
-      "hockey": "Exposition à la vitesse maximale avec forme détendue — la vitesse de pointe nécessite une vraie distance, la meilleure utilisation du terrain."
+      "hockey": "Courir à vitesse maximale avec une forme détendue — la vitesse de pointe, ça prend de la vraie distance. Meilleure utilisation du terrain."
     },
     "Dumbbell lateral raise": {
       "cues": [
@@ -434,37 +434,37 @@
         ["Descente 3 sec — c'est là que le travail se fait", null],
         ["Balancement = trop lourd", null]
       ],
-      "warn": "Dans un sous-sol avec plafond bas, arrêter la montée à la hauteur de la poitrine plutôt que des épaules.",
+      "warn": "Plafond bas ? Arrêter la montée à la hauteur de la poitrine plutôt que des épaules.",
       "hockey": null
     },
     "5-cone star drill": {
       "cues": [
-        ["Sprinter chaque bras de l'étoile — pas de trot", null],
+        ["Sprinter sur chaque bras de l'étoile — pas de trot", null],
         ["Toucher chaque cône avec la main la plus proche", null],
         ["Le retour au centre compte autant que le sprint vers l'extérieur", null]
       ],
-      "warn": "Nécessite une vraie largeur — mieux sur le terrain.",
-      "hockey": "La vitesse multi-directionnelle est ce qui distingue les gardiens et patineurs rapides des lents."
+      "warn": "Ça prend de l'espace — mieux sur le terrain.",
+      "hockey": "La vitesse multi-directionnelle, c'est ce qui sépare les joueurs rapides des lents."
     },
     "TRX single-leg lunge": {
       "cues": [
         ["Pied arrière dans la sangle, environ 30-40 cm du sol", null],
         ["Descendre droit vers le bas — genou avant à 90°, genou arrière vers le sol", null],
         ["Genou avant aligné au-dessus de la cheville — pas au-delà des orteils", null],
-        ["Torse droit — ne pas se pencher vers l'avant. Mains sur les hanches aide", null],
+        ["Torse bien droit — ne pas se pencher vers l'avant. Les mains sur les hanches aident.", null],
         ["Pause 1 seconde en bas — ne pas la sauter", null]
       ],
-      "warn": "Ne peut pas tenir la position basse stable = faire des fentes fractionnées sur un banc d'abord.",
+      "warn": "Impossible de tenir en bas sans perdre l'équilibre ? Commencer par des fentes avec pied arrière sur un banc.",
       "hockey": null
     },
     "Standing dumbbell chop": {
       "cues": [
-        ["Tenir un haltère à deux mains à une hanche", null],
-        ["Faire pivoter en diagonale vers le haut et en travers vers l'épaule opposée — bras assez tendus", null],
-        ["La puissance vient des hanches qui pivotent, pas des bras — faire pivoter le pied arrière", null]
+        ["Tenir un haltère à deux mains, à la hauteur d'une hanche", null],
+        ["Faire pivoter en diagonale vers le haut, vers l'épaule opposée — bras relativement tendus", null],
+        ["La puissance vient des hanches, pas des bras — faire pivoter le pied arrière", null]
       ],
-      "warn": "Plafond bas : arrêter le mouvement à la hauteur de la poitrine, ne pas le porter au-dessus de la tête.",
-      "hockey": "Patineur seulement : le tir du poignet et le lancer frappé sont une rotation de hanche. C'est la puissance du tir hors glace."
+      "warn": "Plafond bas : arrêter le mouvement à la hauteur de la poitrine, ne pas monter au-dessus de la tête.",
+      "hockey": "Patineur seulement. Le tir du poignet et le lancer frappé, c'est une rotation de hanche. Voilà la puissance du tir, hors glace."
     },
     "Speed squat": {
       "cues": [
@@ -478,37 +478,37 @@
         ["Poids à la poitrine, coudes hauts et parallèles au sol — si les coudes descendent, le poids bascule", null],
         ["Descendre lentement (3 sec) — genoux poussent larges, poitrine haute", null],
         ["Monter droit — ne pas laisser les coudes descendre en montant", null],
-        ["Talons à plat sur le sol tout au long — élargir la position si ça lève", null]
+        ["Talons à plat sur le sol en tout temps — élargir la position si ça lève", null]
       ],
-      "warn": "Coudes qui descendent = poids qui bascule vers l'avant = bas du dos qui s'arrondit. Réduire le poids d'abord.",
-      "hockey": "Le squat avec charge avant entraîne la posture droite dont les deux positions ont besoin."
+      "warn": "Coudes qui descendent = poids qui bascule vers l'avant = bas du dos qui s'arrondit. Réduire le poids avant tout.",
+      "hockey": "Le squat avec charge à l'avant force la posture droite dont les deux positions ont besoin."
     },
     "Single-arm dumbbell row": {
       "cues": [
         ["Genou et main sur le banc — dos plat et parallèle au sol", null],
-        ["Tirer le coude droit vers l'arrière vers la hanche — pas sur le côté", null],
+        ["Tirer le coude vers l'arrière en direction de la hanche — pas sur le côté", null],
         ["Descendre lentement (2-3 sec) — ne pas simplement lâcher le poids", null],
-        ["Ne pas faire pivoter le torse pour aider le levé — garder hanches et épaules alignées", null]
+        ["Ne pas faire pivoter le torse pour aider — garder les hanches et les épaules bien alignées", null]
       ],
       "warn": null, "hockey": null
     },
     "High knees + leg swings + arm circles": {
       "cues": [
-        ["Genoux hauts : lever chaque genou à hauteur de hanche, bras opposé qui monte en même temps — comme marcher sur place très vite", null],
-        ["Balancements de jambes : tenir un mur ou un poteau d'une main, balancer la jambe librement d'avant en arrière sur 10 reps, puis de côté en côté sur 10 reps — sans forcer l'amplitude", null],
-        ["Cercles de bras : bras tendus sur les côtés, faire des grands cercles vers l'arrière (10 reps), puis vers l'avant (10 reps) — épaules relâchées", null]
+        ["Genoux hauts : lever chaque genou à hauteur de la hanche, le bras opposé monte en même temps — comme marcher sur place, mais vite", null],
+        ["Balancements de jambes : tenir un mur ou un poteau d'une main, laisser la jambe balancer librement d'avant en arrière (10 fois), puis de côté (10 fois) — sans forcer l'amplitude", null],
+        ["Cercles de bras : bras tendus sur les côtés, grands cercles vers l'arrière (10), puis vers l'avant (10) — épaules bien relâchées", null]
       ],
       "warn": null,
       "hockey": null
     },
     "TRX fallout": {
       "cues": [
-        ["Commencer debout, tenant les poignées TRX — corps droit avant de se pencher", null],
-        ["Reculer les pieds et pencher tout le corps vers l'avant comme une unité rigide — bras s'étendent au-dessus", null],
-        ["Les hanches ne doivent pas plier ni s'affaisser — le corps reste droit comme une planche tout au long", null],
+        ["Partir debout avec les poignées TRX — corps bien droit avant de se pencher", null],
+        ["Reculer les pieds et incliner tout le corps vers l'avant comme une planche — bras qui s'étendent au-dessus", null],
+        ["Les hanches ne plient pas et ne tombent pas — le corps reste droit comme une planche du début à la fin", null],
         ["Tirer pour revenir en engageant les dorsaux — pas en pliant les hanches", null]
       ],
-      "warn": "Si les hanches plient ou s'affaissent, réduire l'amplitude. Sous un plafond bas, garder l'amplitude courte.",
+      "warn": "Si les hanches plient ou tombent, réduire l'amplitude. Plafond bas : raccourcir le mouvement.",
       "hockey": null
     }
   },
@@ -520,8 +520,8 @@
       "name": "Journée terrain — Bases du sprint",
       "focus": "Mécanique de sprint + sauts sur l'herbe",
       "duration": "~25 min",
-      "tip": "Peut être N'IMPORTE LAQUELLE des 3 séances hebdomadaires — celle qui a accès au terrain et beau temps. Les deux autres sont des journées sous-sol, toujours disponibles.",
-      "swap": "Journée pluvieuse ? Faites une Journée sous-sol à la place, et faites cette séance terrain le prochain beau temps. Sur la semaine vous aurez quand même 3 séances — l'ordre change juste.",
+      "tip": "Cette séance, c'est la wildcard de la semaine : n'importe laquelle des 3 journées qui a du beau temps et l'accès au terrain. Les deux autres sont des journées sous-sol, toujours disponibles.",
+      "swap": "Journée pluvieuse ? Faites une journée sous-sol à la place, et revenez à cette séance terrain au prochain beau temps. Vous arrivez quand même à 3 séances dans la semaine — l'ordre change, c'est tout.",
       "blocks": [
         {
           "label": "Échauffement + école de sprint (5 min)",
@@ -541,7 +541,7 @@
                 { "name": "Crab walk race", "detail": "Latéralement 5 m et retour, hanches hautes", "spec": "3 rondes", "why": "force abducteurs de hanche", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position — enfin de l'espace",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position — profitez de l'espace",
               "split": {
                 "g": { "name": "React & drop", "detail": "Papa appelle gauche/droite — fente en position latérale large, bas et stable", "spec": "15 appels", "why": "réaction du gardien" },
                 "s": { "name": "Lateral bounds", "detail": "Bondir d'un côté à l'autre, tenir chaque atterrissage sur l'herbe", "spec": "3 × 5 chaque côté", "why": "puissance de croisé" }
@@ -569,7 +569,7 @@
       "name": "Journée sous-sol A — Force + Gainage",
       "focus": "Paire squat/charnière + gainage",
       "duration": "~25 min",
-      "tip": "Cette séance et la Journée sous-sol B sont vos solutions de repli par temps de pluie — toujours praticables peu importe la météo.",
+      "tip": "Cette séance et la journée sous-sol B sont vos solutions de repli par temps de pluie — toujours faisables, peu importe la météo.",
       "swap": null,
       "blocks": [
         {
@@ -583,15 +583,15 @@
         {
           "label": "Travail principal (12 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire de force du gainage — squat + gainage (style partenaire)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Squat + gainage en duo",
               "exercises": [
                 { "name": "Goblet squat", "detail": "Haltère à la poitrine, descente 3 sec, profond", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "force du bas du corps", "letter": "A" },
                 { "name": "Dead bug", "detail": "Bras et jambe opposés, dos à plat — S tient un haltère de 2-3 lb", "spec": "3×8 chaque côté", "why": "gainage anti-rotation", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Stabilité latérale + profondeur de papillon/foulée",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Stabilité latérale + profondeur de papillon et de foulée",
               "exercises": [
-                { "name": "TRX assisted deep squat hold", "detail": "Squat le plus profond possible, talons plats", "spec": "3 × 20 sec", "why": "profondeur de squat pour les deux", "letter": "A" },
+                { "name": "TRX assisted deep squat hold", "detail": "Squat le plus profond possible, talons à plat", "spec": "3 × 20 sec", "why": "profondeur de squat pour les deux", "letter": "A" },
                 { "name": "Side plank", "detail": "Sur le genou ou complet", "spec": "G 2×20s / S 2×30s", "why": "gainage latéral", "letter": "B" }
               ]
             }
@@ -614,14 +614,14 @@
       "name": "Journée sous-sol B — Habiletés de position + Mobilité",
       "focus": "Travail de pieds en intérieur + amplitude de hanche",
       "duration": "~25 min",
-      "tip": "Collez du ruban adhésif sur le plancher du sous-sol pour les déplacements latéraux et les sauts sur points — silencieux, peu d'impact, très efficace en intérieur.",
+      "tip": "Collez du ruban adhésif sur le plancher du sous-sol pour les déplacements latéraux et les sauts sur points — silencieux, faible impact, très efficace en intérieur.",
       "swap": null,
       "blocks": [
         {
           "label": "Échauffement (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Jumping jacks + hip circles + ankle rolls", "detail": "1 min chaque — les jacks peuvent être sans impact (pas à la place de saut) si le bruit sur le plancher pose problème", "spec": "3 min", "why": "préparation des articulations" }
+              { "name": "Jumping jacks + hip circles + ankle rolls", "detail": "1 min chaque — les jacks peuvent être sans impact si le bruit sur le plancher pose problème", "spec": "3 min", "why": "préparation des articulations" }
             ]}
           ]
         },
@@ -637,7 +637,7 @@
                 { "name": "Dot hops (4-square)", "detail": "4 points au ruban, tous les patterns — silencieux sur un tapis", "spec": "2 × 30 sec", "why": "vitesse des pieds", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Coordination du gainage + amplitude profonde de la hanche",
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Gainage + amplitude profonde de hanche",
               "exercises": [
                 { "name": "Mirror drill", "detail": "Les frères s'imitent dans des déplacements latéraux, position basse", "spec": "3 × 30 sec", "why": "suivi réactif", "letter": "A" },
                 { "name": "Hip 90/90 stretch", "detail": "Se pencher au-dessus du tibia avant", "spec": "45 sec chaque côté", "why": "rotateurs profonds de la hanche", "letter": "B" }
@@ -663,8 +663,8 @@
       "name": "Journée terrain — Développement de la vitesse",
       "focus": "Sprints sur vraie distance + navettes",
       "duration": "~30 min",
-      "tip": "C'est là que les lignes de yard deviennent utiles — chaque distance ci-dessous est exacte, pas besoin de mesurer.",
-      "swap": "Journée pluvieuse ? Faites une Journée sous-sol à la place, et déplacez cette séance au prochain beau temps — même en milieu de semaine c'est bien.",
+      "tip": "Les lignes de yard sont utiles ici — chaque distance est exacte, pas besoin de mesurer.",
+      "swap": "Journée pluvieuse ? Faites une journée sous-sol à la place, et déplacez cette séance au prochain beau temps — même en milieu de semaine, c'est parfait.",
       "blocks": [
         {
           "label": "Échauffement + école de sprint (6 min)",
@@ -672,7 +672,7 @@
             { "solo": true, "exercises": [
               { "name": "Skipping + inchworm walk-out", "detail": "2 min saut à la corde, 5 inchworms", "spec": "3 min", "why": "préparation générale" },
               { "name": "A-skips", "detail": "Genou haut, bras opposé, claquer le pied au sol", "spec": "2 × 10 m", "why": "mécanique de sprint" },
-              { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis y aller", "spec": "3 × 10 m", "why": "posture d'accélération" }
+              { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis partir", "spec": "3 × 10 m", "why": "posture d'accélération" }
             ]}
           ]
         },
@@ -685,7 +685,7 @@
                 { "name": "Crab walk race", "detail": "Latéralement 5 m et retour", "spec": "3 rondes", "why": "force abducteurs de hanche", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse pure + puissance latérale sur l'herbe",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse pure et puissance latérale sur l'herbe",
               "exercises": [
                 { "name": "Driveway sprints", "detail": "Départ tombant vers sprint max 15 m (lignes de yard), récupération au pas", "spec": "4 × 15 m chaque", "why": "vitesse pure", "letter": "A" },
                 { "name": "Lateral bounds", "detail": "Tenir chaque atterrissage 1 sec", "spec": "2 × 5 chaque côté", "why": "puissance latérale", "letter": "B" }
@@ -710,7 +710,7 @@
       "name": "Journée sous-sol A — Force + Poussée/Tiré",
       "focus": "Squat/charnière chargé + haut du corps",
       "duration": "~30 min",
-      "tip": "Les charges augmentent ici pour le 12 ans. Les haltères sont le cœur de cette séance.",
+      "tip": "Les charges augmentent pour le 12 ans. Les haltères sont au cœur de cette séance.",
       "swap": null,
       "blocks": [
         {
@@ -724,13 +724,13 @@
         {
           "label": "Travail principal (17 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire de force principale — squat + charnière",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Squat + charnière, les deux exercices principaux",
               "exercises": [
                 { "name": "Goblet squat", "detail": "Haltère à la poitrine, descente 3 sec, profond", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "force du bas du corps", "letter": "A" },
                 { "name": "Romanian deadlift", "detail": "Charnière, dos droit, sentir les ischios", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "le moteur du patin", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Poussée/tiré haut du corps + gainage",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Haut du corps : poussée et tiré + gainage",
               "split": {
                 "g": { "name": "Swiss ball jackknife", "detail": "Planche, tibias sur le ballon, genoux vers la poitrine", "spec": "2 × 8", "why": "gainage + fléchisseurs de hanche" },
                 "s": { "name": "Swiss ball Russian twist", "detail": "Pont sur le ballon, faire pivoter un haltère de 5 lb d'un côté à l'autre", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir" }
@@ -740,7 +740,7 @@
               ]
             },
             { "solo": true, "exercises": [
-              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "l'étirement du gardien + protection poussée de croissance" }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "étirement du gardien + protection croissance" }
             ]}
           ]
         },
@@ -761,7 +761,7 @@
       "name": "Journée sous-sol B — Habiletés de position + Sauts",
       "focus": "Sauts à faible impact sur tapis + réaction",
       "duration": "~30 min",
-      "tip": "Utilisez un tapis mousse/caoutchouc pour les squat sauts — garde le bruit bas et protège les articulations.",
+      "tip": "Utilisez un tapis mousse ou caoutchouc pour les squat sauts — ça garde le bruit bas et protège les articulations.",
       "swap": null,
       "blocks": [
         {
@@ -775,7 +775,7 @@
         {
           "label": "Travail principal (17 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Puissance à faible impact sur le tapis + poussée haut du corps",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Sur le tapis : puissance à faible impact + poussée haut du corps",
               "exercises": [
                 { "name": "Squat jumps", "detail": "Sur le tapis mousse — exploser vers le haut, atterrir doucement, pause en bas", "spec": "G 3×6 / S 3×8", "why": "puissance de poussée", "letter": "A" },
                 { "name": "Push-up handles variation", "detail": "Pompe, sauter les mains latéralement, pompe", "spec": "G 3×6 / S 3×8", "why": "explosivité haut du corps", "letter": "B" }
@@ -810,8 +810,8 @@
       "name": "Journée terrain — Vitesse maximale + Vitesse de jeu",
       "focus": "Flying sprints, exercice étoile, sauts combinés",
       "duration": "~35 min",
-      "tip": "Tempo pré-saison. Chronométrer tout — les chiffres du Jour de test #2 sont les cibles pour les reps d'aujourd'hui.",
-      "swap": "Journée pluvieuse ? Faites une Journée sous-sol, déplacez celle-ci au prochain beau temps. En Phase 3 les garçons connaissent bien les exercices — un jour de délai ne coûte rien.",
+      "tip": "Tempo pré-saison. Tout se chronomètre — les résultats du Jour de test 2 sont les cibles d'aujourd'hui.",
+      "swap": "Journée pluvieuse ? Faites une journée sous-sol, replacez celle-ci au prochain beau temps. En phase 3, les gars connaissent les exercices par cœur — un jour de délai ne change rien.",
       "blocks": [
         {
           "label": "Échauffement + école de sprint (6 min)",
@@ -825,13 +825,13 @@
         {
           "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Chaîne explosive + force unilatérale — herbe idéale",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Chaîne explosive + force unilatérale — l'herbe, c'est l'idéal",
               "exercises": [
                 { "name": "Combo: squat jump + lateral bound", "detail": "Sauter, atterrir, bondir immédiatement latéralement, tenir", "spec": "G 3×4/côté / S 4×4/côté", "why": "chaîne de puissance de position", "letter": "A" },
-                { "name": "Single-leg squat to box", "detail": "Utiliser une balle de soccer ou un cône bas pour que le talon libre touche", "spec": "G 2×6/jambe / S 3×6/jambe", "why": "force unilatérale", "letter": "B" }
+                { "name": "Single-leg squat to box", "detail": "Utiliser une balle de soccer ou un cône bas pour que le talon libre effleure", "spec": "G 2×6/jambe / S 3×6/jambe", "why": "force unilatérale", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse maximale + multi-directionnel",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse maximale et multi-directionnel",
               "exercises": [
                 { "name": "Flying sprints", "detail": "Trot 5 m, vitesse max 10 m, côte — récupération complète", "spec": "5 reps chaque", "why": "vitesse maximale", "letter": "A" },
                 { "name": "5-cone star drill", "detail": "Centre + 4 coins, sprint aller-retour — chronométré", "spec": "3 chronométrés chaque", "why": "vitesse multi-directionnelle", "letter": "B" }
@@ -861,7 +861,7 @@
       "name": "Journée sous-sol A — Force maximale",
       "focus": "Exercices principaux aux charges de pointe",
       "duration": "~35 min",
-      "tip": "Si le 12 ans s'en sort trop facilement, augmenter le poids légèrement — seulement après une semaine de forme parfaite à la charge actuelle.",
+      "tip": "Si le 12 ans trouve ça trop facile, on monte le poids un peu — mais seulement après une semaine complète avec une forme parfaite au poids actuel.",
       "swap": null,
       "blocks": [
         {
@@ -875,19 +875,19 @@
         {
           "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "La paire d'exercices principaux — squat + tiré",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Squat + tiré, les exercices principaux",
               "exercises": [
                 { "name": "Front squat", "detail": "Poids à la poitrine, coudes hauts, profond et contrôlé", "spec": "G 3×8 @10-15lb / S 3×8 @20-25lb", "why": "force complète du bas du corps", "letter": "A" },
                 { "name": "Single-arm dumbbell row", "detail": "Genou sur le banc, tirer vers la hanche", "spec": "G 3×8 @10-15lb / S 3×8 @15-20lb", "why": "dos + posture", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Gainage + amplitude de carre (sécuritaire pour plafond bas)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Gainage + amplitude de carre — espace réduit, pas de problème",
               "exercises": [
-                { "name": "TRX fallout", "detail": "Corps rigide, bras au-dessus de la tête — réduire l'amplitude sous un plafond bas", "spec": "G 2×8 / S 3×8", "why": "gainage anti-extension", "letter": "A" },
+                { "name": "TRX fallout", "detail": "Corps rigide, bras au-dessus de la tête — raccourcir l'amplitude sous un plafond bas", "spec": "G 2×8 / S 3×8", "why": "gainage anti-extension", "letter": "A" },
                 { "name": "Lateral lunge", "detail": "Grand pas, s'asseoir dans la hanche — S tient 5-10 lb à la poitrine", "spec": "2 × 8 chaque côté", "why": "aine + amplitude de carre", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Unipodal + rotation (hauteur poitrine pour plafonds bas)",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Unipodal + rotation — arrêter à la hauteur de la poitrine si le plafond est bas",
               "split": {
                 "g": { "name": "Swiss ball jackknife", "detail": "Genoux vers la poitrine, hanches bien alignées", "spec": "2 × 8", "why": "gainage + fléchisseurs de hanche" },
                 "s": { "name": "Standing dumbbell chop", "detail": "Faire pivoter l'haltère de la hanche à hauteur de poitrine — arrêter avant la ligne du plafond", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir" }
@@ -918,7 +918,7 @@
       "name": "Journée sous-sol B — Rapidité + Mains",
       "focus": "Exercices réactifs + vitesse à faible impact",
       "duration": "~35 min",
-      "tip": "Terminer avec le mini tir au but contre un mur quand vous pouvez — c'est le meilleur finisseur de position spécifique que l'un ou l'autre obtient.",
+      "tip": "Si vous avez le temps, terminez avec le mini tir au but — c'est le meilleur finisseur de position spécifique que les deux peuvent avoir.",
       "swap": null,
       "blocks": [
         {
@@ -932,13 +932,13 @@
         {
           "label": "Travail principal (21 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse multi-directionnelle (faible impact) + gainage",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Vitesse multi-directionnelle à faible impact + gainage",
               "exercises": [
                 { "name": "Speed squat", "detail": "Descente rapide, montée explosive, sans pause — silencieux, sans saut", "spec": "G 2×12 / S 3×12", "why": "recrutement rapide des fibres", "letter": "A" },
                 { "name": "Plank shoulder taps", "detail": "Hanches complètement immobiles", "spec": "2 × 10 chaque côté", "why": "gainage anti-rotation", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Force de hanche + mains de position",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Force de hanche + travail des mains spécifique",
               "split": {
                 "g": { "name": "Wall ball reaction", "detail": "Balle de crosse, angles variés — mains de gardien", "spec": "90 sec", "why": "coordination œil-main + anticipation" },
                 "s": { "name": "Standing dumbbell chop", "detail": "Faire pivoter l'haltère de la hanche à hauteur de poitrine — arrêter avant la ligne du plafond", "spec": "2 × 8 chaque côté", "why": "puissance au tir" }
@@ -947,7 +947,7 @@
                 { "name": "TRX single-leg lunge", "detail": "Pied arrière dans la sangle, pause en bas — les deux", "spec": "G 2×8/jambe / S 3×8/jambe", "why": "stabilité de hanche + fessiers", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Suivi + changements de direction en espace réduit",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Suivi réactif + changements de direction en espace réduit",
               "exercises": [
                 { "name": "Mirror drill", "detail": "Les frères s'imitent, ajouter des feintes", "spec": "3 × 30 sec", "why": "suivi réactif", "letter": "A" },
                 { "name": "Cone weave sprint", "detail": "6 cônes rapprochés — slalom rapide, marcher pour revenir", "spec": "5 reps chaque", "why": "agilité + changements de direction", "letter": "B" }
