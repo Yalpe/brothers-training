@@ -492,6 +492,15 @@
       ],
       "warn": null, "hockey": null
     },
+    "High knees + leg swings + arm circles": {
+      "cues": [
+        ["Genoux hauts : lever chaque genou à hauteur de hanche, bras opposé qui monte en même temps — comme marcher sur place très vite", null],
+        ["Balancements de jambes : tenir un mur ou un poteau d'une main, balancer la jambe librement d'avant en arrière sur 10 reps, puis de côté en côté sur 10 reps — sans forcer l'amplitude", null],
+        ["Cercles de bras : bras tendus sur les côtés, faire des grands cercles vers l'arrière (10 reps), puis vers l'avant (10 reps) — épaules relâchées", null]
+      ],
+      "warn": null,
+      "hockey": null
+    },
     "TRX fallout": {
       "cues": [
         ["Commencer debout, tenant les poignées TRX — corps droit avant de se pencher", null],

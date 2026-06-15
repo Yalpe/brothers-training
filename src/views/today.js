@@ -61,6 +61,8 @@ function cuesHTML(name, formData) {
   }
   if (fd.warn) html += `<div class="cue-warn">⚠️ ${fd.warn}</div>`;
   if (fd.hockey) html += `<div class="cue-hockey">🏒 ${fd.hockey}</div>`;
+  const searchQ = encodeURIComponent(name + ' exercise form how to');
+  html += `<a class="search-link" href="https://www.google.com/search?q=${searchQ}" target="_blank" rel="noopener">🔍 Voir des vidéos — ${name}</a>`;
   html += '</div>';
   return html;
 }
@@ -163,33 +165,41 @@ function splitHTML(split, weekIndex, formData, withCheckbox) {
   const sKey = `done_${weekIndex}_${split.s.name}`;
   const gDone = getState(gKey, false);
   const sDone = getState(sKey, false);
+  const gEnc = encodeURIComponent(split.g.name);
+  const sEnc = encodeURIComponent(split.s.name);
 
-  return `<div class="split-row">
-    <div class="split-card" data-ex-name="${encodeURIComponent(split.g.name)}">
-      <div class="split-card-header">
-        ${withCheckbox ? `<button class="exercise-check ${gDone ? 'checked' : ''}" data-check-key="${gKey}" style="width:24px;height:24px;min-width:24px">${gDone ? '✓' : ''}</button>` : ''}
-        <span class="badge badge-g">G</span>
-        ${formData[split.g.name] ? `<button class="exercise-expand-btn" data-expand="${encodeURIComponent(split.g.name)}" style="margin-left:auto;font-size:0.9rem">ℹ️</button>` : ''}
+  // Cues panels render full-width below the grid, toggled by athlete selector
+  const hasCuesG = !!formData[split.g.name];
+  const hasCuesS = !!formData[split.s.name];
+
+  return `<div class="split-block-wrap" data-split>
+    <div class="split-row">
+      <div class="split-card" data-ex-name="${gEnc}">
+        <div class="split-card-header">
+          ${withCheckbox ? `<button class="exercise-check ${gDone ? 'checked' : ''}" data-check-key="${gKey}" style="width:24px;height:24px;min-width:24px">${gDone ? '✓' : ''}</button>` : ''}
+          <span class="badge badge-g">G</span>
+          ${hasCuesG ? `<button class="exercise-expand-btn split-expand-btn" data-split-expand="g" style="margin-left:auto;font-size:0.9rem">ℹ️</button>` : ''}
+        </div>
+        <div class="split-name ${gDone ? 'done' : ''}">${split.g.name}</div>
+        ${split.g.spec ? `<div class="split-spec">${split.g.spec}</div>` : ''}
+        ${split.g.detail ? `<div class="split-detail">${split.g.detail}</div>` : ''}
       </div>
-      <div class="split-name ${gDone ? 'done' : ''}">${split.g.name}</div>
-      ${split.g.spec ? `<div class="split-spec">${split.g.spec}</div>` : ''}
-      ${split.g.detail ? `<div class="split-detail">${split.g.detail}</div>` : ''}
-      <div class="ex-cues-panel" style="display:none" data-cues-for="${encodeURIComponent(split.g.name)}">
-        ${cuesHTML(split.g.name, formData)}
+      <div class="split-card" data-ex-name="${sEnc}">
+        <div class="split-card-header">
+          ${withCheckbox ? `<button class="exercise-check ${sDone ? 'checked' : ''}" data-check-key="${sKey}" style="width:24px;height:24px;min-width:24px">${sDone ? '✓' : ''}</button>` : ''}
+          <span class="badge badge-s">S</span>
+          ${hasCuesS ? `<button class="exercise-expand-btn split-expand-btn" data-split-expand="s" style="margin-left:auto;font-size:0.9rem">ℹ️</button>` : ''}
+        </div>
+        <div class="split-name ${sDone ? 'done' : ''}">${split.s.name}</div>
+        ${split.s.spec ? `<div class="split-spec" style="color:var(--s-color)">${split.s.spec}</div>` : ''}
+        ${split.s.detail ? `<div class="split-detail">${split.s.detail}</div>` : ''}
       </div>
     </div>
-    <div class="split-card" data-ex-name="${encodeURIComponent(split.s.name)}">
-      <div class="split-card-header">
-        ${withCheckbox ? `<button class="exercise-check ${sDone ? 'checked' : ''}" data-check-key="${sKey}" style="width:24px;height:24px;min-width:24px">${sDone ? '✓' : ''}</button>` : ''}
-        <span class="badge badge-s">S</span>
-        ${formData[split.s.name] ? `<button class="exercise-expand-btn" data-expand="${encodeURIComponent(split.s.name)}" style="margin-left:auto;font-size:0.9rem">ℹ️</button>` : ''}
-      </div>
-      <div class="split-name ${sDone ? 'done' : ''}">${split.s.name}</div>
-      ${split.s.spec ? `<div class="split-spec" style="color:var(--s-color)">${split.s.spec}</div>` : ''}
-      ${split.s.detail ? `<div class="split-detail">${split.s.detail}</div>` : ''}
-      <div class="ex-cues-panel" style="display:none" data-cues-for="${encodeURIComponent(split.s.name)}">
-        ${cuesHTML(split.s.name, formData)}
-      </div>
+    <div class="split-cues-panel" data-split-cues="g" style="display:none">
+      ${hasCuesG ? cuesHTML(split.g.name, formData) : ''}
+    </div>
+    <div class="split-cues-panel" data-split-cues="s" style="display:none">
+      ${hasCuesS ? cuesHTML(split.s.name, formData) : ''}
     </div>
   </div>`;
 }
@@ -297,7 +307,7 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
     });
   });
 
-  // ── Expand cues
+  // ── Expand cues (solo/superset exercises)
   container.querySelectorAll('[data-expand]').forEach(btn => {
     btn.addEventListener('click', () => {
       const name = btn.dataset.expand;
@@ -306,6 +316,26 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
         const open = panel.style.display !== 'none';
         panel.style.display = open ? 'none' : 'block';
         btn.textContent = open ? 'ℹ️' : '✕';
+      }
+    });
+  });
+
+  // ── Expand cues (split exercises — full-width panel below grid)
+  container.querySelectorAll('[data-split-expand]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const athlete = btn.dataset.splitExpand; // 'g' or 's'
+      const wrap = btn.closest('[data-split]');
+      const panel = wrap?.querySelector(`[data-split-cues="${athlete}"]`);
+      const other = wrap?.querySelector(`[data-split-cues="${athlete === 'g' ? 's' : 'g'}"]`);
+      const otherBtn = wrap?.querySelector(`[data-split-expand="${athlete === 'g' ? 's' : 'g'}"]`);
+      if (!panel) return;
+      const open = panel.style.display !== 'none';
+      panel.style.display = open ? 'none' : 'block';
+      btn.textContent = open ? 'ℹ️' : '✕';
+      // Close the other athlete's panel if open
+      if (!open && other && other.style.display !== 'none') {
+        other.style.display = 'none';
+        if (otherBtn) otherBtn.textContent = 'ℹ️';
       }
     });
   });
