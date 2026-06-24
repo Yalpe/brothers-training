@@ -52,19 +52,20 @@ function renderPicker(container, data, onPick) {
 // ── Form cues panel ───────────────────────────────────────────────────────────
 function cuesHTML(name, formData) {
   const fd = formData[name];
-  if (!fd) return '';
   let html = '<div class="exercise-cues">';
-  if (fd.cues?.length) {
-    html += fd.cues.map(([text, sub]) =>
-      `<div class="cue-item"><div class="cue-text">• ${text}</div>${sub ? `<div class="cue-sub">${sub}</div>` : ''}</div>`
-    ).join('');
+  if (fd) {
+    if (fd.cues?.length) {
+      html += fd.cues.map(([text, sub]) =>
+        `<div class="cue-item"><div class="cue-text">• ${text}</div>${sub ? `<div class="cue-sub">${sub}</div>` : ''}</div>`
+      ).join('');
+    }
+    if (fd.warn) html += `<div class="cue-warn">⚠️ ${fd.warn}</div>`;
+    if (fd.hockey) html += `<div class="cue-hockey">🏒 ${fd.hockey}</div>`;
   }
-  if (fd.warn) html += `<div class="cue-warn">⚠️ ${fd.warn}</div>`;
-  if (fd.hockey) html += `<div class="cue-hockey">🏒 ${fd.hockey}</div>`;
   const parts = name.split(' + ');
   html += parts.map(p => {
     const q = encodeURIComponent(p.trim() + ' exercise form how to');
-    return `<a class="search-link" href="https://www.google.com/search?q=${q}" target="_blank" rel="noopener">🔍 Voir des vidéos — ${p.trim()}</a>`;
+    return `<a class="search-link" href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener">🔍 Voir des vidéos — ${p.trim()}</a>`;
   }).join('');
   html += '</div>';
   return html;
@@ -88,7 +89,7 @@ function exerciseRowHTML(ex, weekIndex, formData, withCheckbox = true) {
         ${ex.detail ? `<div class="exercise-why">${ex.detail}</div>` : ''}
         ${ex.why ? `<div class="exercise-why" style="color:var(--text-dim);font-style:italic">${ex.why}</div>` : ''}
       </div>
-      ${formData[ex.name] ? `<button class="exercise-expand-btn" data-expand="${encodeURIComponent(ex.name)}" aria-label="Conseils de forme">ℹ️</button>` : ''}
+      <button class="exercise-expand-btn" data-expand="${encodeURIComponent(ex.name)}" aria-label="Conseils de forme">ℹ️</button>
     </div>
     <div class="ex-cues-panel" style="display:none" data-cues-for="${encodeURIComponent(ex.name)}">
       ${cuesHTML(ex.name, formData)}
@@ -171,9 +172,8 @@ function splitHTML(split, weekIndex, formData, withCheckbox) {
   const gEnc = encodeURIComponent(split.g.name);
   const sEnc = encodeURIComponent(split.s.name);
 
-  // Cues panels render full-width below the grid, toggled by athlete selector
-  const hasCuesG = !!formData[split.g.name];
-  const hasCuesS = !!formData[split.s.name];
+  const hasCuesG = true;
+  const hasCuesS = true;
 
   return `<div class="split-block-wrap" data-split>
     <div class="split-row">
