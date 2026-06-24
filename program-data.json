@@ -613,7 +613,7 @@
       "loc": "basement",
       "name": "Journée sous-sol B — Habiletés de position + Mobilité",
       "focus": "Travail de pieds en intérieur + amplitude de hanche",
-      "duration": "~25 min",
+      "duration": "~30 min",
       "tip": "Collez du ruban adhésif sur le plancher du sous-sol pour les déplacements latéraux et les sauts sur points — silencieux, faible impact, très efficace en intérieur.",
       "swap": null,
       "blocks": [
@@ -641,6 +641,12 @@
               "exercises": [
                 { "name": "Mirror drill", "detail": "Les frères s'imitent dans des déplacements latéraux, position basse", "spec": "3 × 30 sec", "why": "suivi réactif", "letter": "A" },
                 { "name": "Hip 90/90 stretch", "detail": "Se pencher au-dessus du tibia avant", "spec": "45 sec chaque côté", "why": "rotateurs profonds de la hanche", "letter": "B" }
+              ]
+            },
+            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Pousser + tirer — équilibre du haut du corps",
+              "exercises": [
+                { "name": "Push-up handles variation", "detail": "Descente contrôlée 2 sec, coudes à 45°", "spec": "G 3×6 / S 3×10", "why": "force de poussée", "letter": "A" },
+                { "name": "TRX row", "detail": "Corps droit comme une planche, tirer les coudes vers les hanches", "spec": "G 3×8 / S 3×10", "why": "force de traction", "letter": "B" }
               ]
             }
           ]
