@@ -10,29 +10,9 @@
     "legend": {
       "SS": "Supersérie — les exercices se font A puis B l'un après l'autre (ou en duo : un fait A pendant que l'autre fait B, puis on échange), avec repos après les deux.",
       "split": "Séparation de position — le gardien (G) et le patineur (S) font chacun un exercice différent à ce slot.",
-      "G/S specs": "Quand les répétitions ou les poids diffèrent par athlète, les deux sont indiqués.",
-      "game": "Jeu de fin de séance, choisi dans le menu des jeux par les garçons (ils alternent le choix)."
+      "G/S specs": "Quand les répétitions ou les poids diffèrent par athlète, les deux sont indiqués."
     }
   },
-
-  "games": [
-    { "id": "mini-shootout", "name": "Mini tir au but", "icon": "ball-football",
-      "desc": "Le patineur tire une balle de tennis ou molle sur un filet de ruban adhésif ou un vrai filet, le gardien défend. Marche en intérieur contre un mur ou dehors avec un vrai filet. Ça compte comme de l'entraînement de position pour les deux. Comptez les arrêts et les buts." },
-    { "id": "save-streak", "name": "Série d'arrêts", "icon": "target",
-      "desc": "Papa lance des balles molles vers le gardien à hauteurs et angles variés — comptez les arrêts consécutifs. Version patineur : réceptions consécutives à une main contre un mur." },
-    { "id": "deck-of-cards", "name": "Jeu de cartes", "icon": "cards",
-      "desc": "Pigez une carte : cœur = squats sautés, carreau = sauts sur les points, trèfle = déplacements latéraux, pique = pompes. Le chiffre = les répétitions. Les frères alternent les piges pendant 3 minutes." },
-    { "id": "mirror-battle", "name": "Bataille miroir", "icon": "copy",
-      "desc": "Les frères se font face. L'un dirige des déplacements, feintes et baisses pendant 30 sec, l'autre imite. On échange. Papa juge qui a le mieux suivi — le perdant fait 5 burpees." },
-    { "id": "beat-the-timer", "name": "Battre le chrono", "icon": "clock-bolt",
-      "desc": "60 secondes : maximum de déplacements latéraux entre deux lignes à 3 m. Chaque frère bat son propre record — tableau séparé sur le frigo par enfant." },
-    { "id": "animal-relays", "name": "Relais animaux", "icon": "paw",
-      "desc": "Marche de l'ours à l'aller, saut de grenouille au retour, marche du crabe à l'aller, sprint au retour. Les frères font la course, ou les deux contre Papa. Mieux sur le terrain où il y a de la place pour sprinter à la fin." },
-    { "id": "red-light-green-light", "name": "Feu rouge, feu vert — édition hockey", "icon": "traffic-lights",
-      "desc": "Vert = sprint avec bonne traction des bras. Rouge : le gardien s'abaisse en papillon ou position latérale, le patineur prend une position basse de hockey-stop. Pris à bouger = 3 pas en arrière. Terrain seulement pour la version sprint ; en sous-sol, on se réduit aux déplacements latéraux." },
-    { "id": "chase-tag", "name": "Course-poursuite", "icon": "run",
-      "desc": "10 m d'avance, le poursuivant essaie de toucher avant la ligne. Ça prend du terrain — la meilleure utilisation de l'espace ouvert. Rien ne développe la vitesse d'un enfant comme courir après quelqu'un et se faire courir après." }
-  ],
 
   "tests": {
     "label": "Jour de test — dernière séance de chaque phase (semaines 3, 6, 10)",
@@ -541,18 +521,11 @@
                 { "name": "Crab walk race", "detail": "Latéralement 5 m et retour, hanches hautes", "spec": "3 rondes", "why": "force abducteurs de hanche", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position — profitez de l'espace",
-              "split": {
-                "g": { "name": "React & drop", "detail": "Papa appelle gauche/droite — fente en position latérale large, bas et stable", "spec": "15 appels", "why": "réaction du gardien" },
-                "s": { "name": "Lateral bounds", "detail": "Bondir d'un côté à l'autre, tenir chaque atterrissage sur l'herbe", "spec": "3 × 5 chaque côté", "why": "puissance de croisé" }
-              },
-              "exercises": [
-                { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis sprinter 10 m", "spec": "3 reps chaque", "why": "posture d'accélération", "letter": "B" }
-              ]
-            }
+            { "solo": true, "exercises": [
+              { "name": "Lateral bounds", "detail": "Bondir d'un côté à l'autre, tenir chaque atterrissage sur l'herbe", "spec": "3 × 5 chaque côté", "why": "puissance de croisé" }
+            ]}
           ]
         },
-        { "label": "Jeu final (4 min) — ils alternent le choix", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
@@ -597,7 +570,6 @@
             }
           ]
         },
-        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
@@ -651,7 +623,6 @@
             }
           ]
         },
-        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
@@ -699,7 +670,6 @@
             }
           ]
         },
-        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
@@ -750,7 +720,6 @@
             ]}
           ]
         },
-        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (4 min) — ensemble",
           "items": [
@@ -798,7 +767,6 @@
             }
           ]
         },
-        { "label": "Jeu final (4 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
@@ -850,7 +818,6 @@
             }
           ]
         },
-        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (4 min) — ensemble",
           "items": [
@@ -907,7 +874,6 @@
             ]}
           ]
         },
-        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (5 min) — ensemble",
           "items": [
@@ -961,7 +927,6 @@
             }
           ]
         },
-        { "label": "Jeu final (5 min)", "items": [ { "game": true } ] },
         {
           "label": "Retour au calme (4 min) — ensemble",
           "items": [

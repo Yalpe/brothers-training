@@ -1,4 +1,4 @@
-const CACHE = 'bht-v9';
+const CACHE = 'bht-v10';
 const ASSETS = [
   'index.html',
   'manifest.json',

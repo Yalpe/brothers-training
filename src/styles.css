@@ -402,31 +402,6 @@ nav button:active { opacity: 0.7; }
 .session-pick-dur { font-size: 0.78rem; color: var(--text-dim); }
 .session-pick-arrow { color: var(--text-dim); font-size: 1.1rem; flex-shrink: 0; }
 
-/* ── Game picker ── */
-.game-card {
-  background: rgba(255,213,79,0.07);
-  border: 1px solid rgba(255,213,79,0.2);
-  border-radius: var(--radius);
-  padding: 16px;
-}
-.game-card h3 { color: var(--gold); margin-bottom: 12px; }
-.game-picked-name { font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
-.game-picked-desc { font-size: 0.85rem; color: var(--text-dim); line-height: 1.5; }
-.game-list { margin-top: 12px; }
-.game-list-item {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,213,79,0.1);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.game-list-item:last-child { border-bottom: none; }
-.game-list-item:active { opacity: 0.7; }
-.game-icon { font-size: 1.3rem; }
-.game-list-name { font-size: 0.92rem; font-weight: 600; color: var(--white); }
-.game-list-desc { font-size: 0.78rem; color: var(--text-dim); margin-top: 2px; }
-
 /* ── Browse view ── */
 .browse-session-card {
   background: var(--card-bg);
@@ -540,33 +515,6 @@ nav button:active { opacity: 0.7; }
 .rule-arrow { color: var(--text-dim); transition: transform 0.2s; }
 .rule-arrow.open { transform: rotate(180deg); }
 .rule-body {
-  padding: 0 16px 14px;
-  font-size: 0.88rem;
-  color: var(--text-dim);
-  line-height: 1.6;
-}
-
-.ref-game-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius);
-  margin-bottom: 8px;
-  overflow: hidden;
-}
-.ref-game-toggle {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 14px 16px;
-  text-align: left;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 56px;
-}
-.ref-game-name { font-size: 0.95rem; font-weight: 600; color: var(--white); flex: 1; }
-.ref-game-body {
   padding: 0 16px 14px;
   font-size: 0.88rem;
   color: var(--text-dim);

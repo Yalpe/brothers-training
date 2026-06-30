@@ -1,10 +1,5 @@
 import { getState, setState, navigate } from '../app.js';
 
-const GAME_ICONS = {
-  'ball-football': '🏈', 'target': '🎯', 'cards': '🃏', 'copy': '🪞',
-  'clock-bolt': '⚡', 'paw': '🐾', 'traffic-lights': '🚦', 'run': '🏃'
-};
-
 // ── Session picker ────────────────────────────────────────────────────────────
 function renderPicker(container, data, onPick) {
   const phases = {};
@@ -207,36 +202,6 @@ function splitHTML(split, weekIndex, formData, withCheckbox) {
   </div>`;
 }
 
-// ── Game picker block ─────────────────────────────────────────────────────────
-function gamePicker(games) {
-  const pick = games[Math.floor(Math.random() * games.length)];
-  const icon = GAME_ICONS[pick.icon] || '🎮';
-  return `<div class="game-card">
-    <h3>🎮 Jeu final</h3>
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="font-size:2rem">${icon}</span>
-      <div>
-        <div class="game-picked-name">${pick.name}</div>
-        <div class="game-picked-desc">${pick.desc}</div>
-      </div>
-    </div>
-    <div style="display:flex;gap:8px;flex-wrap:wrap">
-      <button class="btn btn-gold btn-sm" id="game-reroll">🎲 Autre jeu</button>
-      <button class="btn btn-ghost btn-sm" id="game-show-all">Voir tous les jeux</button>
-    </div>
-    <div id="game-list-panel" style="display:none" class="game-list">
-      ${games.map(g => `
-        <div class="game-list-item">
-          <span class="game-icon">${GAME_ICONS[g.icon] || '🎮'}</span>
-          <div>
-            <div class="game-list-name">${g.name}</div>
-            <div class="game-list-desc">${g.desc}</div>
-          </div>
-        </div>`).join('')}
-    </div>
-  </div>`;
-}
-
 // ── Render one session ────────────────────────────────────────────────────────
 function renderSession(container, week, weekIndex, data, withCheckbox = true, showBack = false) {
   const locBadge = week.loc === 'field'
@@ -261,9 +226,7 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
   for (const block of week.blocks) {
     html += `<div class="block-section"><div class="block-label">${block.label}</div>`;
     for (const item of block.items) {
-      if (item.game) {
-        html += gamePicker(data.games);
-      } else if (item.solo) {
+      if (item.solo) {
         html += `<div class="card">`;
         html += item.exercises.map(ex => exerciseRowHTML(ex, weekIndex, data.formData, withCheckbox)).join('');
         html += `</div>`;
@@ -357,37 +320,6 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
     import('./browse.js').then(m => m.renderBrowse(container.closest('#view') || container, data));
   });
 
-  // ── Game reroll
-  const gameCard = container.querySelector('.game-card');
-  if (gameCard) {
-    gameCard.querySelector('#game-reroll')?.addEventListener('click', () => {
-      const slot = gameCard.closest('.block-section');
-      const newHtml = gamePicker(data.games);
-      const tmp = document.createElement('div');
-      tmp.innerHTML = newHtml;
-      gameCard.replaceWith(tmp.firstElementChild);
-      attachGameHandlers(slot, data);
-    });
-    gameCard.querySelector('#game-show-all')?.addEventListener('click', () => {
-      const panel = gameCard.querySelector('#game-list-panel');
-      if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
-    });
-  }
-}
-
-function attachGameHandlers(slot, data) {
-  const gameCard = slot.querySelector('.game-card');
-  if (!gameCard) return;
-  gameCard.querySelector('#game-reroll')?.addEventListener('click', () => {
-    const tmp = document.createElement('div');
-    tmp.innerHTML = gamePicker(data.games);
-    gameCard.replaceWith(tmp.firstElementChild);
-    attachGameHandlers(slot, data);
-  });
-  gameCard.querySelector('#game-show-all')?.addEventListener('click', () => {
-    const panel = gameCard.querySelector('#game-list-panel');
-    if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
-  });
 }
 
 // ── Main export ───────────────────────────────────────────────────────────────
