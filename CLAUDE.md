@@ -25,7 +25,7 @@ src/
     today.js        session picker + session runner (primary view)
     browse.js       read-only session list + preview
     tests.js        test logging + improvement tracking
-    reference.js    house rules + games accordion
+    reference.js    house rules accordion
 ```
 
 ## program-data.json — critical constraints
@@ -37,7 +37,6 @@ These fields are used as lookup keys or parsed by regex — do NOT change their 
 - **`rest` strings** — must contain `"sec"` or `"min"`. Parsed by `/(\d+)\s*sec/i` and `/(\d+)\s*min/i` in today.js.
 - **G/S spec strings** — split on `" / "` (space-slash-space) for two-column display. e.g. `"G 3×8 @10lb / S 3×8 @15-20lb"`.
 - **`loc` values** — only `"field"` or `"basement"`.
-- **`icon` values** — mapped to emoji in GAME_ICONS: `ball-football`, `target`, `cards`, `copy`, `clock-bolt`, `paw`, `traffic-lights`, `run`.
 
 ## Language
 
@@ -51,6 +50,10 @@ All UI text and `program-data.json` content is **Quebec French**. Use natural co
 Push to `main` → GitHub Pages auto-deploys. Always bump `bht-vN` in sw.js when changing any cached file so users get the update.
 
 Local dev: `npx serve .` then open `http://localhost:3000` (ES modules need a server, not `file://`).
+
+## Session design principle
+
+In practice it's easier and faster for all three participants (G, S, and Papa) to do the same exercises together. Prefer `solo` blocks where everyone does the same thing over `split` blocks with position-specific exercises, unless there's a strong reason to differentiate.
 
 ## Key behaviors
 
