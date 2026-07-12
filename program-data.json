@@ -54,23 +54,6 @@
       "warn": "Si le dos décolle du tapis, la rep ne compte pas. Réduire l'amplitude.",
       "hockey": null
     },
-    "Lateral shuffle + freeze": {
-      "cues": [
-        ["Rester bas en tout temps — les hanches ne montent jamais pendant le déplacement", "s'il se relève, réduire les reps"],
-        ["Les pieds ne se croisent jamais — pousser sur le pied arrière", null],
-        ["Au freeze : position large et stable, poids centré, mains levées comme si on tenait un bâton", null]
-      ],
-      "warn": "Pieds qui se croisent = ralentir avant d'accélérer.",
-      "hockey": "De poteau à poteau pour le gardien, travail de pieds en zone défensive pour le patineur."
-    },
-    "Swiss ball wall squat": {
-      "cues": [
-        ["Ballon dans le bas du dos, pieds avancés — genoux à 90° avec les tibias verticaux", null],
-        ["3 secondes en bas, 1 sec de pause, puis remonter normalement", null],
-        ["Poids sur les talons en tout temps", null]
-      ],
-      "warn": null, "hockey": null
-    },
     "Dot hops (4-square)": {
       "cues": [
         ["Contacts rapides et dynamiques sur les avant-pieds", null],
@@ -103,14 +86,6 @@
       ],
       "warn": null, "hockey": null
     },
-    "T-drill (simplified)": {
-      "cues": [
-        ["Rester bas à chaque changement de direction", null],
-        ["Toucher chaque cône avec la main la plus proche — ça force une position basse", null],
-        ["Reculer avec des petits pas rapides, poids légèrement vers l'avant", null]
-      ],
-      "warn": null, "hockey": null
-    },
     "Mirror drill": {
       "cues": [
         ["Squat bas tout au long — ne pas se relever entre les mouvements", null],
@@ -119,15 +94,6 @@
       ],
       "warn": null,
       "hockey": "Le gardien suit le porteur de rondelle, le patineur apprend le miroir défensif. Ça marche partout."
-    },
-    "Red light, green light — hockey edition": {
-      "cues": [
-        ["Vert = sprint avec bonne traction des bras", null],
-        ["Rouge : le gardien s'abaisse en papillon ou position latérale, le patineur prend une position basse de hockey-stop", null],
-        ["Pris à bouger au rouge = 3 pas en arrière. Rendre ça compétitif.", null]
-      ],
-      "warn": null,
-      "hockey": "Un jeu qui combine mécanique de sprint et position spécifique sous pression de réaction — plusieurs habiletés en une seule activité."
     },
     "TRX assisted deep squat hold": {
       "cues": [
@@ -156,13 +122,6 @@
       "warn": "Si un côté est beaucoup plus raide, y passer plus de temps. Les athlètes sont souvent asymétriques selon leur côté dominant.",
       "hockey": null
     },
-    "Swiss ball pass": {
-      "cues": [
-        ["Le bas du dos reste en contact avec le tapis pendant tout le mouvement", null],
-        ["Lent et contrôlé — ne pas balancer le ballon", null]
-      ],
-      "warn": null, "hockey": null
-    },
     "Lateral lunge": {
       "cues": [
         ["Grand pas sur le côté — plus large que ce qui semble naturel. La hanche doit plier profondément.", null],
@@ -182,24 +141,6 @@
       "warn": null,
       "hockey": "École de sprint. Maîtriser le A-skip, c'est le chemin le plus direct pour courir plus vite. Sur l'herbe avec une vraie distance, ça devient ce que ça doit être."
     },
-    "Falling starts": {
-      "cues": [
-        ["Se tenir droit, se pencher vers l'avant depuis les chevilles comme une planche jusqu'à la perte d'équilibre", null],
-        ["Les premiers pas sont courts, rapides et derrière le corps — pousser le sol vers l'arrière", null],
-        ["Rester bas pour les 5 premiers mètres, se relever graduellement", null]
-      ],
-      "warn": null,
-      "hockey": "Enseigne la bonne posture d'accélération — le penché vers l'avant et la poussée que les coureurs lents oublient toujours."
-    },
-    "Box jumps": {
-      "cues": [
-        ["Légère flexion rapide avant de sauter — pas un squat profond d'abord", null],
-        ["Atterrir doucement en squat partiel. Bruyant = boîte trop haute.", null],
-        ["Toujours descendre en marchant, jamais sauter en arrière — protège l'achille", null]
-      ],
-      "warn": "Genoux qui s'effondrent à l'atterrissage = on arrête la série. Pour le 12 ans : toute douleur sous le genou = réduire les sauts de moitié pour la semaine. En intérieur, un tapis mousse ou caoutchouc réduit le bruit et amortit l'impact.",
-      "hockey": "La flexion-explosion, c'est la même réponse explosive que pousser sur le poteau (gardien) ou prendre la première foulée (patineur)."
-    },
     "TRX row": {
       "cues": [
         ["Corps droit comme une planche de la tête aux talons — pas de hanches qui tombent", null],
@@ -218,15 +159,6 @@
       ],
       "warn": null,
       "hockey": "Chronométrer chaque rep, records séparés par athlète. Les lignes de yard donnent des distances exactes — idéal sur le terrain."
-    },
-    "Single-leg balance + reach": {
-      "cues": [
-        ["La jambe d'appui a une légère flexion — jamais complètement droite", null],
-        ["Tendre vers l'avant lentement, avec contrôle complet — pas de balancement ni d'élan", null],
-        ["La hanche de la jambe d'appui reste de niveau — surveiller si le bassin penche d'un côté", "bassin qui penche = fessier moyen faible"]
-      ],
-      "warn": "Tomber souvent du même côté peut signifier une cheville plus faible — lui donner plus de temps.",
-      "hockey": null
     },
     "Driveway sprints": {
       "cues": [
@@ -271,6 +203,16 @@
         ["Pour le saut latéral : les deux mains bougent ensemble — garder les hanches de niveau pendant le saut", null]
       ],
       "warn": null, "hockey": null
+    },
+    "Bench dips": {
+      "cues": [
+        ["Mains sur le bord du banc, doigts vers l'avant, coudes qui pointent vers l'arrière — pas vers les côtés", null],
+        ["Descendre en pliant les coudes jusqu'à environ 90°, pas plus bas — protéger l'épaule", null],
+        ["Garder les épaules basses, loin des oreilles, et le dos qui frôle le banc", null],
+        ["Plus facile : rapprocher les pieds du banc, genoux pliés. Plus dur : éloigner les pieds.", null]
+      ],
+      "warn": "Ne pas descendre trop bas : une tension à l'avant de l'épaule = remonter l'amplitude. Épaules qui montent vers les oreilles = on ralentit.",
+      "hockey": "Construit la force de poussée qui rend les pompes plus faciles — et aide le gardien à se relever vite de la glace."
     },
     "Cone weave sprint": {
       "cues": [
@@ -318,14 +260,6 @@
       "warn": "Le bas du dos qui s'arrondit, c'est LA chose à surveiller pour les deux. Réduire le poids ou limiter l'amplitude si ça arrive.",
       "hockey": "Les ischio-jambiers et les fessiers, c'est le moteur du patin. Le mouvement le plus important du programme."
     },
-    "Dumbbell floor press": {
-      "cues": [
-        ["Allongé sur le dos, pieds à plat sur le sol, bas du dos légèrement pressé contre le sol", null],
-        ["Pousser droit vers le haut — poignets au-dessus des coudes dans le bas du mouvement", null],
-        ["Descendre lentement (2-3 sec) — coudes à environ 45° du corps", null]
-      ],
-      "warn": null, "hockey": null
-    },
     "Swiss ball jackknife": {
       "cues": [
         ["Partir en planche solide — mains sous les épaules, core engagé", null],
@@ -343,7 +277,7 @@
         ["Les hanches restent hautes et de niveau — seul le torse pivote", null]
       ],
       "warn": null,
-      "hockey": "Patineur seulement : la puissance du tir vient de la rotation. Lent et contrôlé avant de penser à la vitesse."
+      "hockey": "La puissance du tir vient de la rotation pour le patineur ; pour le gardien, c'est le contrôle de la rotation du tronc. Lent et contrôlé avant de penser à la vitesse."
     },
     "Step-up with knee drive": {
       "cues": [
@@ -407,15 +341,6 @@
       ],
       "warn": null,
       "hockey": "Courir à vitesse maximale avec une forme détendue — la vitesse de pointe, ça prend de la vraie distance. Meilleure utilisation du terrain."
-    },
-    "Dumbbell lateral raise": {
-      "cues": [
-        ["Monter à la hauteur des épaules seulement, légère flexion du coude", null],
-        ["Descente 3 sec — c'est là que le travail se fait", null],
-        ["Balancement = trop lourd", null]
-      ],
-      "warn": "Plafond bas ? Arrêter la montée à la hauteur de la poitrine plutôt que des épaules.",
-      "hockey": null
     },
     "5-cone star drill": {
       "cues": [
@@ -644,12 +569,11 @@
       "swap": "Journée pluvieuse ? Faites une journée sous-sol à la place, et déplacez cette séance au prochain beau temps — même en milieu de semaine, c'est parfait.",
       "blocks": [
         {
-          "label": "Échauffement + école de sprint (6 min)",
+          "label": "Échauffement + école de sprint (5 min)",
           "items": [
             { "solo": true, "exercises": [
               { "name": "Skipping + inchworm walk-out", "detail": "2 min saut à la corde, 5 inchworms", "spec": "3 min", "why": "préparation générale" },
-              { "name": "A-skips", "detail": "Genou haut, bras opposé, claquer le pied au sol", "spec": "2 × 10 m", "why": "mécanique de sprint" },
-              { "name": "Falling starts", "detail": "Se pencher jusqu'à la perte d'équilibre, puis partir", "spec": "3 × 10 m", "why": "posture d'accélération" }
+              { "name": "A-skips", "detail": "Genou haut, bras opposé, claquer le pied au sol", "spec": "2 × 10 m", "why": "mécanique de sprint" }
             ]}
           ]
         },
@@ -706,15 +630,15 @@
                 { "name": "Romanian deadlift", "detail": "Charnière, dos droit, sentir les ischios", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "le moteur du patin", "letter": "B" }
               ]
             },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Haut du corps : poussée et tiré + gainage",
-              "split": {
-                "g": { "name": "Swiss ball jackknife", "detail": "Planche, tibias sur le ballon, genoux vers la poitrine", "spec": "2 × 8", "why": "gainage + fléchisseurs de hanche" },
-                "s": { "name": "Swiss ball Russian twist", "detail": "Pont sur le ballon, faire pivoter un haltère de 5 lb d'un côté à l'autre", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir" }
-              },
+            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Pousser + tirer — équilibre du haut du corps",
               "exercises": [
+                { "name": "Bench dips", "detail": "Mains sur le banc, coudes vers l'arrière, descendre à 90° — pieds rapprochés pour commencer", "spec": "G 3×8 / S 3×10", "why": "force de poussée (triceps)", "letter": "A" },
                 { "name": "TRX row", "detail": "Corps droit comme une planche, poitrine vers les mains — S avance les pieds pour un angle plus difficile", "spec": "G 3×8 / S 3×10", "why": "tiré haut du corps", "letter": "B" }
               ]
             },
+            { "solo": true, "exercises": [
+              { "name": "Swiss ball Russian twist", "detail": "Pont sur le ballon, faire pivoter un haltère léger d'un côté à l'autre — les deux garçons, lent et contrôlé", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir + contrôle du tronc" }
+            ]},
             { "solo": true, "exercises": [
               { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "étirement du gardien + protection croissance" }
             ]}
