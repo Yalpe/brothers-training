@@ -415,6 +415,26 @@
       ],
       "warn": "Si les hanches plient ou tombent, réduire l'amplitude. Plafond bas : raccourcir le mouvement.",
       "hockey": null
+    },
+    "Suitcase carry": {
+      "cues": [
+        ["Un seul haltère dans une main, le long de la cuisse — marcher grand et bien droit", null],
+        ["Rester carré : ne pas se pencher vers l'haltère, épaules de niveau, hanches de niveau", "truc : 'imagine un verre d'eau sur ta tête'"],
+        ["Côtes basses, ventre gainé — c'est le côté sans poids qui travaille pour te garder droit", null],
+        ["Faire les deux bras également : même distance à gauche qu'à droite", null]
+      ],
+      "warn": "Si le tronc penche d'un côté, l'haltère est trop lourd — alléger. On marche lentement et contrôlé, pas de course.",
+      "hockey": "Le gainage anti-flexion latérale et la poigne, c'est ce qui garde le corps solide dans les batailles le long de la bande et sur les mises en échec — personne ne te pousse de côté."
+    },
+    "TRX Y raise": {
+      "cues": [
+        ["Debout face à l'ancrage, se pencher vers l'arrière en tenant les sangles — corps droit et gainé, talons au sol", null],
+        ["Monter les bras tendus au-dessus de la tête en forme de Y, pouces vers le haut et l'arrière", null],
+        ["Le mouvement vient du haut du dos : tirer les omoplates vers le bas et l'arrière, pas avec les mains", null],
+        ["Lent et contrôlé — ne pas cambrer le bas du dos ni hausser les épaules vers les oreilles", null]
+      ],
+      "warn": "Épaules qui montent vers les oreilles = trop dur : reculer les pieds pour se redresser et alléger l'angle. Ne pas creuser le bas du dos pour tricher.",
+      "hockey": "Posture et santé de l'épaule — contre la position penchée du gardien et du patineur, et garde les épaules solides pour les tirs et les contacts."
     }
   },
 
@@ -607,10 +627,10 @@
     {
       "phase": "Phase 2 (semaines 4–6)",
       "loc": "basement",
-      "name": "Journée sous-sol A — Force + Poussée/Tiré",
-      "focus": "Squat/charnière chargé + haut du corps",
+      "name": "Journée sous-sol A — Force (stations)",
+      "focus": "Deux circuits de force en 3 stations",
       "duration": "~30 min",
-      "tip": "Les charges augmentent pour le 12 ans. Les haltères sont au cœur de cette séance.",
+      "tip": "Format station : 3 exercices, une personne par station. On fait sa station, on tourne — quand les trois ont fait les trois, on prend le repos ensemble. Chacun règle son poids à sa station.",
       "swap": null,
       "blocks": [
         {
@@ -622,33 +642,37 @@
           ]
         },
         {
-          "label": "Travail principal (17 min)",
+          "label": "Circuit 1 — Force principale (10 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Squat + charnière, les deux exercices principaux",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde complète", "note": "3 stations : squat, tiré, charnière. Une personne par station, on tourne — repos quand les trois ont tout fait.",
               "exercises": [
                 { "name": "Goblet squat", "detail": "Haltère à la poitrine, descente 3 sec, profond", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "force du bas du corps", "letter": "A" },
-                { "name": "Romanian deadlift", "detail": "Charnière, dos droit, sentir les ischios", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "le moteur du patin", "letter": "B" }
+                { "name": "TRX row", "detail": "Corps droit comme une planche, poitrine vers les mains — avancer les pieds pour un angle plus difficile", "spec": "G 3×10 / S 3×10", "why": "tiré haut du corps", "letter": "B" },
+                { "name": "Romanian deadlift", "detail": "Charnière, dos droit, sentir les ischios", "spec": "G 3×8 @10lb / S 3×8 @15-20lb", "why": "le moteur du patin", "letter": "C" }
               ]
-            },
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Pousser + tirer — équilibre du haut du corps",
+            }
+          ]
+        },
+        {
+          "label": "Circuit 2 — Accessoire (10 min)",
+          "items": [
+            { "ss": true, "rest": "45 sec de repos après chaque ronde complète", "note": "3 stations : pousser, gainage, transport. Une personne par station, on tourne — repos quand les trois ont tout fait.",
               "exercises": [
-                { "name": "Bench dips", "detail": "Mains sur le banc, coudes vers l'arrière, descendre à 90° — pieds rapprochés pour commencer", "spec": "G 3×8 / S 3×10", "why": "force de poussée (triceps)", "letter": "A" },
-                { "name": "TRX row", "detail": "Corps droit comme une planche, poitrine vers les mains — S avance les pieds pour un angle plus difficile", "spec": "G 3×8 / S 3×10", "why": "tiré haut du corps", "letter": "B" }
+                { "name": "Bench dips", "detail": "Mains sur une chaise solide, coudes vers l'arrière, descendre à 90° — pieds rapprochés pour commencer", "spec": "G 3×8 / S 3×10", "why": "force de poussée (triceps)", "letter": "A" },
+                { "name": "Dead bug", "detail": "Bras et jambe opposés, dos à plat — S tient un haltère de 2-3 lb", "spec": "3×8 chaque côté", "why": "gainage anti-extension (protège le dos)", "letter": "B" },
+                { "name": "Suitcase carry", "detail": "Un seul haltère dans une main, marcher grand et droit — changer de main à mi-chemin", "spec": "2 × 20 m par bras", "why": "gainage anti-flexion latérale + poigne", "letter": "C" }
               ]
-            },
-            { "solo": true, "exercises": [
-              { "name": "Swiss ball Russian twist", "detail": "Pont sur le ballon, faire pivoter un haltère léger d'un côté à l'autre — les deux garçons, lent et contrôlé", "spec": "2 × 8 chaque côté", "why": "puissance de rotation au tir + contrôle du tronc" }
-            ]},
-            { "solo": true, "exercises": [
-              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "étirement du gardien + protection croissance" }
-            ]}
+            }
           ]
         },
         {
           "label": "Retour au calme (4 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Frog stretch + seated glute stretch", "detail": "60 sec grenouille, 45 sec fessier par côté", "spec": "4 min", "why": "aine + fessiers" }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "étirement du gardien + protection croissance" }
+            ]},
+            { "solo": true, "exercises": [
+              { "name": "Frog stretch + seated glute stretch", "detail": "60 sec grenouille, 45 sec fessier par côté", "spec": "3 min", "why": "aine + fessiers" }
             ]}
           ]
         }
@@ -657,10 +681,10 @@
     {
       "phase": "Phase 2 (semaines 4–6)",
       "loc": "basement",
-      "name": "Journée sous-sol B — Habiletés de position + Sauts",
-      "focus": "Sauts à faible impact sur tapis + réaction",
+      "name": "Journée sous-sol B — Sauts + Rapidité (stations)",
+      "focus": "Puissance à faible impact + rapidité en 3 stations",
       "duration": "~30 min",
-      "tip": "Utilisez un tapis mousse ou caoutchouc pour les squat sauts — ça garde le bruit bas et protège les articulations.",
+      "tip": "Format station : 3 exercices, une personne par station. On tourne, puis repos quand les trois ont tout fait. Un tapis mousse garde les sauts silencieux et protège les articulations.",
       "swap": null,
       "blocks": [
         {
@@ -672,21 +696,25 @@
           ]
         },
         {
-          "label": "Travail principal (17 min)",
+          "label": "Circuit 1 — Puissance à faible impact (10 min)",
           "items": [
-            { "ss": true, "rest": "60 sec de repos après chaque ronde", "note": "Sur le tapis : puissance à faible impact + poussée haut du corps",
+            { "ss": true, "rest": "60 sec de repos après chaque ronde complète", "note": "3 stations sur le tapis : saut, poussée, unipodal. Une personne par station, on tourne — repos quand les trois ont tout fait.",
               "exercises": [
                 { "name": "Squat jumps", "detail": "Sur le tapis mousse — exploser vers le haut, atterrir doucement, pause en bas", "spec": "G 3×6 / S 3×8", "why": "puissance de poussée", "letter": "A" },
-                { "name": "Push-up handles variation", "detail": "Pompe, sauter les mains latéralement, pompe", "spec": "G 3×6 / S 3×8", "why": "explosivité haut du corps", "letter": "B" }
+                { "name": "Push-up handles variation", "detail": "Pompe, sauter les mains latéralement, pompe", "spec": "G 3×6 / S 3×8", "why": "explosivité haut du corps", "letter": "B" },
+                { "name": "Single-leg squat to box", "detail": "Talon libre effleure une cible basse — chaise, ballon ou coussin. Genou aligné sur le 2e orteil.", "spec": "G 2×6/jambe / S 3×6/jambe", "why": "force unilatérale (une jambe = un patin)", "letter": "C" }
               ]
-            },
-            { "ss": true, "rest": "45 sec de repos après chaque ronde", "note": "Séparation de position + réaction",
-              "split": {
-                "g": { "name": "Drop-step to save", "detail": "Position gardien, Papa pointe — drop step, fente large, tenir 2 sec. Pas de chutes de genoux en intérieur.", "spec": "12 reps", "why": "de poteau à poteau" },
-                "s": { "name": "Crossover step-overs", "detail": "Croiser au-dessus d'une ligne, pousser latéralement sur le pied arrière", "spec": "3 × 8 chaque sens", "why": "foulée croisée" }
-              },
+            }
+          ]
+        },
+        {
+          "label": "Circuit 2 — Rapidité + réaction (10 min)",
+          "items": [
+            { "ss": true, "rest": "45 sec de repos après chaque ronde complète", "note": "3 stations : pieds vites, posture/épaule, réaction. Une personne par station, on tourne — repos quand les trois ont tout fait.",
               "exercises": [
-                { "name": "Reaction ball drops", "detail": "Attraper avant le 2e rebond — petits mouvements, compatible avec un plafond bas", "spec": "10 laisser-tomber chaque", "why": "réaction pure", "letter": "B" }
+                { "name": "Dot hops (4-square)", "detail": "4 points au ruban, tous les patterns — silencieux sur un tapis", "spec": "3 × 30 sec", "why": "vitesse des pieds", "letter": "A" },
+                { "name": "TRX Y raise", "detail": "Se pencher vers l'arrière, monter les bras tendus en Y — tirer les omoplates vers le bas. Reculer les pieds pour rendre plus facile.", "spec": "G 3×10 / S 3×12", "why": "posture + santé de l'épaule", "letter": "B" },
+                { "name": "Wall ball reaction", "detail": "Balle contre le mur, angles et hauteurs variés — attraper à une main quand c'est possible", "spec": "45 sec", "why": "réaction + vivacité des mains", "letter": "C" }
               ]
             }
           ]
@@ -695,7 +723,10 @@
           "label": "Retour au calme (3 min) — ensemble",
           "items": [
             { "solo": true, "exercises": [
-              { "name": "Doorframe chest stretch + seated forward fold", "detail": "45 sec chaque", "spec": "3 min", "why": null }
+              { "name": "Pigeon pose", "detail": "6 respirations lentes par côté — les deux garçons, à chaque fois", "spec": "~60 sec par côté", "why": "étirement du gardien + protection croissance" }
+            ]},
+            { "solo": true, "exercises": [
+              { "name": "Doorframe chest stretch + seated forward fold", "detail": "45 sec chaque", "spec": "2 min", "why": null }
             ]}
           ]
         }
