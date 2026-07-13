@@ -311,8 +311,15 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
 
   // ── Change session button
   container.querySelector('#change-session')?.addEventListener('click', () => {
-    setState('session', null);
-    renderToday(container.closest('#view') || container, data);
+    // Go back through history so the pushed session entry is popped cleanly
+    // (popstate handler in app.js re-renders the picker). Fall back to a direct
+    // render if there's no session entry on the stack.
+    if (history.state?.bhtSession) {
+      history.back();
+    } else {
+      setState('session', null);
+      renderToday(container.closest('#view') || container, data);
+    }
   });
 
   // ── Back to browse
@@ -322,6 +329,16 @@ function renderSession(container, week, weekIndex, data, withCheckbox = true, sh
 
 }
 
+// ── History ───────────────────────────────────────────────────────────────────
+// Push a marker entry so the browser/device back button returns to the picker
+// instead of leaving the app. Guard against duplicates so re-entering a session
+// doesn't stack multiple entries.
+function pushSessionHistory() {
+  if (!history.state?.bhtSession) {
+    history.pushState({ bhtSession: true }, '');
+  }
+}
+
 // ── Main export ───────────────────────────────────────────────────────────────
 export function renderToday(container, data) {
   const saved = getState('session');
@@ -329,11 +346,15 @@ export function renderToday(container, data) {
   if (!saved) {
     renderPicker(container, data, (weekIndex) => {
       setState('session', { weekIndex });
+      pushSessionHistory();
       renderSession(container, data.weeks[weekIndex], weekIndex, data, true, false);
     });
     return;
   }
 
+  // Session restored from localStorage (e.g. app reopened straight into a
+  // session) — make sure there's a history entry so back returns to the picker.
+  pushSessionHistory();
   renderSession(container, data.weeks[saved.weekIndex], saved.weekIndex, data, true, false);
 }
 

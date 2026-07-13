@@ -39,6 +39,16 @@ function renderTab(tab) {
   }
 }
 
+// ── Browser back button ────────────────────────────────────────────────────────
+// The session runner pushes a history entry (see today.js) so the device/browser
+// back button returns to the session picker instead of closing the app.
+window.addEventListener('popstate', () => {
+  if (currentTab === 'today' && getState('session')) {
+    setState('session', null);
+    renderToday(view, data);
+  }
+});
+
 // ── Boot ──────────────────────────────────────────────────────────────────────
 nav.addEventListener('click', e => {
   const btn = e.target.closest('[data-tab]');
